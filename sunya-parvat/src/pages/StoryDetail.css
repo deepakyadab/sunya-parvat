@@ -1,0 +1,107 @@
+.sd__header {
+  padding: 10rem 0 5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 5rem;
+}
+
+.sd__back {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  transition: color 0.3s ease;
+  font-family: var(--font-sans);
+}
+.sd__back:hover { color: var(--text-secondary); }
+
+.sd__meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sd__date,
+.sd__read {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  letter-spacing: 0.1em;
+}
+
+.sd__title {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.sd__subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.sd__body {
+  padding-bottom: 8rem;
+}
+
+.sd__lede {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.sd__divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold-dim);
+  margin: 3rem 0;
+}
+
+.sd__para {
+  font-size: 1rem;
+  line-height: 1.95;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+.sd__signature {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 4rem 0 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.sd__footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.link-subtle {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  font-family: var(--font-sans);
+}
+.link-subtle:hover { color: var(--text-primary); }
+
+@media (max-width: 640px) {
+  .sd__footer-nav { flex-direction: column; gap: 1.5rem; }
+}
