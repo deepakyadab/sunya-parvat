@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const SITE = 'Sunya Parvat';
-export const SITE_URL = 'https://sunya-parvat.vercel.app';
+export const SITE_URL = 'https://sunyaparvat.vercel.app';
 
 function setMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`);

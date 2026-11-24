@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT, loadTreks, importEsm } = require('./lib');
 
-const SITE = process.env.SITE_URL || 'https://sunya-parvat.vercel.app';
+const SITE = process.env.SITE_URL || 'https://sunyaparvat.vercel.app';
 const BUILD = path.join(ROOT, 'build');
 
 const esc = s => String(s == null ? '' : s)

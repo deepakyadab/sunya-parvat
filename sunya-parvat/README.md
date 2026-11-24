@@ -106,9 +106,10 @@ its own title, description and a plain-HTML summary. It also writes `sitemap.xml
 
 ## Audit findings (November 2026) and what changed
 
-- **Repo ≠ live site.** `sunya-parvat.vercel.app` currently serves a different app (a Google
-  AI Studio/Vite build with `/treks`, Zanskar and Everest Base Camp). This work is on
-  this repository. Point the Vercel project at it (root directory `sunya-parvat`) to ship it.
+- **Repo ≠ old live site.** `sunya-parvat.vercel.app` (with a hyphen) still serves an older,
+  separate app (a Google AI Studio/Vite build). This repository is deployed as its own
+  Vercel project at **https://sunyaparvat.vercel.app**. Delete the old project, or move
+  its domain to the new one, so visitors don't land on the old site.
 - `node_modules` was committed to the repository. It is now ignored.
 - Tailwind v4 was configured but unused, and its CRA/PostCSS setup was broken. Removed.
 - The Connect form showed "Received" but sent nothing. It now sends through a server-side
@@ -143,10 +144,10 @@ its own title, description and a plain-HTML summary. It also writes `sitemap.xml
   replace an `image` block whenever you have your own.
 - **Merged entry.** "Singalila Ridge" is merged into Sandakphu–Phalut (same ridge).
   Zanskar, from the live site, is not in this catalog yet.
-- **Email delivery.** Confirmed working on 24 November 2026: a test enquiry sent from the
-  local site through Resend arrived in sunyaparvat@gmail.com. For the live site, add the
-  same environment variables in Vercel and send one more test after deploying (see
-  "Contact and trek enquiries").
+- **Email delivery.** Confirmed working on 25 November 2026: a test enquiry sent from the
+  live site (https://sunyaparvat.vercel.app/connect) arrived in sunyaparvat@gmail.com.
+  Mail from `onboarding@resend.dev` may land in Gmail's spam folder; a verified sending
+  domain fixes that and allows acknowledgement emails.
 
 ## Trek photos
 
@@ -215,6 +216,20 @@ sends the enquiry with [Resend](https://resend.com) to the address in `ENQUIRY_T
    never reach the browser bundle.
 3. Redeploy, send a test message from `/connect`, and confirm it arrives in the
    sunyaparvat@gmail.com inbox. Check the spam folder the first time.
+
+### When "Message sent" shows but nothing arrives
+
+Submissions that look automated (hidden field filled, sent within 3 seconds, more than 3
+links) get a normal "sent" reply so bots learn nothing, but no email is sent. Open Vercel →
+Project → Logs and filter for `[enquiry]`:
+
+- `delivered (...)`: Resend accepted it. Check Gmail's spam folder and Resend → Emails.
+- `dropped as likely spam: <reason>`: nothing was sent. Reasons: `honeypot_filled` (often
+  browser autofill), `sent_too_fast`, `missing_start_time`, `form_too_old`, `too_many_links`.
+- `email delivery is not configured` or `delivery failed`: check the environment variables
+  and the Resend key.
+
+Log lines never include the visitor's name, email or message.
 
 ### Develop and test locally
 

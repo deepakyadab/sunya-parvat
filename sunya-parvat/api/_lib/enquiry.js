@@ -52,14 +52,17 @@ function validate(body) {
   return { errors, data: { name, email, message, trek: trek || null, trekName: trek ? trekName || trek : null, lang } };
 }
 
-function isSpam(body) {
-  if (clean(body.website, 200)) return true;                 // honeypot field humans never see
+/** Why a submission looks automated, or null. Reasons are safe to log (no personal data). */
+function spamReason(body) {
+  if (clean(body.website, 200)) return 'honeypot_filled';    // honeypot field humans never see
   const started = Number(body.startedAt);
-  if (!started || Date.now() - started < MIN_FILL_MS) return true;
-  if (Date.now() - started > 24 * 60 * 60 * 1000) return true;
+  if (!started) return 'missing_start_time';
+  if (Date.now() - started < MIN_FILL_MS) return 'sent_too_fast';
+  if (Date.now() - started > 24 * 60 * 60 * 1000) return 'form_too_old';
   const links = (String(body.message || '').match(/https?:\/\//gi) || []).length;
-  return links > 3;
+  return links > 3 ? 'too_many_links' : null;
 }
+const isSpam = body => spamReason(body) !== null;
 
 /* ---------- rate limiting (best effort, per serverless instance) ---------- */
 
@@ -165,7 +168,7 @@ function providerFor(env) {
 async function handleEnquiry({ method, body, ip, origin, env = process.env }) {
   if (method !== 'POST') return { status: 405, body: { ok: false, error: 'method_not_allowed' } };
 
-  const site = (env.SITE_URL || 'https://sunya-parvat.vercel.app').replace(/\/$/, '');
+  const site = (env.SITE_URL || 'https://sunyaparvat.vercel.app').replace(/\/$/, '');
   const allowed = [site, 'http://localhost:3000', 'http://127.0.0.1:3000', ...(env.ALLOWED_ORIGINS || '').split(',').map(s => s.trim()).filter(Boolean)];
   const preview = env.VERCEL_URL ? `https://${env.VERCEL_URL}` : null;
   if (preview) allowed.push(preview);
@@ -177,8 +180,13 @@ async function handleEnquiry({ method, body, ip, origin, env = process.env }) {
   const { errors, data } = validate(body);
   if (Object.keys(errors).length) return { status: 400, body: { ok: false, error: 'validation', fields: errors } };
 
-  // Pretend success to bots so they do not retry; nothing is sent.
-  if (isSpam(body)) return { status: 200, body: { ok: true } };
+  // Pretend success to bots so they do not retry; nothing is sent. The log line lets the
+  // owner tell "dropped as spam" from "delivered" in the Vercel logs.
+  const spam = spamReason(body);
+  if (spam) {
+    console.warn(`[enquiry] dropped as likely spam: ${spam}`);
+    return { status: 200, body: { ok: true } };
+  }
 
   const to = env.ENQUIRY_TO;
   const send = providerFor(env);
@@ -194,6 +202,7 @@ async function handleEnquiry({ method, body, ip, origin, env = process.env }) {
     console.error('[enquiry] delivery failed:', e.message, e.detail || '');
     return { status: 502, body: { ok: false, error: 'delivery_failed' } };
   }
+  console.log(`[enquiry] delivered (${data.trek ? 'trek enquiry' : 'contact message'})`);
 
   if (String(env.ENQUIRY_SEND_ACK).toLowerCase() === 'true') {
     const a = acknowledgement(data);
@@ -207,4 +216,4 @@ async function handleEnquiry({ method, body, ip, origin, env = process.env }) {
   return { status: 200, body: { ok: true } };
 }
 
-module.exports = { handleEnquiry, validate, isSpam, _resetRateLimit: () => hits.clear() };
+module.exports = { handleEnquiry, validate, isSpam, spamReason, _resetRateLimit: () => hits.clear() };
