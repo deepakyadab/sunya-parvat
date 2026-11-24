@@ -1,34 +1,167 @@
 {
   "id": "triund",
-  "name": { "en": "Triund", "hi": "त्रियुंड" },
-  "aliases": ["triund hill", "snowline", "dharamkot"],
-  "countries": ["india"], "region": "himachal",
-  "area": { "en": "Dhauladhar range, Kangra", "hi": "धौलाधार श्रृंखला, कांगड़ा" },
-  "start": { "en": "Dharamkot / Galu Devi temple, McLeod Ganj", "hi": "धर्मकोट / गल्लू देवी मंदिर, मैक्लोडगंज" },
-  "end": { "en": "Same as start", "hi": "शुरुआत वाला स्थान" },
-  "totalDays": 2, "walkingDays": 2,
-  "durationNote": { "en": "2 days from McLeod Ganj with one night at Triund, or a long single day up and down. Travel to McLeod Ganj is extra.", "hi": "मैक्लोडगंज से 2 दिन, त्रियुंड पर एक रात के साथ, या ऊपर-नीचे का एक लंबा दिन। मैक्लोडगंज तक की यात्रा अलग।" },
+  "name": {
+    "en": "Triund",
+    "hi": "त्रियुंड"
+  },
+  "aliases": [
+    "triund hill",
+    "snowline",
+    "dharamkot"
+  ],
+  "countries": [
+    "india"
+  ],
+  "region": "himachal",
+  "area": {
+    "en": "Dhauladhar range, Kangra",
+    "hi": "धौलाधार श्रृंखला, कांगड़ा"
+  },
+  "start": {
+    "en": "Dharamkot / Galu Devi temple, McLeod Ganj",
+    "hi": "धर्मकोट / गल्लू देवी मंदिर, मैक्लोडगंज"
+  },
+  "end": {
+    "en": "Same as start",
+    "hi": "शुरुआत वाला स्थान"
+  },
+  "totalDays": 2,
+  "walkingDays": 2,
+  "durationNote": {
+    "en": "2 days from McLeod Ganj with one night at Triund, or a long single day up and down. Travel to McLeod Ganj is extra.",
+    "hi": "मैक्लोडगंज से 2 दिन, त्रियुंड पर एक रात के साथ, या ऊपर-नीचे का एक लंबा दिन। मैक्लोडगंज तक की यात्रा अलग।"
+  },
   "maxAltitudeM": 2850,
-  "altitudeNote": { "en": "About 2,850 m at Triund; the optional Snowline extension goes higher.", "hi": "त्रियुंड पर लगभग 2,850 मी.; वैकल्पिक स्नोलाइन इससे ऊँचा है।" },
-  "distanceKm": 18, "dailyHours": "4–5",
+  "altitudeNote": {
+    "en": "About 2,850 m at Triund; the optional Snowline extension goes higher.",
+    "hi": "त्रियुंड पर लगभग 2,850 मी.; वैकल्पिक स्नोलाइन इससे ऊँचा है।"
+  },
+  "distanceKm": 18,
+  "dailyHours": "4–5",
   "difficulty": "easy",
-  "months": [3, 4, 5, 6, 9, 10, 11, 12], "bestMonths": [4, 5, 10, 11],
+  "months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+  ],
+  "bestMonths": [
+    4,
+    5,
+    10,
+    11
+  ],
   "restDays": 0,
   "guide": "not-required",
-  "permits": { "en": "Forest department rules on overnight camping at Triund have changed over the years; check before planning to stay.", "hi": "त्रियुंड पर रात्रि कैंपिंग के वन विभाग के नियम समय-समय पर बदले हैं; रुकने की योजना से पहले जाँचें।" },
-  "types": ["weekend", "beginner", "family"], "landscapes": ["ridge", "forest"],
-  "highlight": { "en": "A grassy ridge facing the Dhauladhar wall, above the Kangra valley.", "hi": "कांगड़ा घाटी के ऊपर, धौलाधार की दीवार के सामने एक घास वाली रिज।" },
-  "suits": { "en": "A first overnight walk, or a weekend from Dharamshala.", "hi": "पहली रात वाली पदयात्रा, या धर्मशाला से एक वीकेंड।" },
-  "limitations": { "en": "Very busy on weekends; the top can be crowded and littered. Not a remote experience.", "hi": "सप्ताहांत पर बहुत भीड़; ऊपर भीड़ और कचरा हो सकता है। दूरस्थ अनुभव नहीं।" },
-  "editorial": { "label": "popular", "reason": { "en": "One of the most visited short treks in Himachal.", "hi": "हिमाचल के सबसे ज़्यादा जाए जाने वाले छोटे ट्रेक में से एक।" } },
-  "overview": { "en": "A short, well-marked climb from McLeod Ganj to a ridge that looks straight at the Dhauladhar range. Go midweek for a quieter night.", "hi": "मैक्लोडगंज से एक छोटी, साफ़ चिह्नित चढ़ाई, एक ऐसी रिज तक जो सीधे धौलाधार श्रृंखला को देखती है। शांत रात के लिए सप्ताह के बीच जाएँ।" },
-  "reach": { "en": "Pathankot railway station or Gaggal (Kangra) airport, then road to McLeod Ganj. Overnight buses run from Delhi.", "hi": "पठानकोट रेलवे स्टेशन या गग्गल (कांगड़ा) हवाई अड्डा, फिर सड़क से मैक्लोडगंज। दिल्ली से रात की बसें चलती हैं।" },
-  "fitness": { "en": "Basic fitness; the last section is steep.", "hi": "सामान्य फ़िटनेस; अंतिम हिस्सा खड़ा है।" },
-  "gear": { "en": "Walking shoes, water, a warm layer for the evening, headlamp if staying overnight.", "hi": "चलने के जूते, पानी, शाम के लिए गर्म परत, रात रुकें तो हेडलैम्प।" },
-  "stay": { "en": "Tents or a forest rest house at the top, subject to current rules.", "hi": "ऊपर टेंट या वन विश्राम गृह, वर्तमान नियमों के अधीन।" },
-  "journal": ["choosing-your-first-trek", "responsible-trekking"],
+  "permits": {
+    "en": "Forest department rules on overnight camping at Triund have changed over the years; check before planning to stay.",
+    "hi": "त्रियुंड पर रात्रि कैंपिंग के वन विभाग के नियम समय-समय पर बदले हैं; रुकने की योजना से पहले जाँचें।"
+  },
+  "types": [
+    "weekend",
+    "beginner",
+    "family"
+  ],
+  "landscapes": [
+    "ridge",
+    "forest"
+  ],
+  "highlight": {
+    "en": "A grassy ridge facing the Dhauladhar wall, above the Kangra valley.",
+    "hi": "कांगड़ा घाटी के ऊपर, धौलाधार की दीवार के सामने एक घास वाली रिज।"
+  },
+  "suits": {
+    "en": "A first overnight walk, or a weekend from Dharamshala.",
+    "hi": "पहली रात वाली पदयात्रा, या धर्मशाला से एक वीकेंड।"
+  },
+  "limitations": {
+    "en": "Very busy on weekends; the top can be crowded and littered. Not a remote experience.",
+    "hi": "सप्ताहांत पर बहुत भीड़; ऊपर भीड़ और कचरा हो सकता है। दूरस्थ अनुभव नहीं।"
+  },
+  "editorial": {
+    "label": "popular",
+    "reason": {
+      "en": "One of the most visited short treks in Himachal.",
+      "hi": "हिमाचल के सबसे ज़्यादा जाए जाने वाले छोटे ट्रेक में से एक।"
+    }
+  },
+  "overview": {
+    "en": "A short, well-marked climb from McLeod Ganj to a ridge that looks straight at the Dhauladhar range. Go midweek for a quieter night.",
+    "hi": "मैक्लोडगंज से एक छोटी, साफ़ चिह्नित चढ़ाई, एक ऐसी रिज तक जो सीधे धौलाधार श्रृंखला को देखती है। शांत रात के लिए सप्ताह के बीच जाएँ।"
+  },
+  "reach": {
+    "en": "Pathankot railway station or Gaggal (Kangra) airport, then road to McLeod Ganj. Overnight buses run from Delhi.",
+    "hi": "पठानकोट रेलवे स्टेशन या गग्गल (कांगड़ा) हवाई अड्डा, फिर सड़क से मैक्लोडगंज। दिल्ली से रात की बसें चलती हैं।"
+  },
+  "fitness": {
+    "en": "Basic fitness; the last section is steep.",
+    "hi": "सामान्य फ़िटनेस; अंतिम हिस्सा खड़ा है।"
+  },
+  "gear": {
+    "en": "Walking shoes, water, a warm layer for the evening, headlamp if staying overnight.",
+    "hi": "चलने के जूते, पानी, शाम के लिए गर्म परत, रात रुकें तो हेडलैम्प।"
+  },
+  "stay": {
+    "en": "Tents or a forest rest house at the top, subject to current rules.",
+    "hi": "ऊपर टेंट या वन विश्राम गृह, वर्तमान नियमों के अधीन।"
+  },
+  "journal": [
+    "choosing-your-first-trek",
+    "responsible-trekking"
+  ],
   "itinerary": [
-    { "day": 1, "kind": "trek", "route": { "en": "Galu Devi temple → Triund", "hi": "गल्लू देवी मंदिर → त्रियुंड" }, "description": { "en": "Forest trail, then 22 bends to the ridge.", "hi": "जंगल का रास्ता, फिर रिज तक 22 मोड़।" }, "distanceKm": 7, "ascentM": 800, "hours": "3–4", "altitudeM": 2850, "overnight": { "en": "Triund (if permitted)", "hi": "त्रियुंड (अनुमति हो तो)" } },
-    { "day": 2, "kind": "trek", "route": { "en": "Triund → (optional Snowline) → McLeod Ganj", "hi": "त्रियुंड → (वैकल्पिक स्नोलाइन) → मैक्लोडगंज" }, "distanceKm": 9, "descentM": 800, "hours": "3–5" }
-  ]
+    {
+      "day": 1,
+      "kind": "trek",
+      "route": {
+        "en": "Galu Devi temple → Triund",
+        "hi": "गल्लू देवी मंदिर → त्रियुंड"
+      },
+      "description": {
+        "en": "Forest trail, then 22 bends to the ridge.",
+        "hi": "जंगल का रास्ता, फिर रिज तक 22 मोड़।"
+      },
+      "distanceKm": 7,
+      "ascentM": 800,
+      "hours": "3–4",
+      "altitudeM": 2850,
+      "overnight": {
+        "en": "Triund (if permitted)",
+        "hi": "त्रियुंड (अनुमति हो तो)"
+      }
+    },
+    {
+      "day": 2,
+      "kind": "trek",
+      "route": {
+        "en": "Triund → (optional Snowline) → McLeod Ganj",
+        "hi": "त्रियुंड → (वैकल्पिक स्नोलाइन) → मैक्लोडगंज"
+      },
+      "distanceKm": 9,
+      "descentM": 800,
+      "hours": "3–5"
+    }
+  ],
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Triund%2C_Dharamsala.jpg/960px-Triund%2C_Dharamsala.jpg",
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Triund%2C_Dharamsala.jpg/500px-Triund%2C_Dharamsala.jpg",
+    "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Triund%2C_Dharamsala.jpg/1280px-Triund%2C_Dharamsala.jpg",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "Large boulder on the Triund ridge facing the clouded Dhauladhar range",
+      "hi": "बादलों से घिरी धौलाधार श्रृंखला के सामने त्रियुंड रिज पर एक बड़ी चट्टान"
+    },
+    "author": "Mohitb1991",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triund,_Dharamsala.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
 }

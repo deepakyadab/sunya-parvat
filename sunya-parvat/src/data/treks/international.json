@@ -1,193 +1,951 @@
 [
   {
     "id": "tour-du-mont-blanc",
-    "name": { "en": "Tour du Mont Blanc", "hi": "टूर दु मों ब्लां" },
-    "aliases": ["tmb", "mont blanc"],
-    "countries": ["france", "italy", "switzerland"], "region": "alps",
-    "start": { "en": "Les Houches, Chamonix valley", "hi": "ले उश, शामोनी घाटी" },
-    "totalDays": 11, "walkingDays": 11,
-    "maxAltitudeM": 2665, "distanceKm": 170, "dailyHours": "5–8",
+    "name": {
+      "en": "Tour du Mont Blanc",
+      "hi": "टूर दु मों ब्लां"
+    },
+    "aliases": [
+      "tmb",
+      "mont blanc"
+    ],
+    "countries": [
+      "france",
+      "italy",
+      "switzerland"
+    ],
+    "region": "alps",
+    "start": {
+      "en": "Les Houches, Chamonix valley",
+      "hi": "ले उश, शामोनी घाटी"
+    },
+    "totalDays": 11,
+    "walkingDays": 11,
+    "maxAltitudeM": 2665,
+    "distanceKm": 170,
+    "dailyHours": "5–8",
     "difficulty": "moderate",
-    "months": [6, 7, 8, 9], "bestMonths": [7, 8],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "bestMonths": [
+      7,
+      8
+    ],
     "guide": "not-required",
-    "permits": { "en": "No permit; mountain huts must be booked well ahead in July–August.", "hi": "परमिट नहीं; जुलाई–अगस्त में पर्वतीय झोपड़ियाँ काफ़ी पहले बुक करनी होती हैं।" },
-    "types": ["long-distance"], "landscapes": ["pass", "valley", "village", "glacier"],
-    "highlight": { "en": "A loop around Mont Blanc through three countries, hut to hut.", "hi": "तीन देशों से होकर, झोपड़ी से झोपड़ी, मों ब्लां के चारों ओर एक चक्र।" }
+    "permits": {
+      "en": "No permit; mountain huts must be booked well ahead in July–August.",
+      "hi": "परमिट नहीं; जुलाई–अगस्त में पर्वतीय झोपड़ियाँ काफ़ी पहले बुक करनी होती हैं।"
+    },
+    "types": [
+      "long-distance"
+    ],
+    "landscapes": [
+      "pass",
+      "valley",
+      "village",
+      "glacier"
+    ],
+    "highlight": {
+      "en": "A loop around Mont Blanc through three countries, hut to hut.",
+      "hi": "तीन देशों से होकर, झोपड़ी से झोपड़ी, मों ब्लां के चारों ओर एक चक्र।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg/960px-GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg/500px-GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg/1280px-GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Rocky Tour du Mont Blanc trail beside lingering snow, north of Col du Bonhomme",
+        "hi": "कोल दु बोनोम के उत्तर में बची हुई बर्फ़ के पास टूर दु मों ब्लां का पथरीला रास्ता"
+      },
+      "author": "Cassican",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:GR5_-_TMB_au_nord_du_col_du_Bonhomme.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "camino-de-santiago",
-    "name": { "en": "Camino de Santiago (Camino Francés)", "hi": "कामिनो दे सांतियागो (कामिनो फ़्रांसेस)" },
-    "aliases": ["camino", "camino frances", "way of st james"],
-    "countries": ["spain", "france"], "region": "galicia",
-    "start": { "en": "Saint-Jean-Pied-de-Port", "hi": "सां-ज़ां-पिए-द-पोर" },
-    "totalDays": 33, "walkingDays": 33,
-    "maxAltitudeM": 1504, "distanceKm": 780, "dailyHours": "5–7",
+    "name": {
+      "en": "Camino de Santiago (Camino Francés)",
+      "hi": "कामिनो दे सांतियागो (कामिनो फ़्रांसेस)"
+    },
+    "aliases": [
+      "camino",
+      "camino frances",
+      "way of st james"
+    ],
+    "countries": [
+      "spain",
+      "france"
+    ],
+    "region": "galicia",
+    "start": {
+      "en": "Saint-Jean-Pied-de-Port",
+      "hi": "सां-ज़ां-पिए-द-पोर"
+    },
+    "totalDays": 33,
+    "walkingDays": 33,
+    "maxAltitudeM": 1504,
+    "distanceKm": 780,
+    "dailyHours": "5–7",
     "difficulty": "easy-moderate",
-    "months": [4, 5, 6, 9, 10], "bestMonths": [5, 9],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      9
+    ],
     "guide": "not-required",
-    "types": ["pilgrimage", "long-distance"], "landscapes": ["village", "valley"],
-    "highlight": { "en": "A centuries-old pilgrimage across northern Spain, staying in pilgrim hostels.", "hi": "उत्तरी स्पेन में सदियों पुरानी तीर्थयात्रा, तीर्थयात्री हॉस्टल में ठहराव।" }
+    "types": [
+      "pilgrimage",
+      "long-distance"
+    ],
+    "landscapes": [
+      "village",
+      "valley"
+    ],
+    "highlight": {
+      "en": "A centuries-old pilgrimage across northern Spain, staying in pilgrim hostels.",
+      "hi": "उत्तरी स्पेन में सदियों पुरानी तीर्थयात्रा, तीर्थयात्री हॉस्टल में ठहराव।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg/960px-Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg/500px-Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg/1280px-Camino_Franc%C3%A9s%2C_Vilamaior%2C_Santiago_de_Compostela.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "The Camino Francés as a quiet country road through misty Galician fields near Santiago",
+        "hi": "सांतियागो के पास धुंधले गैलिशियन खेतों से गुज़रती एक शांत ग्रामीण सड़क के रूप में कामिनो फ़्रांसेस"
+      },
+      "author": "Simon Burchell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camino_Franc%C3%A9s,_Vilamaior,_Santiago_de_Compostela.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "inca-trail",
-    "name": { "en": "Inca Trail to Machu Picchu", "hi": "इंका ट्रेल से माचू पिच्चू" },
-    "aliases": ["inca", "machu picchu"],
-    "countries": ["peru"], "region": "cusco",
-    "start": { "en": "Km 82 (Piscacucho)", "hi": "किमी 82 (पिस्काकुचो)" },
-    "totalDays": 4, "walkingDays": 4,
-    "maxAltitudeM": 4215, "distanceKm": 42, "dailyHours": "5–8",
+    "name": {
+      "en": "Inca Trail to Machu Picchu",
+      "hi": "इंका ट्रेल से माचू पिच्चू"
+    },
+    "aliases": [
+      "inca",
+      "machu picchu"
+    ],
+    "countries": [
+      "peru"
+    ],
+    "region": "cusco",
+    "start": {
+      "en": "Km 82 (Piscacucho)",
+      "hi": "किमी 82 (पिस्काकुचो)"
+    },
+    "totalDays": 4,
+    "walkingDays": 4,
+    "maxAltitudeM": 4215,
+    "distanceKm": 42,
+    "dailyHours": "5–8",
     "difficulty": "moderate",
-    "months": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1], "bestMonths": [5, 6, 7, 8, 9],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Limited daily permits sold only through licensed operators, often months ahead. The trail closes every February.", "hi": "सीमित दैनिक परमिट केवल लाइसेंसधारी ऑपरेटरों के माध्यम से, अक्सर महीनों पहले। ट्रेल हर फ़रवरी बंद रहता है।" },
-    "types": ["pilgrimage"], "landscapes": ["pass", "forest", "summit"],
-    "highlight": { "en": "Inca stone paths and ruins, arriving at Machu Picchu through the Sun Gate.", "hi": "इंका पत्थर के रास्ते और खंडहर, सूर्य द्वार से माचू पिच्चू पहुँचना।" }
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Limited daily permits sold only through licensed operators, often months ahead. The trail closes every February.",
+      "hi": "सीमित दैनिक परमिट केवल लाइसेंसधारी ऑपरेटरों के माध्यम से, अक्सर महीनों पहले। ट्रेल हर फ़रवरी बंद रहता है।"
+    },
+    "types": [
+      "pilgrimage"
+    ],
+    "landscapes": [
+      "pass",
+      "forest",
+      "summit"
+    ],
+    "highlight": {
+      "en": "Inca stone paths and ruins, arriving at Machu Picchu through the Sun Gate.",
+      "hi": "इंका पत्थर के रास्ते और खंडहर, सूर्य द्वार से माचू पिच्चू पहुँचना।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg/960px-220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg/500px-220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg/1280px-220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_%2814977719298%29.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Inca stone terraces and ruins with a steep green peak beyond, on the Inca Trail",
+        "hi": "इंका ट्रेल पर इंका पत्थर की सीढ़ीदार संरचनाएँ और खंडहर, आगे खड़ी हरी चोटी"
+      },
+      "author": "bobistraveling",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:220_View_from_Inca_Trail_to_Sun_Gate_Machu_Picchu_Peru_2488_(14977719298).jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "salkantay-trek",
-    "name": { "en": "Salkantay Trek", "hi": "साल्कांते ट्रेक" },
-    "aliases": ["salkantay"],
-    "countries": ["peru"], "region": "cusco",
-    "start": { "en": "Soraypampa / Challacancha", "hi": "सोरायपम्पा / चल्लाकांचा" },
-    "totalDays": 5, "walkingDays": 4,
-    "maxAltitudeM": 4600, "distanceKm": 72, "dailyHours": "6–8",
+    "name": {
+      "en": "Salkantay Trek",
+      "hi": "साल्कांते ट्रेक"
+    },
+    "aliases": [
+      "salkantay"
+    ],
+    "countries": [
+      "peru"
+    ],
+    "region": "cusco",
+    "start": {
+      "en": "Soraypampa / Challacancha",
+      "hi": "सोरायपम्पा / चल्लाकांचा"
+    },
+    "totalDays": 5,
+    "walkingDays": 4,
+    "maxAltitudeM": 4600,
+    "distanceKm": 72,
+    "dailyHours": "6–8",
     "difficulty": "difficult",
-    "months": [4, 5, 6, 7, 8, 9, 10], "bestMonths": [5, 6, 7, 8],
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8
+    ],
     "guide": "recommended",
-    "types": ["high-altitude"], "landscapes": ["pass", "glacier", "forest"],
-    "highlight": { "en": "From glaciers below Salkantay down to cloud forest, towards Machu Picchu.", "hi": "साल्कांते के नीचे ग्लेशियरों से बादल-वन तक, माचू पिच्चू की ओर।" }
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "pass",
+      "glacier",
+      "forest"
+    ],
+    "highlight": {
+      "en": "From glaciers below Salkantay down to cloud forest, towards Machu Picchu.",
+      "hi": "साल्कांते के नीचे ग्लेशियरों से बादल-वन तक, माचू पिच्चू की ओर।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Salkantay_trek.jpg/960px-Salkantay_trek.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Salkantay_trek.jpg/500px-Salkantay_trek.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Salkantay_trek.jpg/1280px-Salkantay_trek.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Trail through a green valley towards snow-capped Salkantay",
+        "hi": "हरी घाटी से होकर बर्फ़ से ढके साल्कांते की ओर जाता रास्ता"
+      },
+      "author": "Apollo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salkantay_trek.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "kilimanjaro",
-    "name": { "en": "Kilimanjaro routes", "hi": "किलिमंजारो मार्ग" },
-    "aliases": ["kili", "kilimanjaro", "machame", "lemosho", "marangu", "uhuru peak"],
-    "countries": ["tanzania"], "region": "kilimanjaro",
-    "start": { "en": "Machame, Lemosho or Marangu gate", "hi": "माचामे, लेमोशो या मारांगु गेट" },
-    "totalDays": 8, "walkingDays": 7,
-    "durationNote": { "en": "Routes range from 5 to 9 days; longer routes allow better acclimatisation and higher summit success.", "hi": "मार्ग 5 से 9 दिन के हैं; लंबे मार्ग बेहतर अनुकूलन और शिखर पर पहुँचने की बेहतर संभावना देते हैं।" },
-    "maxAltitudeM": 5895, "distanceKm": 70, "dailyHours": "5–8",
+    "name": {
+      "en": "Kilimanjaro routes",
+      "hi": "किलिमंजारो मार्ग"
+    },
+    "aliases": [
+      "kili",
+      "kilimanjaro",
+      "machame",
+      "lemosho",
+      "marangu",
+      "uhuru peak"
+    ],
+    "countries": [
+      "tanzania"
+    ],
+    "region": "kilimanjaro",
+    "start": {
+      "en": "Machame, Lemosho or Marangu gate",
+      "hi": "माचामे, लेमोशो या मारांगु गेट"
+    },
+    "totalDays": 8,
+    "walkingDays": 7,
+    "durationNote": {
+      "en": "Routes range from 5 to 9 days; longer routes allow better acclimatisation and higher summit success.",
+      "hi": "मार्ग 5 से 9 दिन के हैं; लंबे मार्ग बेहतर अनुकूलन और शिखर पर पहुँचने की बेहतर संभावना देते हैं।"
+    },
+    "maxAltitudeM": 5895,
+    "distanceKm": 70,
+    "dailyHours": "5–8",
     "difficulty": "difficult",
-    "months": [1, 2, 3, 6, 7, 8, 9, 10, 12], "bestMonths": [1, 2, 7, 8, 9],
+    "months": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "bestMonths": [
+      1,
+      2,
+      7,
+      8,
+      9
+    ],
     "guide": "required",
-    "permits": { "en": "Park fees; climbing with a licensed guide and registered operator is mandatory.", "hi": "उद्यान शुल्क; लाइसेंसधारी गाइड और पंजीकृत ऑपरेटर के साथ चढ़ाई अनिवार्य।" },
-    "types": ["high-altitude"], "landscapes": ["summit", "forest", "glacier"],
-    "highlight": { "en": "Walking from rainforest to the snow-capped summit of Africa's highest peak.", "hi": "वर्षावन से अफ़्रीका के सबसे ऊँचे बर्फ़ीले शिखर तक की पदयात्रा।" }
+    "permits": {
+      "en": "Park fees; climbing with a licensed guide and registered operator is mandatory.",
+      "hi": "उद्यान शुल्क; लाइसेंसधारी गाइड और पंजीकृत ऑपरेटर के साथ चढ़ाई अनिवार्य।"
+    },
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "summit",
+      "forest",
+      "glacier"
+    ],
+    "highlight": {
+      "en": "Walking from rainforest to the snow-capped summit of Africa's highest peak.",
+      "hi": "वर्षावन से अफ़्रीका के सबसे ऊँचे बर्फ़ीले शिखर तक की पदयात्रा।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Senecio_kilimanjari_stream_Tanzania.jpg/960px-Senecio_kilimanjari_stream_Tanzania.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Senecio_kilimanjari_stream_Tanzania.jpg/500px-Senecio_kilimanjari_stream_Tanzania.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Senecio_kilimanjari_stream_Tanzania.jpg/1280px-Senecio_kilimanjari_stream_Tanzania.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Giant groundsels beside a rocky stream on Kilimanjaro's Machame–Mweka route",
+        "hi": "किलिमंजारो के माचामे–मवेका मार्ग पर एक पथरीली धारा के पास विशाल ग्राउंडसेल पौधे"
+      },
+      "author": "Stig Nygaard from Copenhagen, Denmark",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Senecio_kilimanjari_stream_Tanzania.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "mount-kenya",
-    "name": { "en": "Mount Kenya routes (Point Lenana)", "hi": "माउंट केन्या मार्ग (पॉइंट लेनाना)" },
-    "aliases": ["mount kenya", "point lenana", "sirimon", "chogoria"],
-    "countries": ["kenya"], "region": "mount-kenya",
-    "start": { "en": "Sirimon, Chogoria or Naro Moru gate", "hi": "सिरिमोन, चोगोरिया या नारो मोरू गेट" },
-    "totalDays": 5, "walkingDays": 5,
-    "maxAltitudeM": 4985, "distanceKm": null, "dailyHours": "5–8",
+    "name": {
+      "en": "Mount Kenya routes (Point Lenana)",
+      "hi": "माउंट केन्या मार्ग (पॉइंट लेनाना)"
+    },
+    "aliases": [
+      "mount kenya",
+      "point lenana",
+      "sirimon",
+      "chogoria"
+    ],
+    "countries": [
+      "kenya"
+    ],
+    "region": "mount-kenya",
+    "start": {
+      "en": "Sirimon, Chogoria or Naro Moru gate",
+      "hi": "सिरिमोन, चोगोरिया या नारो मोरू गेट"
+    },
+    "totalDays": 5,
+    "walkingDays": 5,
+    "maxAltitudeM": 4985,
+    "distanceKm": null,
+    "dailyHours": "5–8",
     "difficulty": "difficult",
-    "months": [1, 2, 7, 8, 9, 10], "bestMonths": [1, 2, 8, 9],
+    "months": [
+      1,
+      2,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bestMonths": [
+      1,
+      2,
+      8,
+      9
+    ],
     "guide": "recommended",
-    "types": ["high-altitude"], "landscapes": ["summit", "lake", "valley"],
-    "highlight": { "en": "Tarns, giant lobelias and a dawn summit at Point Lenana.", "hi": "छोटी झीलें, विशाल लोबेलिया और पॉइंट लेनाना पर भोर का शिखर।" }
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "summit",
+      "lake",
+      "valley"
+    ],
+    "highlight": {
+      "en": "Tarns, giant lobelias and a dawn summit at Point Lenana.",
+      "hi": "छोटी झीलें, विशाल लोबेलिया और पॉइंट लेनाना पर भोर का शिखर।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mount_Kenya_Mintos_camp.jpg/960px-Mount_Kenya_Mintos_camp.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mount_Kenya_Mintos_camp.jpg/500px-Mount_Kenya_Mintos_camp.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mount_Kenya_Mintos_camp.jpg/1280px-Mount_Kenya_Mintos_camp.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Dark tarn reflecting the sky at Minto's camp on Mount Kenya",
+        "hi": "माउंट केन्या पर मिंटो कैंप में आसमान का प्रतिबिंब दिखाती गहरी झील"
+      },
+      "author": "Franco Pecchio",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kenya_Mintos_camp.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "laugavegur-trail",
-    "name": { "en": "Laugavegur Trail", "hi": "लौगावेगुर ट्रेल" },
-    "aliases": ["laugavegur", "landmannalaugar"],
-    "countries": ["iceland"], "region": "south-iceland",
-    "start": { "en": "Landmannalaugar (ends at Þórsmörk)", "hi": "लांडमानालौगार (समापन थोर्समर्क)" },
-    "totalDays": 4, "walkingDays": 4,
-    "maxAltitudeM": null, "distanceKm": 55, "dailyHours": "4–7",
+    "name": {
+      "en": "Laugavegur Trail",
+      "hi": "लौगावेगुर ट्रेल"
+    },
+    "aliases": [
+      "laugavegur",
+      "landmannalaugar"
+    ],
+    "countries": [
+      "iceland"
+    ],
+    "region": "south-iceland",
+    "start": {
+      "en": "Landmannalaugar (ends at Þórsmörk)",
+      "hi": "लांडमानालौगार (समापन थोर्समर्क)"
+    },
+    "totalDays": 4,
+    "walkingDays": 4,
+    "maxAltitudeM": null,
+    "distanceKm": 55,
+    "dailyHours": "4–7",
     "difficulty": "moderate",
-    "months": [7, 8, 9], "bestMonths": [7, 8],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "bestMonths": [
+      7,
+      8
+    ],
     "guide": "not-required",
-    "permits": { "en": "No permit; huts and campsites must be booked. The season is short (roughly late June to early September).", "hi": "परमिट नहीं; झोपड़ियाँ और कैंपसाइट बुक करनी होती हैं। मौसम छोटा है (लगभग जून के अंत से सितंबर की शुरुआत)।" },
-    "types": [], "landscapes": ["valley", "glacier", "desert"],
-    "highlight": { "en": "Coloured rhyolite mountains, lava fields and glacier rivers.", "hi": "रंगीन रायोलाइट पर्वत, लावा क्षेत्र और हिमनदी नदियाँ।" }
+    "permits": {
+      "en": "No permit; huts and campsites must be booked. The season is short (roughly late June to early September).",
+      "hi": "परमिट नहीं; झोपड़ियाँ और कैंपसाइट बुक करनी होती हैं। मौसम छोटा है (लगभग जून के अंत से सितंबर की शुरुआत)।"
+    },
+    "types": [],
+    "landscapes": [
+      "valley",
+      "glacier",
+      "desert"
+    ],
+    "highlight": {
+      "en": "Coloured rhyolite mountains, lava fields and glacier rivers.",
+      "hi": "रंगीन रायोलाइट पर्वत, लावा क्षेत्र और हिमनदी नदियाँ।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg/960px-Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg/500px-Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg/1280px-Hattfell_from_Laugavegur_hiking_trail%2C_Iceland_12.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Green, cone-shaped Hattfell rising from a black sand plain on the Laugavegur trail",
+        "hi": "लौगावेगुर ट्रेल पर काली रेत के मैदान से उठता हरा, शंकु आकार का हैटफ़ेल"
+      },
+      "author": "Michal Klajban",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hattfell_from_Laugavegur_hiking_trail,_Iceland_12.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "west-highland-way",
-    "name": { "en": "West Highland Way", "hi": "वेस्ट हाइलैंड वे" },
-    "aliases": ["whw"],
-    "countries": ["scotland"], "region": "highlands",
-    "start": { "en": "Milngavie (ends at Fort William)", "hi": "मिलनगाई (समापन फ़ोर्ट विलियम)" },
-    "totalDays": 7, "walkingDays": 7,
-    "maxAltitudeM": 550, "distanceKm": 154, "dailyHours": "5–7",
+    "name": {
+      "en": "West Highland Way",
+      "hi": "वेस्ट हाइलैंड वे"
+    },
+    "aliases": [
+      "whw"
+    ],
+    "countries": [
+      "scotland"
+    ],
+    "region": "highlands",
+    "start": {
+      "en": "Milngavie (ends at Fort William)",
+      "hi": "मिलनगाई (समापन फ़ोर्ट विलियम)"
+    },
+    "totalDays": 7,
+    "walkingDays": 7,
+    "maxAltitudeM": 550,
+    "distanceKm": 154,
+    "dailyHours": "5–7",
     "difficulty": "easy-moderate",
-    "months": [4, 5, 6, 7, 8, 9, 10], "bestMonths": [5, 6, 9],
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9
+    ],
     "guide": "not-required",
-    "types": ["long-distance", "family"], "landscapes": ["valley", "lake", "village"],
-    "highlight": { "en": "Loch Lomond, Rannoch Moor and Glencoe on a waymarked long-distance path.", "hi": "चिह्नित लंबी दूरी के रास्ते पर लोक लोमंड, रैनक मूर और ग्लेनको।" }
+    "types": [
+      "long-distance",
+      "family"
+    ],
+    "landscapes": [
+      "valley",
+      "lake",
+      "village"
+    ],
+    "highlight": {
+      "en": "Loch Lomond, Rannoch Moor and Glencoe on a waymarked long-distance path.",
+      "hi": "चिह्नित लंबी दूरी के रास्ते पर लोक लोमंड, रैनक मूर और ग्लेनको।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/West_Highland_Way_north_of_Drymen_2025-07-24.jpg/960px-West_Highland_Way_north_of_Drymen_2025-07-24.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/West_Highland_Way_north_of_Drymen_2025-07-24.jpg/500px-West_Highland_Way_north_of_Drymen_2025-07-24.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/West_Highland_Way_north_of_Drymen_2025-07-24.jpg/1280px-West_Highland_Way_north_of_Drymen_2025-07-24.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Windswept tree above pasture on the West Highland Way north of Drymen",
+        "hi": "ड्राइमेन के उत्तर में वेस्ट हाइलैंड वे पर चरागाह के ऊपर हवा से झुका पेड़"
+      },
+      "author": "Opus 113",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_Highland_Way_north_of_Drymen_2025-07-24.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "torres-del-paine-w",
-    "name": { "en": "Torres del Paine W Trek", "hi": "तोरेस देल पाइने डब्ल्यू ट्रेक" },
-    "aliases": ["w trek", "torres del paine", "patagonia"],
-    "countries": ["chile"], "region": "patagonia",
-    "start": { "en": "Paine Grande or Las Torres sector", "hi": "पाइने ग्रांदे या लास तोरेस क्षेत्र" },
-    "totalDays": 5, "walkingDays": 5,
-    "maxAltitudeM": null, "distanceKm": 75, "dailyHours": "5–9",
+    "name": {
+      "en": "Torres del Paine W Trek",
+      "hi": "तोरेस देल पाइने डब्ल्यू ट्रेक"
+    },
+    "aliases": [
+      "w trek",
+      "torres del paine",
+      "patagonia"
+    ],
+    "countries": [
+      "chile"
+    ],
+    "region": "patagonia",
+    "start": {
+      "en": "Paine Grande or Las Torres sector",
+      "hi": "पाइने ग्रांदे या लास तोरेस क्षेत्र"
+    },
+    "totalDays": 5,
+    "walkingDays": 5,
+    "maxAltitudeM": null,
+    "distanceKm": 75,
+    "dailyHours": "5–9",
     "difficulty": "moderate",
-    "months": [10, 11, 12, 1, 2, 3, 4], "bestMonths": [12, 1, 2],
-    "guide": "not-required", "specialPermit": true,
-    "permits": { "en": "Park entry and pre-booked campsites or refugios are mandatory; you may be turned back without them.", "hi": "उद्यान प्रवेश और पहले से बुक कैंपसाइट या रिफ़्यूजियो अनिवार्य; इनके बिना लौटाया जा सकता है।" },
-    "types": [], "landscapes": ["valley", "lake", "glacier"],
-    "highlight": { "en": "Granite towers, Grey glacier and the French valley in Patagonia's wind.", "hi": "पेटागोनिया की हवा में ग्रेनाइट मीनारें, ग्रे ग्लेशियर और फ़्रेंच घाटी।" }
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bestMonths": [
+      12,
+      1,
+      2
+    ],
+    "guide": "not-required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Park entry and pre-booked campsites or refugios are mandatory; you may be turned back without them.",
+      "hi": "उद्यान प्रवेश और पहले से बुक कैंपसाइट या रिफ़्यूजियो अनिवार्य; इनके बिना लौटाया जा सकता है।"
+    },
+    "types": [],
+    "landscapes": [
+      "valley",
+      "lake",
+      "glacier"
+    ],
+    "highlight": {
+      "en": "Granite towers, Grey glacier and the French valley in Patagonia's wind.",
+      "hi": "पेटागोनिया की हवा में ग्रेनाइट मीनारें, ग्रे ग्लेशियर और फ़्रेंच घाटी।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/CuernosAndPaineG.jpg/960px-CuernosAndPaineG.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/CuernosAndPaineG.jpg/500px-CuernosAndPaineG.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/CuernosAndPaineG.jpg/1280px-CuernosAndPaineG.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "The Cuernos del Paine and Paine Grande above forest on the W Trek",
+        "hi": "डब्ल्यू ट्रेक पर जंगल के ऊपर क्वेर्नोस देल पाइने और पाइने ग्रांदे"
+      },
+      "author": "AndrewDeAngelo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CuernosAndPaineG.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "overland-track",
-    "name": { "en": "Overland Track", "hi": "ओवरलैंड ट्रैक" },
-    "aliases": ["overland", "cradle mountain"],
-    "countries": ["australia"], "region": "tasmania",
-    "start": { "en": "Cradle Mountain (ends at Lake St Clair)", "hi": "क्रेडल माउंटेन (समापन लेक सेंट क्लेयर)" },
-    "totalDays": 6, "walkingDays": 6,
-    "maxAltitudeM": null, "distanceKm": 65, "dailyHours": "4–7",
+    "name": {
+      "en": "Overland Track",
+      "hi": "ओवरलैंड ट्रैक"
+    },
+    "aliases": [
+      "overland",
+      "cradle mountain"
+    ],
+    "countries": [
+      "australia"
+    ],
+    "region": "tasmania",
+    "start": {
+      "en": "Cradle Mountain (ends at Lake St Clair)",
+      "hi": "क्रेडल माउंटेन (समापन लेक सेंट क्लेयर)"
+    },
+    "totalDays": 6,
+    "walkingDays": 6,
+    "maxAltitudeM": null,
+    "distanceKm": 65,
+    "dailyHours": "4–7",
     "difficulty": "moderate",
-    "months": [10, 11, 12, 1, 2, 3, 4, 5], "bestMonths": [12, 1, 2, 3],
-    "guide": "not-required", "specialPermit": true,
-    "permits": { "en": "Booking and track pass required in the main season (October–May), with a north-to-south direction.", "hi": "मुख्य मौसम (अक्टूबर–मई) में बुकिंग और ट्रैक पास आवश्यक, उत्तर से दक्षिण दिशा में।" },
-    "types": ["long-distance"], "landscapes": ["lake", "forest", "summit"],
-    "highlight": { "en": "Alpine moorland and ancient rainforest in Tasmania's World Heritage wilderness.", "hi": "तस्मानिया के विश्व धरोहर वन्य क्षेत्र में अल्पाइन दलदली मैदान और प्राचीन वर्षावन।" }
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "bestMonths": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "guide": "not-required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Booking and track pass required in the main season (October–May), with a north-to-south direction.",
+      "hi": "मुख्य मौसम (अक्टूबर–मई) में बुकिंग और ट्रैक पास आवश्यक, उत्तर से दक्षिण दिशा में।"
+    },
+    "types": [
+      "long-distance"
+    ],
+    "landscapes": [
+      "lake",
+      "forest",
+      "summit"
+    ],
+    "highlight": {
+      "en": "Alpine moorland and ancient rainforest in Tasmania's World Heritage wilderness.",
+      "hi": "तस्मानिया के विश्व धरोहर वन्य क्षेत्र में अल्पाइन दलदली मैदान और प्राचीन वर्षावन।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/The_Overland_Track.jpg/960px-The_Overland_Track.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/The_Overland_Track.jpg/500px-The_Overland_Track.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/The_Overland_Track.jpg/1280px-The_Overland_Track.jpg",
+      "width": 960,
+      "height": 641,
+      "scope": "route",
+      "alt": {
+        "en": "Storm clouds over buttongrass plains on the Overland Track in Tasmania",
+        "hi": "तस्मानिया के ओवरलैंड ट्रैक पर बटनग्रास मैदानों के ऊपर तूफ़ानी बादल"
+      },
+      "author": "Davidjones2758",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Overland_Track.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "kumano-kodo",
-    "name": { "en": "Kumano Kodo (Nakahechi)", "hi": "कुमानो कोदो (नाकाहेची)" },
-    "aliases": ["kumano", "nakahechi"],
-    "countries": ["japan"], "region": "kii",
-    "start": { "en": "Takijiri-oji", "hi": "ताकिजिरी-ओजी" },
-    "totalDays": 4, "walkingDays": 4,
-    "maxAltitudeM": null, "distanceKm": 70, "dailyHours": "5–7",
+    "name": {
+      "en": "Kumano Kodo (Nakahechi)",
+      "hi": "कुमानो कोदो (नाकाहेची)"
+    },
+    "aliases": [
+      "kumano",
+      "nakahechi"
+    ],
+    "countries": [
+      "japan"
+    ],
+    "region": "kii",
+    "start": {
+      "en": "Takijiri-oji",
+      "hi": "ताकिजिरी-ओजी"
+    },
+    "totalDays": 4,
+    "walkingDays": 4,
+    "maxAltitudeM": null,
+    "distanceKm": 70,
+    "dailyHours": "5–7",
     "difficulty": "easy-moderate",
-    "months": [3, 4, 5, 10, 11], "bestMonths": [4, 11],
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "bestMonths": [
+      4,
+      11
+    ],
     "guide": "not-required",
-    "types": ["pilgrimage", "long-distance"], "landscapes": ["forest", "village"],
-    "highlight": { "en": "A forest pilgrimage route between the Kumano grand shrines, staying in village inns.", "hi": "कुमानो के महान मंदिरों के बीच वन तीर्थ मार्ग, गाँव की सरायों में ठहराव।" }
+    "types": [
+      "pilgrimage",
+      "long-distance"
+    ],
+    "landscapes": [
+      "forest",
+      "village"
+    ],
+    "highlight": {
+      "en": "A forest pilgrimage route between the Kumano grand shrines, staying in village inns.",
+      "hi": "कुमानो के महान मंदिरों के बीच वन तीर्थ मार्ग, गाँव की सरायों में ठहराव।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kumano_Kodo_pilgrimage_route_Nakahechi_From_Hosshinmon-Oji_To_KumanoHongu-Taisha_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%99%BA%E5%BF%83%E9%96%80%E7%8E%8B%E5%AD%90%EF%BD%9E%E7%86%8A%E9%87%8E%E6%9C%AC%E5%AE%AE%E5%A4%A7%E7%A4%BE141.JPG/960px-thumbnail.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kumano_Kodo_pilgrimage_route_Nakahechi_From_Hosshinmon-Oji_To_KumanoHongu-Taisha_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%99%BA%E5%BF%83%E9%96%80%E7%8E%8B%E5%AD%90%EF%BD%9E%E7%86%8A%E9%87%8E%E6%9C%AC%E5%AE%AE%E5%A4%A7%E7%A4%BE141.JPG/500px-thumbnail.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Kumano_Kodo_pilgrimage_route_Nakahechi_From_Hosshinmon-Oji_To_KumanoHongu-Taisha_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%99%BA%E5%BF%83%E9%96%80%E7%8E%8B%E5%AD%90%EF%BD%9E%E7%86%8A%E9%87%8E%E6%9C%AC%E5%AE%AE%E5%A4%A7%E7%A4%BE141.JPG/1280px-thumbnail.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Kumano Kodo path running through a tall cedar forest towards Kumano Hongu Taisha",
+        "hi": "कुमानो होंगू ताइशा की ओर ऊँचे देवदार वन से होकर जाता कुमानो कोदो रास्ता"
+      },
+      "author": "Nekosuki",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_pilgrimage_route_Nakahechi_From_Hosshinmon-Oji_To_KumanoHongu-Taisha_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%99%BA%E5%BF%83%E9%96%80%E7%8E%8B%E5%AD%90%EF%BD%9E%E7%86%8A%E9%87%8E%E6%9C%AC%E5%AE%AE%E5%A4%A7%E7%A4%BE141.JPG",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "druk-path",
-    "name": { "en": "Druk Path", "hi": "द्रुक पाथ" },
-    "aliases": ["druk"],
-    "countries": ["bhutan"], "region": "paro",
-    "start": { "en": "Paro (ends at Thimphu)", "hi": "पारो (समापन थिम्फू)" },
-    "totalDays": 6, "walkingDays": 5,
-    "maxAltitudeM": null, "distanceKm": 50, "dailyHours": "5–7",
+    "name": {
+      "en": "Druk Path",
+      "hi": "द्रुक पाथ"
+    },
+    "aliases": [
+      "druk"
+    ],
+    "countries": [
+      "bhutan"
+    ],
+    "region": "paro",
+    "start": {
+      "en": "Paro (ends at Thimphu)",
+      "hi": "पारो (समापन थिम्फू)"
+    },
+    "totalDays": 6,
+    "walkingDays": 5,
+    "maxAltitudeM": null,
+    "distanceKm": 50,
+    "dailyHours": "5–7",
     "difficulty": "moderate",
-    "months": [3, 4, 5, 9, 10, 11], "bestMonths": [4, 10],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Must be arranged through a licensed Bhutanese operator with a guide; Bhutan's Sustainable Development Fee applies (with a separate rate for Indian nationals).", "hi": "लाइसेंसधारी भूटानी ऑपरेटर और गाइड के माध्यम से ही; भूटान का सतत विकास शुल्क लागू (भारतीय नागरिकों के लिए अलग दर)।" },
-    "types": [], "landscapes": ["ridge", "lake", "forest"],
-    "highlight": { "en": "High lakes and dzongs on a ridge route between Paro and Thimphu.", "hi": "पारो और थिम्फू के बीच रिज मार्ग पर ऊँची झीलें और ज़ोंग।" }
+    "months": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "bestMonths": [
+      4,
+      10
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Must be arranged through a licensed Bhutanese operator with a guide; Bhutan's Sustainable Development Fee applies (with a separate rate for Indian nationals).",
+      "hi": "लाइसेंसधारी भूटानी ऑपरेटर और गाइड के माध्यम से ही; भूटान का सतत विकास शुल्क लागू (भारतीय नागरिकों के लिए अलग दर)।"
+    },
+    "types": [],
+    "landscapes": [
+      "ridge",
+      "lake",
+      "forest"
+    ],
+    "highlight": {
+      "en": "High lakes and dzongs on a ridge route between Paro and Thimphu.",
+      "hi": "पारो और थिम्फू के बीच रिज मार्ग पर ऊँची झीलें और ज़ोंग।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Jimilang_Tsho.jpg/960px-Jimilang_Tsho.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Jimilang_Tsho.jpg/500px-Jimilang_Tsho.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Jimilang_Tsho.jpg/1280px-Jimilang_Tsho.jpg",
+      "width": 960,
+      "height": 608,
+      "scope": "route",
+      "alt": {
+        "en": "Jimilang Tsho lake with a trekker resting on the shore, on the Druk Path",
+        "hi": "द्रुक पाथ पर जिमिलांग त्सो झील, किनारे पर आराम करता एक ट्रेकर"
+      },
+      "author": "Dan Nevill",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jimilang_Tsho.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "jomolhari-trek",
-    "name": { "en": "Jomolhari Trek", "hi": "जोमोलहरी ट्रेक" },
-    "aliases": ["jomolhari", "chomolhari"],
-    "countries": ["bhutan"], "region": "paro",
-    "start": { "en": "Drukgyel / Shana, Paro valley", "hi": "द्रुकग्येल / शाना, पारो घाटी" },
-    "totalDays": 8, "walkingDays": 7,
-    "maxAltitudeM": null, "distanceKm": null, "dailyHours": "6–8",
+    "name": {
+      "en": "Jomolhari Trek",
+      "hi": "जोमोलहरी ट्रेक"
+    },
+    "aliases": [
+      "jomolhari",
+      "chomolhari"
+    ],
+    "countries": [
+      "bhutan"
+    ],
+    "region": "paro",
+    "start": {
+      "en": "Drukgyel / Shana, Paro valley",
+      "hi": "द्रुकग्येल / शाना, पारो घाटी"
+    },
+    "totalDays": 8,
+    "walkingDays": 7,
+    "maxAltitudeM": null,
+    "distanceKm": null,
+    "dailyHours": "6–8",
     "difficulty": "difficult",
-    "months": [4, 5, 6, 9, 10, 11], "bestMonths": [4, 10],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Licensed Bhutanese operator and guide required; Sustainable Development Fee applies.", "hi": "लाइसेंसधारी भूटानी ऑपरेटर और गाइड आवश्यक; सतत विकास शुल्क लागू।" },
-    "types": ["high-altitude"], "landscapes": ["pass", "valley", "village"],
-    "highlight": { "en": "Yak-herder camps beneath the sacred peak of Jomolhari.", "hi": "पवित्र जोमोलहरी शिखर के नीचे याक-चरवाहों के कैंप।" }
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "bestMonths": [
+      4,
+      10
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Licensed Bhutanese operator and guide required; Sustainable Development Fee applies.",
+      "hi": "लाइसेंसधारी भूटानी ऑपरेटर और गाइड आवश्यक; सतत विकास शुल्क लागू।"
+    },
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "pass",
+      "valley",
+      "village"
+    ],
+    "highlight": {
+      "en": "Yak-herder camps beneath the sacred peak of Jomolhari.",
+      "hi": "पवित्र जोमोलहरी शिखर के नीचे याक-चरवाहों के कैंप।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg/960px-Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg/500px-Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg/1280px-Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Snow and ice face of Jomolhari, seen from the Jangothang base camp",
+        "hi": "जांगोथांग बेस कैंप से दिखता जोमोलहरी का बर्फ़ीला मुख"
+      },
+      "author": "Christopher Fynn",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Jomolhari_from_Bhutan_2009-10-11_b.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   }
 ]

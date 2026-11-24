@@ -36,6 +36,8 @@
 .hero__search { display: flex; gap: 0.5rem; max-width: 30rem; }
 .hero__search .field { flex: 1; min-width: 0; background: rgba(10, 10, 8, 0.6); }
 .hero__stats { margin-top: 1rem; font-size: 0.82rem; color: var(--text-secondary); }
+.hero__credit { margin-top: 1.4rem; font-size: 0.72rem; color: var(--text-muted); max-width: 40rem; }
+.hero__credit a { color: var(--text-secondary); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ─── Sections ─── */
 .home-section { padding-top: clamp(3.5rem, 8vw, 6rem); }

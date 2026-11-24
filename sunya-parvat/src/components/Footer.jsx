@@ -27,6 +27,7 @@ export default function Footer() {
               <Link to="/about">{t('nav.about')}</Link>
               <Link to="/connect">{t('nav.connect')}</Link>
               <a href="https://instagram.com/sunya_parvat" target="_blank" rel="noreferrer">Instagram ↗</a>
+              <Link to="/credits">{t('photo.credits')}</Link>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ const BUILD = path.join(ROOT, 'build');
 const esc = s => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-function page(template, { route, title, description, body }) {
+function page(template, { route, title, description, body, image }) {
   const full = `${title} · Sunya Parvat`;
   let html = template
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(full)}</title>`)
@@ -26,6 +26,7 @@ function page(template, { route, title, description, body }) {
     `<meta property="og:description" content="${esc(description)}" />`,
     `<meta property="og:url" content="${SITE}${route}" />`,
     `<meta property="og:type" content="website" />`,
+    image ? `<meta property="og:image" content="${esc(image)}" />` : '',
   ].join('');
   html = html.replace('</head>', `${head}</head>`);
   html = html.replace('<div id="root"></div>', `<div id="root"><main class="prerender">${body}</main></div>`);
@@ -67,6 +68,7 @@ const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep
     const itin = (t.itinerary || []).map(d => `<li>Day ${d.day}: ${esc(d.route && d.route.en)}</li>`).join('');
     add(`/treks/${t.id}`, {
       title: `${t.name.en} trek — itinerary, best time & facts`,
+      image: t.image && t.image.src,
       description: `${(t.highlight && t.highlight.en) || ''} ${facts}.`.trim(),
       body: `<h1>${esc(t.name.en)}</h1><p>${esc((t.overview && t.overview.en) || (t.highlight && t.highlight.en))}</p><p>${esc(facts)}</p>${itin ? `<h2>Itinerary</h2><ol>${itin}</ol>` : ''}`,
     });
@@ -90,6 +92,11 @@ const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep
   add('/about', { title: 'About', description: 'Why Sunya Parvat exists.', body: '<h1>About Sunya Parvat</h1>' });
   add('/before-you-go', { title: 'Before You Go', description: 'What the mountain asks of you: fitness, mindset, discipline and gear.', body: '<h1>Before You Go</h1>' });
   add('/connect', { title: 'Connect', description: 'Write to Sunya Parvat with a question about a trek.', body: '<h1>Connect</h1>' });
+  add('/credits', {
+    title: 'Photo credits',
+    description: 'Sources, photographers and licenses for the photographs on Sunya Parvat.',
+    body: `<h1>Photo credits</h1><ul>${treks.filter(t => t.image).map(t => `<li>${esc(t.name.en)}: <a href="${esc(t.image.sourceUrl)}">${esc(t.image.author)}</a>, ${esc(t.image.license)}</li>`).join('')}</ul>`,
+  });
 
   const today = new Date().toISOString().slice(0, 10);
   fs.writeFileSync(path.join(BUILD, 'sitemap.xml'),

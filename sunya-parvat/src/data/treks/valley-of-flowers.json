@@ -1,80 +1,293 @@
 {
   "id": "valley-of-flowers",
-  "legacyIds": ["valley-of-flowers-surrender"],
-  "name": { "en": "Valley of Flowers", "hi": "फूलों की घाटी" },
-  "title": { "en": "Surrender in the Valley", "hi": "घाटी में समर्पण" },
-  "tagline": { "en": "A valley that answers nothing, offers everything", "hi": "एक घाटी जो कुछ उत्तर नहीं देती, सब कुछ देती है" },
-  "aliases": ["vof", "hemkund", "hemkund sahib", "phoolon ki ghati"],
-  "countries": ["india"], "region": "uttarakhand",
-  "area": { "en": "Nanda Devi Biosphere Reserve, Chamoli", "hi": "नंदा देवी बायोस्फ़ीयर रिज़र्व, चमोली" },
-  "start": { "en": "Govindghat (Pulna roadhead)", "hi": "गोविंदघाट (पुलना सड़क-अंत)" },
-  "end": { "en": "Govindghat", "hi": "गोविंदघाट" },
-  "totalDays": 6, "walkingDays": 4,
-  "durationNote": { "en": "6 days counted from Govindghat. Reaching Govindghat from Rishikesh/Haridwar takes most of a day each way, so plan 7–8 days from Rishikesh. Valley visits are day walks from Ghangaria; camping inside the park is not allowed.", "hi": "गोविंदघाट से गिने गए 6 दिन। ऋषिकेश/हरिद्वार से गोविंदघाट आने-जाने में लगभग एक-एक दिन लगता है, इसलिए ऋषिकेश से 7–8 दिन रखें। घाटी की सैर घांघरिया से दिन की पदयात्रा है; उद्यान के अंदर कैंपिंग की अनुमति नहीं है।" },
+  "legacyIds": [
+    "valley-of-flowers-surrender"
+  ],
+  "name": {
+    "en": "Valley of Flowers",
+    "hi": "फूलों की घाटी"
+  },
+  "title": {
+    "en": "Surrender in the Valley",
+    "hi": "घाटी में समर्पण"
+  },
+  "tagline": {
+    "en": "A valley that answers nothing, offers everything",
+    "hi": "एक घाटी जो कुछ उत्तर नहीं देती, सब कुछ देती है"
+  },
+  "aliases": [
+    "vof",
+    "hemkund",
+    "hemkund sahib",
+    "phoolon ki ghati"
+  ],
+  "countries": [
+    "india"
+  ],
+  "region": "uttarakhand",
+  "area": {
+    "en": "Nanda Devi Biosphere Reserve, Chamoli",
+    "hi": "नंदा देवी बायोस्फ़ीयर रिज़र्व, चमोली"
+  },
+  "start": {
+    "en": "Govindghat (Pulna roadhead)",
+    "hi": "गोविंदघाट (पुलना सड़क-अंत)"
+  },
+  "end": {
+    "en": "Govindghat",
+    "hi": "गोविंदघाट"
+  },
+  "totalDays": 6,
+  "walkingDays": 4,
+  "durationNote": {
+    "en": "6 days counted from Govindghat. Reaching Govindghat from Rishikesh/Haridwar takes most of a day each way, so plan 7–8 days from Rishikesh. Valley visits are day walks from Ghangaria; camping inside the park is not allowed.",
+    "hi": "गोविंदघाट से गिने गए 6 दिन। ऋषिकेश/हरिद्वार से गोविंदघाट आने-जाने में लगभग एक-एक दिन लगता है, इसलिए ऋषिकेश से 7–8 दिन रखें। घाटी की सैर घांघरिया से दिन की पदयात्रा है; उद्यान के अंदर कैंपिंग की अनुमति नहीं है।"
+  },
   "maxAltitudeM": 4329,
-  "altitudeNote": { "en": "4,329 m is Hemkund Sahib (optional). The valley floor is roughly 3,350–3,650 m.", "hi": "4,329 मी. हेमकुंड साहिब है (वैकल्पिक)। घाटी का तल लगभग 3,350–3,650 मी. है।" },
-  "distanceKm": 38, "dailyHours": "4–7",
+  "altitudeNote": {
+    "en": "4,329 m is Hemkund Sahib (optional). The valley floor is roughly 3,350–3,650 m.",
+    "hi": "4,329 मी. हेमकुंड साहिब है (वैकल्पिक)। घाटी का तल लगभग 3,350–3,650 मी. है।"
+  },
+  "distanceKm": 38,
+  "dailyHours": "4–7",
   "difficulty": "easy-moderate",
-  "months": [6, 7, 8, 9, 10], "bestMonths": [7, 8],
-  "acclimatisation": { "en": "Two nights at Ghangaria before Hemkund helps.", "hi": "हेमकुंड से पहले घांघरिया में दो रातें मदद करती हैं।" },
+  "months": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "bestMonths": [
+    7,
+    8
+  ],
+  "acclimatisation": {
+    "en": "Two nights at Ghangaria before Hemkund helps.",
+    "hi": "हेमकुंड से पहले घांघरिया में दो रातें मदद करती हैं।"
+  },
   "restDays": 0,
-  "guide": "not-required", "specialPermit": false,
-  "permits": { "en": "Valley of Flowers National Park entry ticket at the forest check-post near Ghangaria. The park is generally open from 1 June to 31 October; entry is daytime only.", "hi": "घांघरिया के पास वन चौकी पर फूलों की घाटी राष्ट्रीय उद्यान का प्रवेश टिकट। उद्यान आमतौर पर 1 जून से 31 अक्टूबर तक खुला रहता है; प्रवेश केवल दिन में।" },
-  "types": ["beginner", "family", "pilgrimage", "monsoon-friendly"], "landscapes": ["valley", "meadow", "lake"],
-  "highlight": { "en": "A UNESCO World Heritage valley that is at its fullest bloom in the monsoon.", "hi": "यूनेस्को विश्व धरोहर घाटी, जो मानसून में पूरी तरह खिलती है।" },
-  "suits": { "en": "Beginners, families with older children, and anyone who wants a monsoon trek.", "hi": "शुरुआती, बड़े बच्चों वाले परिवार, और मानसून ट्रेक चाहने वाला कोई भी।" },
-  "limitations": { "en": "Monsoon brings rain and landslide-related road closures on the way to Govindghat. Hemkund is a steep 1,100 m+ climb in a day.", "hi": "मानसून में बारिश और गोविंदघाट के रास्ते भूस्खलन से सड़क बंद हो सकती है। हेमकुंड एक दिन में 1,100 मी.+ की खड़ी चढ़ाई है।" },
-  "editorial": { "label": "classic", "reason": { "en": "The monsoon trek we recommend first.", "hi": "मानसून के लिए हमारी पहली सिफ़ारिश।" } },
-  "overview": { "en": "There are places that speak before you speak to them. You enter the valley expecting beauty. You leave it carrying something you cannot name. Practically, it is a gentle trail from Govindghat to Ghangaria, with day walks into the valley and an optional climb to Hemkund Sahib.", "hi": "कुछ जगहें आपके बोलने से पहले ही बोल देती हैं। आप सुंदरता की उम्मीद लेकर घाटी में जाते हैं, और कुछ ऐसा लेकर लौटते हैं जिसे नाम नहीं दे पाते। व्यावहारिक रूप से यह गोविंदघाट से घांघरिया तक एक सहज रास्ता है, घाटी में दिन की पदयात्राओं और हेमकुंड साहिब की वैकल्पिक चढ़ाई के साथ।" },
+  "guide": "not-required",
+  "specialPermit": false,
+  "permits": {
+    "en": "Valley of Flowers National Park entry ticket at the forest check-post near Ghangaria. The park is generally open from 1 June to 31 October; entry is daytime only.",
+    "hi": "घांघरिया के पास वन चौकी पर फूलों की घाटी राष्ट्रीय उद्यान का प्रवेश टिकट। उद्यान आमतौर पर 1 जून से 31 अक्टूबर तक खुला रहता है; प्रवेश केवल दिन में।"
+  },
+  "types": [
+    "beginner",
+    "family",
+    "pilgrimage",
+    "monsoon-friendly"
+  ],
+  "landscapes": [
+    "valley",
+    "meadow",
+    "lake"
+  ],
+  "highlight": {
+    "en": "A UNESCO World Heritage valley that is at its fullest bloom in the monsoon.",
+    "hi": "यूनेस्को विश्व धरोहर घाटी, जो मानसून में पूरी तरह खिलती है।"
+  },
+  "suits": {
+    "en": "Beginners, families with older children, and anyone who wants a monsoon trek.",
+    "hi": "शुरुआती, बड़े बच्चों वाले परिवार, और मानसून ट्रेक चाहने वाला कोई भी।"
+  },
+  "limitations": {
+    "en": "Monsoon brings rain and landslide-related road closures on the way to Govindghat. Hemkund is a steep 1,100 m+ climb in a day.",
+    "hi": "मानसून में बारिश और गोविंदघाट के रास्ते भूस्खलन से सड़क बंद हो सकती है। हेमकुंड एक दिन में 1,100 मी.+ की खड़ी चढ़ाई है।"
+  },
+  "editorial": {
+    "label": "classic",
+    "reason": {
+      "en": "The monsoon trek we recommend first.",
+      "hi": "मानसून के लिए हमारी पहली सिफ़ारिश।"
+    }
+  },
+  "overview": {
+    "en": "There are places that speak before you speak to them. You enter the valley expecting beauty. You leave it carrying something you cannot name. Practically, it is a gentle trail from Govindghat to Ghangaria, with day walks into the valley and an optional climb to Hemkund Sahib.",
+    "hi": "कुछ जगहें आपके बोलने से पहले ही बोल देती हैं। आप सुंदरता की उम्मीद लेकर घाटी में जाते हैं, और कुछ ऐसा लेकर लौटते हैं जिसे नाम नहीं दे पाते। व्यावहारिक रूप से यह गोविंदघाट से घांघरिया तक एक सहज रास्ता है, घाटी में दिन की पदयात्राओं और हेमकुंड साहिब की वैकल्पिक चढ़ाई के साथ।"
+  },
   "highlights": [
-    { "en": "Hundreds of alpine flower species in July–August", "hi": "जुलाई–अगस्त में सैकड़ों अल्पाइन फूलों की प्रजातियाँ" },
-    { "en": "Hemkund Sahib, a Sikh shrine beside a glacial lake", "hi": "हिमनदी झील के किनारे सिख तीर्थ हेमकुंड साहिब" },
-    { "en": "Pushpawati river flowing through the valley", "hi": "घाटी से बहती पुष्पावती नदी" }
+    {
+      "en": "Hundreds of alpine flower species in July–August",
+      "hi": "जुलाई–अगस्त में सैकड़ों अल्पाइन फूलों की प्रजातियाँ"
+    },
+    {
+      "en": "Hemkund Sahib, a Sikh shrine beside a glacial lake",
+      "hi": "हिमनदी झील के किनारे सिख तीर्थ हेमकुंड साहिब"
+    },
+    {
+      "en": "Pushpawati river flowing through the valley",
+      "hi": "घाटी से बहती पुष्पावती नदी"
+    }
   ],
-  "reach": { "en": "Rishikesh to Govindghat is about 270 km by road (10–12 hours) via Joshimath. From Govindghat a short drive to Pulna, then the trail to Ghangaria.", "hi": "ऋषिकेश से गोविंदघाट सड़क से लगभग 270 किमी (10–12 घंटे) है, जोशीमठ होते हुए। गोविंदघाट से पुलना तक छोटी ड्राइव, फिर घांघरिया तक पैदल रास्ता।" },
-  "fitness": { "en": "Comfortable 10 km walks with some climbing. Hemkund day needs more stamina.", "hi": "कुछ चढ़ाई के साथ आराम से 10 किमी चलना। हेमकुंड के दिन अधिक सहनशक्ति चाहिए।" },
-  "gear": { "en": "Rain jacket and pack cover are essential, quick-dry layers, trekking shoes with grip, a warm layer for Hemkund mornings.", "hi": "रेन जैकेट और बैग कवर अनिवार्य, जल्दी सूखने वाले कपड़े, पकड़ वाले जूते, हेमकुंड की सुबह के लिए एक गर्म परत।" },
-  "stay": { "en": "Hotels and guesthouses in Govindghat and Ghangaria; no camping in the park.", "hi": "गोविंदघाट और घांघरिया में होटल और गेस्टहाउस; उद्यान में कैंपिंग नहीं।" },
+  "reach": {
+    "en": "Rishikesh to Govindghat is about 270 km by road (10–12 hours) via Joshimath. From Govindghat a short drive to Pulna, then the trail to Ghangaria.",
+    "hi": "ऋषिकेश से गोविंदघाट सड़क से लगभग 270 किमी (10–12 घंटे) है, जोशीमठ होते हुए। गोविंदघाट से पुलना तक छोटी ड्राइव, फिर घांघरिया तक पैदल रास्ता।"
+  },
+  "fitness": {
+    "en": "Comfortable 10 km walks with some climbing. Hemkund day needs more stamina.",
+    "hi": "कुछ चढ़ाई के साथ आराम से 10 किमी चलना। हेमकुंड के दिन अधिक सहनशक्ति चाहिए।"
+  },
+  "gear": {
+    "en": "Rain jacket and pack cover are essential, quick-dry layers, trekking shoes with grip, a warm layer for Hemkund mornings.",
+    "hi": "रेन जैकेट और बैग कवर अनिवार्य, जल्दी सूखने वाले कपड़े, पकड़ वाले जूते, हेमकुंड की सुबह के लिए एक गर्म परत।"
+  },
+  "stay": {
+    "en": "Hotels and guesthouses in Govindghat and Ghangaria; no camping in the park.",
+    "hi": "गोविंदघाट और घांघरिया में होटल और गेस्टहाउस; उद्यान में कैंपिंग नहीं।"
+  },
   "faqs": [
-    { "q": { "en": "When are the most flowers in bloom?", "hi": "सबसे अधिक फूल कब खिलते हैं?" },
-      "a": { "en": "Mid-July to mid-August is usually the peak. June has fewer flowers and some snow; September turns golden.", "hi": "मध्य-जुलाई से मध्य-अगस्त आमतौर पर चरम होता है। जून में कम फूल और कुछ बर्फ़; सितंबर में घाटी सुनहरी हो जाती है।" } }
+    {
+      "q": {
+        "en": "When are the most flowers in bloom?",
+        "hi": "सबसे अधिक फूल कब खिलते हैं?"
+      },
+      "a": {
+        "en": "Mid-July to mid-August is usually the peak. June has fewer flowers and some snow; September turns golden.",
+        "hi": "मध्य-जुलाई से मध्य-अगस्त आमतौर पर चरम होता है। जून में कम फूल और कुछ बर्फ़; सितंबर में घाटी सुनहरी हो जाती है।"
+      }
+    }
   ],
-  "journal": ["seasonal-planning", "packing-for-a-himalayan-trek"],
+  "journal": [
+    "seasonal-planning",
+    "packing-for-a-himalayan-trek"
+  ],
   "itinerary": [
-    { "day": 1, "kind": "travel",
-      "route": { "en": "Arrive Govindghat", "hi": "गोविंदघाट पहुँचें" },
-      "description": { "en": "Arrive from Joshimath; check your onward road conditions in monsoon.", "hi": "जोशीमठ से पहुँचें; मानसून में आगे की सड़क की स्थिति जाँचें।" },
+    {
+      "day": 1,
+      "kind": "travel",
+      "route": {
+        "en": "Arrive Govindghat",
+        "hi": "गोविंदघाट पहुँचें"
+      },
+      "description": {
+        "en": "Arrive from Joshimath; check your onward road conditions in monsoon.",
+        "hi": "जोशीमठ से पहुँचें; मानसून में आगे की सड़क की स्थिति जाँचें।"
+      },
       "altitudeM": 1830,
-      "overnight": { "en": "Guesthouse, Govindghat", "hi": "गेस्टहाउस, गोविंदघाट" },
-      "reflection": "The river is your companion from the first step. She doesn't care where you are from. She just moves." },
-    { "day": 2, "kind": "trek",
-      "route": { "en": "Pulna → Ghangaria", "hi": "पुलना → घांघरिया" },
-      "description": { "en": "A broad, paved trail along the Lakshman Ganga.", "hi": "लक्ष्मण गंगा के किनारे चौड़ा, पक्का रास्ता।" },
-      "distanceKm": 10, "ascentM": 1000, "hours": "5–6", "altitudeM": 3050,
-      "overnight": { "en": "Guesthouse, Ghangaria", "hi": "गेस्टहाउस, घांघरिया" },
-      "reflection": "A small settlement at the meeting of two valleys. One leads to Hemkund Sahib. One leads to the flowers. You sleep lightly, aware you are between worlds." },
-    { "day": 3, "kind": "trek",
-      "route": { "en": "Ghangaria → Valley of Flowers → Ghangaria", "hi": "घांघरिया → फूलों की घाटी → घांघरिया" },
-      "description": { "en": "Enter the park through the check-post; walk as far as time allows and return by the closing time.", "hi": "चौकी से उद्यान में प्रवेश; समय अनुसार अंदर तक चलें और बंद होने के समय तक लौटें।" },
-      "distanceKm": 10, "ascentM": 500, "hours": "6–7", "altitudeM": 3600,
-      "overnight": { "en": "Guesthouse, Ghangaria", "hi": "गेस्टहाउस, घांघरिया" },
-      "reflection": "The valley opens slowly. Then it doesn't. You are surrounded. You forget your problems — not because they solved themselves, but because they became irrelevant." },
-    { "day": 4, "kind": "trek",
-      "route": { "en": "Second valley day (optional)", "hi": "घाटी का दूसरा दिन (वैकल्पिक)" },
-      "description": { "en": "Return without a plan, or rest in Ghangaria before Hemkund.", "hi": "बिना योजना के फिर जाएँ, या हेमकुंड से पहले घांघरिया में आराम करें।" },
-      "hours": "4–6", "altitudeM": 3600,
-      "overnight": { "en": "Guesthouse, Ghangaria", "hi": "गेस्टहाउस, घांघरिया" },
-      "reflection": "Today you go with no plan. You sit when you want to sit. You walk when you feel like walking." },
-    { "day": 5, "kind": "summit",
-      "route": { "en": "Ghangaria → Hemkund Sahib → Ghangaria", "hi": "घांघरिया → हेमकुंड साहिब → घांघरिया" },
-      "description": { "en": "A steep stone path to the shrine and lake. Start early; weather turns after noon.", "hi": "तीर्थ और झील तक खड़ा पत्थर का रास्ता। जल्दी निकलें; दोपहर बाद मौसम बदलता है।" },
-      "distanceKm": 12, "ascentM": 1280, "descentM": 1280, "hours": "7–8", "altitudeM": 4329,
-      "overnight": { "en": "Guesthouse, Ghangaria", "hi": "गेस्टहाउस, घांघरिया" },
-      "reflection": "Whether or not you're religious, there is something about a place of devotion at altitude that reshapes the chest." },
-    { "day": 6, "kind": "trek",
-      "route": { "en": "Ghangaria → Pulna → Govindghat", "hi": "घांघरिया → पुलना → गोविंदघाट" },
-      "description": { "en": "Walk down and drive onward to Joshimath or beyond.", "hi": "नीचे उतरें और जोशीमठ या आगे की ओर ड्राइव करें।" },
-      "distanceKm": 10, "descentM": 1000, "hours": "4–5",
-      "reflection": "The world is waiting. For a few hours, the two worlds coexist inside you." }
-  ]
+      "overnight": {
+        "en": "Guesthouse, Govindghat",
+        "hi": "गेस्टहाउस, गोविंदघाट"
+      },
+      "reflection": "The river is your companion from the first step. She doesn't care where you are from. She just moves."
+    },
+    {
+      "day": 2,
+      "kind": "trek",
+      "route": {
+        "en": "Pulna → Ghangaria",
+        "hi": "पुलना → घांघरिया"
+      },
+      "description": {
+        "en": "A broad, paved trail along the Lakshman Ganga.",
+        "hi": "लक्ष्मण गंगा के किनारे चौड़ा, पक्का रास्ता।"
+      },
+      "distanceKm": 10,
+      "ascentM": 1000,
+      "hours": "5–6",
+      "altitudeM": 3050,
+      "overnight": {
+        "en": "Guesthouse, Ghangaria",
+        "hi": "गेस्टहाउस, घांघरिया"
+      },
+      "reflection": "A small settlement at the meeting of two valleys. One leads to Hemkund Sahib. One leads to the flowers. You sleep lightly, aware you are between worlds."
+    },
+    {
+      "day": 3,
+      "kind": "trek",
+      "route": {
+        "en": "Ghangaria → Valley of Flowers → Ghangaria",
+        "hi": "घांघरिया → फूलों की घाटी → घांघरिया"
+      },
+      "description": {
+        "en": "Enter the park through the check-post; walk as far as time allows and return by the closing time.",
+        "hi": "चौकी से उद्यान में प्रवेश; समय अनुसार अंदर तक चलें और बंद होने के समय तक लौटें।"
+      },
+      "distanceKm": 10,
+      "ascentM": 500,
+      "hours": "6–7",
+      "altitudeM": 3600,
+      "overnight": {
+        "en": "Guesthouse, Ghangaria",
+        "hi": "गेस्टहाउस, घांघरिया"
+      },
+      "reflection": "The valley opens slowly. Then it doesn't. You are surrounded. You forget your problems — not because they solved themselves, but because they became irrelevant."
+    },
+    {
+      "day": 4,
+      "kind": "trek",
+      "route": {
+        "en": "Second valley day (optional)",
+        "hi": "घाटी का दूसरा दिन (वैकल्पिक)"
+      },
+      "description": {
+        "en": "Return without a plan, or rest in Ghangaria before Hemkund.",
+        "hi": "बिना योजना के फिर जाएँ, या हेमकुंड से पहले घांघरिया में आराम करें।"
+      },
+      "hours": "4–6",
+      "altitudeM": 3600,
+      "overnight": {
+        "en": "Guesthouse, Ghangaria",
+        "hi": "गेस्टहाउस, घांघरिया"
+      },
+      "reflection": "Today you go with no plan. You sit when you want to sit. You walk when you feel like walking."
+    },
+    {
+      "day": 5,
+      "kind": "summit",
+      "route": {
+        "en": "Ghangaria → Hemkund Sahib → Ghangaria",
+        "hi": "घांघरिया → हेमकुंड साहिब → घांघरिया"
+      },
+      "description": {
+        "en": "A steep stone path to the shrine and lake. Start early; weather turns after noon.",
+        "hi": "तीर्थ और झील तक खड़ा पत्थर का रास्ता। जल्दी निकलें; दोपहर बाद मौसम बदलता है।"
+      },
+      "distanceKm": 12,
+      "ascentM": 1280,
+      "descentM": 1280,
+      "hours": "7–8",
+      "altitudeM": 4329,
+      "overnight": {
+        "en": "Guesthouse, Ghangaria",
+        "hi": "गेस्टहाउस, घांघरिया"
+      },
+      "reflection": "Whether or not you're religious, there is something about a place of devotion at altitude that reshapes the chest."
+    },
+    {
+      "day": 6,
+      "kind": "trek",
+      "route": {
+        "en": "Ghangaria → Pulna → Govindghat",
+        "hi": "घांघरिया → पुलना → गोविंदघाट"
+      },
+      "description": {
+        "en": "Walk down and drive onward to Joshimath or beyond.",
+        "hi": "नीचे उतरें और जोशीमठ या आगे की ओर ड्राइव करें।"
+      },
+      "distanceKm": 10,
+      "descentM": 1000,
+      "hours": "4–5",
+      "reflection": "The world is waiting. For a few hours, the two worlds coexist inside you."
+    }
+  ],
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg/960px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg",
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg/500px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg",
+    "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg/1280px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "Green floor of the Valley of Flowers below snowy peaks and drifting cloud",
+      "hi": "बर्फ़ीली चोटियों और बादलों के नीचे फूलों की घाटी का हरा तल"
+    },
+    "author": "Rohit Sharma",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valley_of_flowers_national_park,_Uttarakhand,_India.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
 }

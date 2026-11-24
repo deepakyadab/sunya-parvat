@@ -1,14 +1,17 @@
 # Sunya Parvat — शून्य पर्वत
 
 A calm, bilingual (English / हिंदी) guide for finding, comparing and preparing for treks.
-React 18 + Create React App, no backend. Deployed as static files (Vercel).
+React 18 + Create React App, deployed on Vercel as static files plus one serverless
+function (`api/enquiry.js`) that emails contact and trek enquiries.
 
 ```
 npm install
 npm start              # http://localhost:3000  (also enables /editor)
 npm run build          # production build + static pre-render + sitemap
-npm run check-data     # validate the trek catalog (add --verbose for warnings)
+npm run check-data     # validate the trek catalog and photo licensing (--verbose for warnings)
 npm run editor-server  # local-only server that lets /editor write trek files
+npm run api            # local enquiry API (see "Contact and trek enquiries")
+npm run test:enquiry   # tests for the enquiry handler (no email is sent)
 ```
 
 ## What is on the site
@@ -108,8 +111,8 @@ its own title, description and a plain-HTML summary. It also writes `sitemap.xml
   this repository. Point the Vercel project at it (root directory `sunya-parvat`) to ship it.
 - `node_modules` was committed to the repository. It is now ignored.
 - Tailwind v4 was configured but unused, and its CRA/PostCSS setup was broken. Removed.
-- The Connect form showed "Received" but sent nothing. It now opens the visitor's email
-  app with the message filled in, and says so.
+- The Connect form showed "Received" but sent nothing. It now sends through a server-side
+  email function (see "Contact and trek enquiries").
 - Fixed content errors in the old data:
   - Valley of Flowers was listed under spring (the park opens 1 June), so the spring
     filter showed nothing.
@@ -135,10 +138,91 @@ its own title, description and a plain-HTML summary. It also writes `sitemap.xml
   but a fluent Hindi editor must review it before launch. Safety content comes first:
   `altitude-awareness`, trek `localCheck` notes, Ask Sunya's safety replies. Articles carry
   `hiReviewed: false` until then.
-- **Photography.** Cards use generated mountain artwork. Add real photos per trek with
-  `"image": { "src", "alt": { "en", "hi" } }`. The home hero uses one Unsplash photo
-  shown as decoration (empty alt), not as a specific trek.
+- **Photography.** 70 of 71 treks have a licensed Wikimedia Commons photo (see "Trek
+  photos"). Warwan Valley still shows a placeholder. Owner photos would be better still;
+  replace an `image` block whenever you have your own.
 - **Merged entry.** "Singalila Ridge" is merged into Sandakphu–Phalut (same ridge).
   Zanskar, from the live site, is not in this catalog yet.
-- **Contact.** The site uses `sunyaparvat@gmail.com`, taken from the live site's footer.
-  Confirm it, or connect a form service (for example Formspree) to receive messages on-site.
+- **Email delivery.** Needs a Resend account and environment variables before it works in
+  production. Real inbox delivery to sunyaparvat@gmail.com has not been tested yet
+  (see "Contact and trek enquiries").
+
+## Trek photos
+
+Each trek's `image` block records where its photo comes from:
+
+```json
+"image": {
+  "src": "…/960px-File.jpg", "srcSmall": "…/500px-File.jpg", "srcLarge": "…/1280px-File.jpg",
+  "width": 960, "height": 640,
+  "scope": "route",
+  "alt": { "en": "…", "hi": "…" },
+  "subject": { "en": "…" },
+  "author": "Photographer", "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:…",
+  "source": "Wikimedia Commons", "retrieved": "2026-11-24"
+}
+```
+
+- **Source.** All current photos are from Wikimedia Commons under CC0, public domain,
+  CC BY or CC BY-SA. NC, ND and GFDL-only files are rejected by `npm run check-data`.
+  Each was chosen because its Commons title or description names the trek or a place on
+  it, and each was checked by eye before its alt text was written.
+- **`scope`.** `route` means the photo shows the trek or a point on it. `regional` means
+  the right region but not the exact route; the card and page say so. Sham Valley is the
+  only regional photo (apricot blossom at Alchi).
+- **Credit.** Every trek page shows photographer, license link and source under the hero,
+  and `/credits` lists them all. CC BY and CC BY-SA require this attribution, so keep it
+  if you change the layout.
+- **No photo.** If no `image` is set, a clean generated placeholder marked "Photo coming
+  soon" is shown (currently Warwan Valley).
+- **Speed.** Wikimedia's standard 500/960/1280 px renditions are served with
+  `srcset`/`sizes`. Cards lazy-load; the trek hero loads first.
+- **Owner photos.** Put files in `public/images/treks/`, set `src` to `/images/treks/x.jpg`,
+  `author` to the photographer, `license` to "Owner photo — all rights reserved" (or your
+  chosen license), and `sourceUrl` to your site or Instagram post.
+
+## Contact and trek enquiries
+
+The Connect page form and the "Have a question about this trek?" form on every trek page
+post to `/api/enquiry`. That is a Vercel serverless function (`api/enquiry.js`) which
+sends the enquiry with [Resend](https://resend.com) to the address in `ENQUIRY_TO`.
+
+- **Fields:** name, reply email, the selected trek (optional on Connect, fixed on trek
+  pages) and the message. Nothing else is collected or stored.
+- **Validation:** checked in the browser and again on the server: name 2–80 characters,
+  valid email, message 10–2,000 characters, and a known trek id format.
+- **Spam protection:** a hidden honeypot field, a minimum time to fill the form, a limit
+  on links in the message, and an origin check.
+- **Rate limiting:** 5 messages per IP address per 10 minutes. This is kept in memory per
+  serverless instance, so it is best-effort; use Upstash or Vercel KV for a strict limit.
+- **Honest status:** the success message appears only after Resend accepts the email. On
+  any failure the visitor sees a retry message, their entries stay in the form, and no
+  provider or configuration details are shown.
+- **Acknowledgement:** with `ENQUIRY_SEND_ACK=true`, the visitor gets a short "we received
+  your message" email in their language. This needs a verified sending domain.
+
+### Set it up on Vercel
+
+1. Create a Resend account. Verify a domain you own, or for a first test use the sender
+   `onboarding@resend.dev`, which only delivers to the email address that owns the Resend
+   account.
+2. In Vercel → Project → Settings → Environment Variables, add the variables from
+   `.env.example`: `RESEND_API_KEY`, `ENQUIRY_TO=sunyaparvat@gmail.com`, `ENQUIRY_FROM`,
+   `ENQUIRY_SEND_ACK` and `SITE_URL`. Never commit real values; they are server-only and
+   never reach the browser bundle.
+3. Redeploy, send a test message from `/connect`, and confirm it arrives in the
+   sunyaparvat@gmail.com inbox. Check the spam folder the first time.
+
+### Develop and test locally
+
+```
+cp .env.example .env.local   # then set EMAIL_PROVIDER=mock to avoid sending real email
+npm run api                  # enquiry API on :4322 (npm start proxies /api to it)
+npm start
+npm run test:enquiry         # 13 handler tests: delivery, validation, spam, rate limit, failures
+```
+
+`EMAIL_PROVIDER=mock` prints the email in the API terminal, and `mock-fail` simulates a
+provider error. Both are refused in production.

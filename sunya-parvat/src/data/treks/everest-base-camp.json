@@ -1,56 +1,380 @@
 {
   "id": "everest-base-camp",
-  "name": { "en": "Everest Base Camp", "hi": "एवरेस्ट बेस कैंप" },
-  "aliases": ["ebc", "everest", "kala patthar", "kalapatthar"],
-  "countries": ["nepal"], "region": "khumbu",
-  "area": { "en": "Sagarmatha National Park, Solukhumbu", "hi": "सागरमाथा राष्ट्रीय उद्यान, सोलुखुम्बु" },
-  "start": { "en": "Lukla (flight from Kathmandu or Ramechhap)", "hi": "लुक्ला (काठमांडू या रामेछाप से उड़ान)" },
-  "end": { "en": "Lukla", "hi": "लुक्ला" },
-  "totalDays": 14, "walkingDays": 11,
-  "durationNote": { "en": "14 days Kathmandu to Kathmandu: 11 walking days (including 2 acclimatisation days), the Lukla return flight, one buffer day for flight delays and a departure day. Lukla flights are often delayed by weather; more buffer is wise.", "hi": "काठमांडू से काठमांडू 14 दिन: 11 पैदल दिन (2 अनुकूलन दिवस सहित), लुक्ला से वापसी उड़ान, उड़ान देरी के लिए एक बफ़र दिन और प्रस्थान का दिन। मौसम के कारण लुक्ला की उड़ानें अक्सर देर से होती हैं; अधिक बफ़र रखना समझदारी है।" },
+  "name": {
+    "en": "Everest Base Camp",
+    "hi": "एवरेस्ट बेस कैंप"
+  },
+  "aliases": [
+    "ebc",
+    "everest",
+    "kala patthar",
+    "kalapatthar"
+  ],
+  "countries": [
+    "nepal"
+  ],
+  "region": "khumbu",
+  "area": {
+    "en": "Sagarmatha National Park, Solukhumbu",
+    "hi": "सागरमाथा राष्ट्रीय उद्यान, सोलुखुम्बु"
+  },
+  "start": {
+    "en": "Lukla (flight from Kathmandu or Ramechhap)",
+    "hi": "लुक्ला (काठमांडू या रामेछाप से उड़ान)"
+  },
+  "end": {
+    "en": "Lukla",
+    "hi": "लुक्ला"
+  },
+  "totalDays": 14,
+  "walkingDays": 11,
+  "durationNote": {
+    "en": "14 days Kathmandu to Kathmandu: 11 walking days (including 2 acclimatisation days), the Lukla return flight, one buffer day for flight delays and a departure day. Lukla flights are often delayed by weather; more buffer is wise.",
+    "hi": "काठमांडू से काठमांडू 14 दिन: 11 पैदल दिन (2 अनुकूलन दिवस सहित), लुक्ला से वापसी उड़ान, उड़ान देरी के लिए एक बफ़र दिन और प्रस्थान का दिन। मौसम के कारण लुक्ला की उड़ानें अक्सर देर से होती हैं; अधिक बफ़र रखना समझदारी है।"
+  },
   "maxAltitudeM": 5545,
-  "altitudeNote": { "en": "5,545 m is Kala Patthar, the usual high point. Base camp itself is about 5,364 m.", "hi": "5,545 मी. काला पत्थर है, सामान्य सबसे ऊँचा बिंदु। बेस कैंप लगभग 5,364 मी. पर है।" },
-  "distanceKm": 130, "dailyHours": "5–8",
+  "altitudeNote": {
+    "en": "5,545 m is Kala Patthar, the usual high point. Base camp itself is about 5,364 m.",
+    "hi": "5,545 मी. काला पत्थर है, सामान्य सबसे ऊँचा बिंदु। बेस कैंप लगभग 5,364 मी. पर है।"
+  },
+  "distanceKm": 130,
+  "dailyHours": "5–8",
   "difficulty": "difficult",
-  "months": [3, 4, 5, 9, 10, 11, 12], "bestMonths": [3, 4, 5, 10, 11],
-  "acclimatisation": { "en": "Two acclimatisation days: Namche Bazaar and Dingboche, each with a short climb-high, sleep-low walk.", "hi": "दो अनुकूलन दिवस: नामचे बाज़ार और डिंगबोचे, दोनों में ऊपर चढ़कर नीचे सोने वाली छोटी सैर।" },
+  "months": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12
+  ],
+  "bestMonths": [
+    3,
+    4,
+    5,
+    10,
+    11
+  ],
+  "acclimatisation": {
+    "en": "Two acclimatisation days: Namche Bazaar and Dingboche, each with a short climb-high, sleep-low walk.",
+    "hi": "दो अनुकूलन दिवस: नामचे बाज़ार और डिंगबोचे, दोनों में ऊपर चढ़कर नीचे सोने वाली छोटी सैर।"
+  },
   "restDays": 2,
-  "guide": "required", "specialPermit": false,
-  "permits": { "en": "Sagarmatha National Park entry permit and the Khumbu Pasang Lhamu Rural Municipality permit. Nepal introduced a licensed-guide requirement for foreign trekkers in 2023; how it applies in Khumbu and to Indian citizens has varied, so confirm before you go.", "hi": "सागरमाथा राष्ट्रीय उद्यान प्रवेश परमिट और खुम्बू पासांग ल्हामु ग्रामीण नगरपालिका परमिट। नेपाल ने 2023 में विदेशी ट्रेकर्स के लिए लाइसेंसधारी गाइड का नियम लागू किया; खुम्बू में और भारतीय नागरिकों पर यह कैसे लागू होता है, यह बदलता रहा है, इसलिए जाने से पहले पुष्टि करें।" },
-  "types": ["high-altitude", "expedition"], "landscapes": ["glacier", "village", "valley"],
-  "highlight": { "en": "Sherpa villages, Tengboche monastery and Everest from Kala Patthar.", "hi": "शेरपा गाँव, तेंगबोचे मठ और काला पत्थर से एवरेस्ट।" },
-  "suits": { "en": "Trekkers with prior multi-day experience who can walk 6–8 hours for many consecutive days.", "hi": "बहु-दिवसीय अनुभव वाले ट्रेकर, जो लगातार कई दिन 6–8 घंटे चल सकें।" },
-  "limitations": { "en": "Sustained altitude above 4,000 m for about a week; Lukla flights are weather-dependent; busy trail in peak season.", "hi": "लगभग एक सप्ताह तक 4,000 मी. से ऊपर; लुक्ला की उड़ानें मौसम पर निर्भर; व्यस्त मौसम में भीड़।" },
-  "editorial": { "label": "classic", "reason": { "en": "The best-known Himalayan teahouse trek.", "hi": "सबसे प्रसिद्ध हिमालयी टीहाउस ट्रेक।" } },
-  "overview": { "en": "A teahouse trek up the Khumbu valley to the foot of Everest, through Sherpa villages, monasteries and glacial moraine. The altitude, not the terrain, is the main challenge.", "hi": "खुम्बू घाटी से होकर एवरेस्ट की तलहटी तक टीहाउस ट्रेक, शेरपा गाँवों, मठों और हिमनदी मोरेन से होते हुए। मुख्य चुनौती रास्ता नहीं, ऊँचाई है।" },
+  "guide": "required",
+  "specialPermit": false,
+  "permits": {
+    "en": "Sagarmatha National Park entry permit and the Khumbu Pasang Lhamu Rural Municipality permit. Nepal introduced a licensed-guide requirement for foreign trekkers in 2023; how it applies in Khumbu and to Indian citizens has varied, so confirm before you go.",
+    "hi": "सागरमाथा राष्ट्रीय उद्यान प्रवेश परमिट और खुम्बू पासांग ल्हामु ग्रामीण नगरपालिका परमिट। नेपाल ने 2023 में विदेशी ट्रेकर्स के लिए लाइसेंसधारी गाइड का नियम लागू किया; खुम्बू में और भारतीय नागरिकों पर यह कैसे लागू होता है, यह बदलता रहा है, इसलिए जाने से पहले पुष्टि करें।"
+  },
+  "types": [
+    "high-altitude",
+    "expedition"
+  ],
+  "landscapes": [
+    "glacier",
+    "village",
+    "valley"
+  ],
+  "highlight": {
+    "en": "Sherpa villages, Tengboche monastery and Everest from Kala Patthar.",
+    "hi": "शेरपा गाँव, तेंगबोचे मठ और काला पत्थर से एवरेस्ट।"
+  },
+  "suits": {
+    "en": "Trekkers with prior multi-day experience who can walk 6–8 hours for many consecutive days.",
+    "hi": "बहु-दिवसीय अनुभव वाले ट्रेकर, जो लगातार कई दिन 6–8 घंटे चल सकें।"
+  },
+  "limitations": {
+    "en": "Sustained altitude above 4,000 m for about a week; Lukla flights are weather-dependent; busy trail in peak season.",
+    "hi": "लगभग एक सप्ताह तक 4,000 मी. से ऊपर; लुक्ला की उड़ानें मौसम पर निर्भर; व्यस्त मौसम में भीड़।"
+  },
+  "editorial": {
+    "label": "classic",
+    "reason": {
+      "en": "The best-known Himalayan teahouse trek.",
+      "hi": "सबसे प्रसिद्ध हिमालयी टीहाउस ट्रेक।"
+    }
+  },
+  "overview": {
+    "en": "A teahouse trek up the Khumbu valley to the foot of Everest, through Sherpa villages, monasteries and glacial moraine. The altitude, not the terrain, is the main challenge.",
+    "hi": "खुम्बू घाटी से होकर एवरेस्ट की तलहटी तक टीहाउस ट्रेक, शेरपा गाँवों, मठों और हिमनदी मोरेन से होते हुए। मुख्य चुनौती रास्ता नहीं, ऊँचाई है।"
+  },
   "highlights": [
-    { "en": "Namche Bazaar and Tengboche monastery", "hi": "नामचे बाज़ार और तेंगबोचे मठ" },
-    { "en": "Ama Dablam views from Pangboche and Dingboche", "hi": "पांगबोचे और डिंगबोचे से अमा डबलाम के दृश्य" },
-    { "en": "Sunrise over Everest from Kala Patthar", "hi": "काला पत्थर से एवरेस्ट पर सूर्योदय" }
+    {
+      "en": "Namche Bazaar and Tengboche monastery",
+      "hi": "नामचे बाज़ार और तेंगबोचे मठ"
+    },
+    {
+      "en": "Ama Dablam views from Pangboche and Dingboche",
+      "hi": "पांगबोचे और डिंगबोचे से अमा डबलाम के दृश्य"
+    },
+    {
+      "en": "Sunrise over Everest from Kala Patthar",
+      "hi": "काला पत्थर से एवरेस्ट पर सूर्योदय"
+    }
   ],
-  "reach": { "en": "Fly or drive to Kathmandu. Indian citizens can enter Nepal with a valid passport or voter ID. Lukla flights leave from Kathmandu or, in peak months, from Ramechhap (Manthali), a 4–5 hour drive away.", "hi": "काठमांडू तक उड़ान या सड़क। भारतीय नागरिक वैध पासपोर्ट या वोटर आईडी से नेपाल जा सकते हैं। लुक्ला की उड़ानें काठमांडू से या व्यस्त महीनों में रामेछाप (मंथली) से जाती हैं, जो 4–5 घंटे की ड्राइव पर है।" },
-  "fitness": { "en": "Build to 10 km runs or long hill days with a pack. Do at least one prior trek above 3,500 m if you can.", "hi": "10 किमी दौड़ या बैग के साथ लंबी पहाड़ी सैर तक अभ्यास। संभव हो तो पहले 3,500 मी. से ऊपर का एक ट्रेक करें।" },
-  "gear": { "en": "Down jacket and sleeping bag rated well below freezing, broken-in boots, layers, trekking poles, water purification, sun protection.", "hi": "शून्य से काफ़ी नीचे के लिए डाउन जैकेट और स्लीपिंग बैग, पहने हुए बूट, परतें, ट्रेकिंग पोल, पानी शुद्ध करने का साधन, धूप से सुरक्षा।" },
-  "stay": { "en": "Teahouses (lodges) every night; simple rooms, shared toilets higher up. Meals are bought at the lodge.", "hi": "हर रात टीहाउस (लॉज); साधारण कमरे, ऊपर साझा शौचालय। भोजन लॉज में ख़रीदा जाता है।" },
+  "reach": {
+    "en": "Fly or drive to Kathmandu. Indian citizens can enter Nepal with a valid passport or voter ID. Lukla flights leave from Kathmandu or, in peak months, from Ramechhap (Manthali), a 4–5 hour drive away.",
+    "hi": "काठमांडू तक उड़ान या सड़क। भारतीय नागरिक वैध पासपोर्ट या वोटर आईडी से नेपाल जा सकते हैं। लुक्ला की उड़ानें काठमांडू से या व्यस्त महीनों में रामेछाप (मंथली) से जाती हैं, जो 4–5 घंटे की ड्राइव पर है।"
+  },
+  "fitness": {
+    "en": "Build to 10 km runs or long hill days with a pack. Do at least one prior trek above 3,500 m if you can.",
+    "hi": "10 किमी दौड़ या बैग के साथ लंबी पहाड़ी सैर तक अभ्यास। संभव हो तो पहले 3,500 मी. से ऊपर का एक ट्रेक करें।"
+  },
+  "gear": {
+    "en": "Down jacket and sleeping bag rated well below freezing, broken-in boots, layers, trekking poles, water purification, sun protection.",
+    "hi": "शून्य से काफ़ी नीचे के लिए डाउन जैकेट और स्लीपिंग बैग, पहने हुए बूट, परतें, ट्रेकिंग पोल, पानी शुद्ध करने का साधन, धूप से सुरक्षा।"
+  },
+  "stay": {
+    "en": "Teahouses (lodges) every night; simple rooms, shared toilets higher up. Meals are bought at the lodge.",
+    "hi": "हर रात टीहाउस (लॉज); साधारण कमरे, ऊपर साझा शौचालय। भोजन लॉज में ख़रीदा जाता है।"
+  },
   "faqs": [
-    { "q": { "en": "Which months are best?", "hi": "कौन-से महीने सबसे अच्छे हैं?" },
-      "a": { "en": "March–May and October–November are the main seasons. September and December are possible but wetter or colder. June–August is the monsoon and is not recommended.", "hi": "मार्च–मई और अक्टूबर–नवंबर मुख्य मौसम हैं। सितंबर और दिसंबर संभव हैं पर अधिक गीले या ठंडे। जून–अगस्त मानसून है और इसकी सलाह नहीं दी जाती।" } }
+    {
+      "q": {
+        "en": "Which months are best?",
+        "hi": "कौन-से महीने सबसे अच्छे हैं?"
+      },
+      "a": {
+        "en": "March–May and October–November are the main seasons. September and December are possible but wetter or colder. June–August is the monsoon and is not recommended.",
+        "hi": "मार्च–मई और अक्टूबर–नवंबर मुख्य मौसम हैं। सितंबर और दिसंबर संभव हैं पर अधिक गीले या ठंडे। जून–अगस्त मानसून है और इसकी सलाह नहीं दी जाती।"
+      }
+    }
   ],
-  "journal": ["altitude-awareness", "fitness-for-trekking"],
+  "journal": [
+    "altitude-awareness",
+    "fitness-for-trekking"
+  ],
   "itinerary": [
-    { "day": 1, "kind": "trek", "route": { "en": "Fly to Lukla → Phakding", "hi": "लुक्ला उड़ान → फाकडिंग" }, "description": { "en": "Short flight, then an easy downhill walk.", "hi": "छोटी उड़ान, फिर आसान ढलान वाली सैर।" }, "distanceKm": 8, "hours": "3–4", "altitudeM": 2610, "overnight": { "en": "Teahouse, Phakding", "hi": "टीहाउस, फाकडिंग" } },
-    { "day": 2, "kind": "trek", "route": { "en": "Phakding → Namche Bazaar", "hi": "फाकडिंग → नामचे बाज़ार" }, "description": { "en": "Suspension bridges and a long climb to Namche.", "hi": "झूला पुल और नामचे तक लंबी चढ़ाई।" }, "distanceKm": 10, "ascentM": 830, "hours": "6–7", "altitudeM": 3440, "overnight": { "en": "Teahouse, Namche", "hi": "टीहाउस, नामचे" } },
-    { "day": 3, "kind": "acclimatisation", "route": { "en": "Acclimatisation in Namche", "hi": "नामचे में अनुकूलन" }, "description": { "en": "Short hike towards Syangboche/Everest View Hotel, then return to sleep in Namche.", "hi": "स्यांगबोचे/एवरेस्ट व्यू होटल की ओर छोटी सैर, फिर नामचे लौटकर रात।" }, "hours": "3–4", "altitudeM": 3440, "overnight": { "en": "Teahouse, Namche", "hi": "टीहाउस, नामचे" } },
-    { "day": 4, "kind": "trek", "route": { "en": "Namche → Tengboche", "hi": "नामचे → तेंगबोचे" }, "distanceKm": 10, "hours": "5–6", "altitudeM": 3860, "overnight": { "en": "Teahouse, Tengboche/Deboche", "hi": "टीहाउस, तेंगबोचे/देबोचे" } },
-    { "day": 5, "kind": "trek", "route": { "en": "Tengboche → Dingboche", "hi": "तेंगबोचे → डिंगबोचे" }, "distanceKm": 11, "hours": "5–6", "altitudeM": 4410, "overnight": { "en": "Teahouse, Dingboche", "hi": "टीहाउस, डिंगबोचे" } },
-    { "day": 6, "kind": "acclimatisation", "route": { "en": "Acclimatisation in Dingboche", "hi": "डिंगबोचे में अनुकूलन" }, "description": { "en": "Climb part-way up Nangkartshang, return to sleep low.", "hi": "नांगकार्त्शांग पर कुछ ऊपर तक चढ़ें, नीचे लौटकर सोएँ।" }, "hours": "3–4", "altitudeM": 4410, "overnight": { "en": "Teahouse, Dingboche", "hi": "टीहाउस, डिंगबोचे" } },
-    { "day": 7, "kind": "trek", "route": { "en": "Dingboche → Lobuche", "hi": "डिंगबोचे → लोबुचे" }, "distanceKm": 8, "hours": "5–6", "altitudeM": 4940, "overnight": { "en": "Teahouse, Lobuche", "hi": "टीहाउस, लोबुचे" } },
-    { "day": 8, "kind": "summit", "route": { "en": "Lobuche → Gorak Shep → Everest Base Camp → Gorak Shep", "hi": "लोबुचे → गोरकशेप → एवरेस्ट बेस कैंप → गोरकशेप" }, "distanceKm": 13, "hours": "7–8", "altitudeM": 5364, "overnight": { "en": "Teahouse, Gorak Shep", "hi": "टीहाउस, गोरकशेप" } },
-    { "day": 9, "kind": "summit", "route": { "en": "Kala Patthar at dawn → Pheriche", "hi": "भोर में काला पत्थर → फेरिचे" }, "distanceKm": 13, "hours": "7–8", "altitudeM": 5545, "overnight": { "en": "Teahouse, Pheriche", "hi": "टीहाउस, फेरिचे" }, "notes": { "en": "Skip Kala Patthar if you feel unwell; descending is the treatment.", "hi": "अस्वस्थ लगे तो काला पत्थर छोड़ें; नीचे उतरना ही उपचार है।" } },
-    { "day": 10, "kind": "trek", "route": { "en": "Pheriche → Namche", "hi": "फेरिचे → नामचे" }, "distanceKm": 20, "hours": "6–7", "altitudeM": 3440, "overnight": { "en": "Teahouse, Namche", "hi": "टीहाउस, नामचे" } },
-    { "day": 11, "kind": "trek", "route": { "en": "Namche → Lukla", "hi": "नामचे → लुक्ला" }, "distanceKm": 18, "hours": "6–7", "altitudeM": 2860, "overnight": { "en": "Teahouse, Lukla", "hi": "टीहाउस, लुक्ला" } },
-    { "day": 12, "kind": "travel", "route": { "en": "Fly Lukla → Kathmandu", "hi": "लुक्ला → काठमांडू उड़ान" } },
-    { "day": 13, "kind": "buffer", "route": { "en": "Buffer day in Kathmandu", "hi": "काठमांडू में बफ़र दिन" }, "description": { "en": "Held for weather-delayed flights.", "hi": "मौसम से उड़ान में देरी के लिए रखा गया।" } },
-    { "day": 14, "kind": "travel", "route": { "en": "Depart Kathmandu", "hi": "काठमांडू से प्रस्थान" } }
-  ]
+    {
+      "day": 1,
+      "kind": "trek",
+      "route": {
+        "en": "Fly to Lukla → Phakding",
+        "hi": "लुक्ला उड़ान → फाकडिंग"
+      },
+      "description": {
+        "en": "Short flight, then an easy downhill walk.",
+        "hi": "छोटी उड़ान, फिर आसान ढलान वाली सैर।"
+      },
+      "distanceKm": 8,
+      "hours": "3–4",
+      "altitudeM": 2610,
+      "overnight": {
+        "en": "Teahouse, Phakding",
+        "hi": "टीहाउस, फाकडिंग"
+      }
+    },
+    {
+      "day": 2,
+      "kind": "trek",
+      "route": {
+        "en": "Phakding → Namche Bazaar",
+        "hi": "फाकडिंग → नामचे बाज़ार"
+      },
+      "description": {
+        "en": "Suspension bridges and a long climb to Namche.",
+        "hi": "झूला पुल और नामचे तक लंबी चढ़ाई।"
+      },
+      "distanceKm": 10,
+      "ascentM": 830,
+      "hours": "6–7",
+      "altitudeM": 3440,
+      "overnight": {
+        "en": "Teahouse, Namche",
+        "hi": "टीहाउस, नामचे"
+      }
+    },
+    {
+      "day": 3,
+      "kind": "acclimatisation",
+      "route": {
+        "en": "Acclimatisation in Namche",
+        "hi": "नामचे में अनुकूलन"
+      },
+      "description": {
+        "en": "Short hike towards Syangboche/Everest View Hotel, then return to sleep in Namche.",
+        "hi": "स्यांगबोचे/एवरेस्ट व्यू होटल की ओर छोटी सैर, फिर नामचे लौटकर रात।"
+      },
+      "hours": "3–4",
+      "altitudeM": 3440,
+      "overnight": {
+        "en": "Teahouse, Namche",
+        "hi": "टीहाउस, नामचे"
+      }
+    },
+    {
+      "day": 4,
+      "kind": "trek",
+      "route": {
+        "en": "Namche → Tengboche",
+        "hi": "नामचे → तेंगबोचे"
+      },
+      "distanceKm": 10,
+      "hours": "5–6",
+      "altitudeM": 3860,
+      "overnight": {
+        "en": "Teahouse, Tengboche/Deboche",
+        "hi": "टीहाउस, तेंगबोचे/देबोचे"
+      }
+    },
+    {
+      "day": 5,
+      "kind": "trek",
+      "route": {
+        "en": "Tengboche → Dingboche",
+        "hi": "तेंगबोचे → डिंगबोचे"
+      },
+      "distanceKm": 11,
+      "hours": "5–6",
+      "altitudeM": 4410,
+      "overnight": {
+        "en": "Teahouse, Dingboche",
+        "hi": "टीहाउस, डिंगबोचे"
+      }
+    },
+    {
+      "day": 6,
+      "kind": "acclimatisation",
+      "route": {
+        "en": "Acclimatisation in Dingboche",
+        "hi": "डिंगबोचे में अनुकूलन"
+      },
+      "description": {
+        "en": "Climb part-way up Nangkartshang, return to sleep low.",
+        "hi": "नांगकार्त्शांग पर कुछ ऊपर तक चढ़ें, नीचे लौटकर सोएँ।"
+      },
+      "hours": "3–4",
+      "altitudeM": 4410,
+      "overnight": {
+        "en": "Teahouse, Dingboche",
+        "hi": "टीहाउस, डिंगबोचे"
+      }
+    },
+    {
+      "day": 7,
+      "kind": "trek",
+      "route": {
+        "en": "Dingboche → Lobuche",
+        "hi": "डिंगबोचे → लोबुचे"
+      },
+      "distanceKm": 8,
+      "hours": "5–6",
+      "altitudeM": 4940,
+      "overnight": {
+        "en": "Teahouse, Lobuche",
+        "hi": "टीहाउस, लोबुचे"
+      }
+    },
+    {
+      "day": 8,
+      "kind": "summit",
+      "route": {
+        "en": "Lobuche → Gorak Shep → Everest Base Camp → Gorak Shep",
+        "hi": "लोबुचे → गोरकशेप → एवरेस्ट बेस कैंप → गोरकशेप"
+      },
+      "distanceKm": 13,
+      "hours": "7–8",
+      "altitudeM": 5364,
+      "overnight": {
+        "en": "Teahouse, Gorak Shep",
+        "hi": "टीहाउस, गोरकशेप"
+      }
+    },
+    {
+      "day": 9,
+      "kind": "summit",
+      "route": {
+        "en": "Kala Patthar at dawn → Pheriche",
+        "hi": "भोर में काला पत्थर → फेरिचे"
+      },
+      "distanceKm": 13,
+      "hours": "7–8",
+      "altitudeM": 5545,
+      "overnight": {
+        "en": "Teahouse, Pheriche",
+        "hi": "टीहाउस, फेरिचे"
+      },
+      "notes": {
+        "en": "Skip Kala Patthar if you feel unwell; descending is the treatment.",
+        "hi": "अस्वस्थ लगे तो काला पत्थर छोड़ें; नीचे उतरना ही उपचार है।"
+      }
+    },
+    {
+      "day": 10,
+      "kind": "trek",
+      "route": {
+        "en": "Pheriche → Namche",
+        "hi": "फेरिचे → नामचे"
+      },
+      "distanceKm": 20,
+      "hours": "6–7",
+      "altitudeM": 3440,
+      "overnight": {
+        "en": "Teahouse, Namche",
+        "hi": "टीहाउस, नामचे"
+      }
+    },
+    {
+      "day": 11,
+      "kind": "trek",
+      "route": {
+        "en": "Namche → Lukla",
+        "hi": "नामचे → लुक्ला"
+      },
+      "distanceKm": 18,
+      "hours": "6–7",
+      "altitudeM": 2860,
+      "overnight": {
+        "en": "Teahouse, Lukla",
+        "hi": "टीहाउस, लुक्ला"
+      }
+    },
+    {
+      "day": 12,
+      "kind": "travel",
+      "route": {
+        "en": "Fly Lukla → Kathmandu",
+        "hi": "लुक्ला → काठमांडू उड़ान"
+      }
+    },
+    {
+      "day": 13,
+      "kind": "buffer",
+      "route": {
+        "en": "Buffer day in Kathmandu",
+        "hi": "काठमांडू में बफ़र दिन"
+      },
+      "description": {
+        "en": "Held for weather-delayed flights.",
+        "hi": "मौसम से उड़ान में देरी के लिए रखा गया।"
+      }
+    },
+    {
+      "day": 14,
+      "kind": "travel",
+      "route": {
+        "en": "Depart Kathmandu",
+        "hi": "काठमांडू से प्रस्थान"
+      }
+    }
+  ],
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Everest_Base_Camp_from_Kala_Patther.jpg/960px-Everest_Base_Camp_from_Kala_Patther.jpg",
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Everest_Base_Camp_from_Kala_Patther.jpg/500px-Everest_Base_Camp_from_Kala_Patther.jpg",
+    "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Everest_Base_Camp_from_Kala_Patther.jpg/1280px-Everest_Base_Camp_from_Kala_Patther.jpg",
+    "width": 960,
+    "height": 606,
+    "scope": "route",
+    "alt": {
+      "en": "Colourful tents of Everest Base Camp on the Khumbu glacier moraine, seen from above",
+      "hi": "ऊपर से दिखते, खुम्बू ग्लेशियर के मोरेन पर एवरेस्ट बेस कैंप के रंगीन टेंट"
+    },
+    "author": "Goutam1962",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest_Base_Camp_from_Kala_Patther.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
 }

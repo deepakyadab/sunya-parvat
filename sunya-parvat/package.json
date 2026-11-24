@@ -13,8 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build && node scripts/prerender.js",
     "check-data": "node scripts/check-data.js",
-    "editor-server": "node scripts/editor-server.js"
+    "editor-server": "node scripts/editor-server.js",
+    "api": "node scripts/api-dev-server.js",
+    "test:enquiry": "node scripts/test-enquiry.js"
   },
+  "proxy": "http://127.0.0.1:4322",
   "eslintConfig": {
     "extends": ["react-app"]
   },

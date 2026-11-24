@@ -20,6 +20,7 @@ import About from './pages/About';
 import BeforeYouGo from './pages/BeforeYouGo';
 import Connect from './pages/Connect';
 import NotFound from './pages/NotFound';
+import Credits from './pages/Credits';
 
 // The editor exists only in development builds (`npm start`).
 // In `npm run build` this condition is false and the editor code is not bundled.
@@ -72,6 +73,7 @@ export default function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/before-you-go" element={<BeforeYouGo />} />
                   <Route path="/connect" element={<Connect />} />
+                  <Route path="/credits" element={<Credits />} />
                   <Route path="/journeys" element={<LegacyJourneys />} />
                   <Route path="/journeys/:id" element={<LegacyJourney />} />
                   <Route path="/stories" element={<Navigate to="/journal" replace />} />

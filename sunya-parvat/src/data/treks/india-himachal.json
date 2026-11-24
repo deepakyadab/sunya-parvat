@@ -1,119 +1,577 @@
 [
   {
     "id": "buran-ghati",
-    "name": { "en": "Buran Ghati", "hi": "बुरान घाटी" },
-    "aliases": ["buran", "chandranahan"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Janglik, Shimla district (ends at Barua, Kinnaur)", "hi": "जंगलिक, शिमला ज़िला (समापन बरुआ, किन्नौर)" },
-    "totalDays": 8, "walkingDays": 6,
-    "maxAltitudeM": 4575, "distanceKm": 37, "dailyHours": "4–8",
+    "name": {
+      "en": "Buran Ghati",
+      "hi": "बुरान घाटी"
+    },
+    "aliases": [
+      "buran",
+      "chandranahan"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Janglik, Shimla district (ends at Barua, Kinnaur)",
+      "hi": "जंगलिक, शिमला ज़िला (समापन बरुआ, किन्नौर)"
+    },
+    "totalDays": 8,
+    "walkingDays": 6,
+    "maxAltitudeM": 4575,
+    "distanceKm": 37,
+    "dailyHours": "4–8",
     "difficulty": "difficult",
-    "months": [5, 6, 9, 10], "bestMonths": [5, 6, 9],
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9
+    ],
     "guide": "recommended",
-    "types": ["high-altitude"], "landscapes": ["pass", "meadow", "lake", "village"],
-    "highlight": { "en": "Dayara meadows, Chandranahan lake and a rappel-style snow descent from the pass.", "hi": "दयारा मैदान, चंद्रनाहन झील और दर्रे से रस्सी के सहारे बर्फ़ीली उतराई।" },
-    "limitations": { "en": "The pass descent usually needs fixed ropes and experienced staff.", "hi": "दर्रे की उतराई में आमतौर पर रस्सी और अनुभवी टीम चाहिए।" }
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "pass",
+      "meadow",
+      "lake",
+      "village"
+    ],
+    "highlight": {
+      "en": "Dayara meadows, Chandranahan lake and a rappel-style snow descent from the pass.",
+      "hi": "दयारा मैदान, चंद्रनाहन झील और दर्रे से रस्सी के सहारे बर्फ़ीली उतराई।"
+    },
+    "limitations": {
+      "en": "The pass descent usually needs fixed ropes and experienced staff.",
+      "hi": "दर्रे की उतराई में आमतौर पर रस्सी और अनुभवी टीम चाहिए।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Himalayan_highland_Meadows.jpg/960px-Himalayan_highland_Meadows.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Himalayan_highland_Meadows.jpg/500px-Himalayan_highland_Meadows.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Himalayan_highland_Meadows.jpg/1280px-Himalayan_highland_Meadows.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Sheep grazing on a high green meadow in the Buran valley, with trekkers' tents",
+        "hi": "बुरान घाटी के ऊँचे हरे मैदान पर चरती भेड़ें और ट्रेकर्स के टेंट"
+      },
+      "author": "Shobhla-Himachal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_highland_Meadows.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "beas-kund",
-    "name": { "en": "Beas Kund", "hi": "ब्यास कुंड" },
-    "aliases": ["beaskund", "beas kund"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Solang / Dhundi, Manali", "hi": "सोलंग / धुंडी, मनाली" },
-    "totalDays": 4, "walkingDays": 3,
-    "maxAltitudeM": 3700, "distanceKm": 16, "dailyHours": "3–6",
+    "name": {
+      "en": "Beas Kund",
+      "hi": "ब्यास कुंड"
+    },
+    "aliases": [
+      "beaskund",
+      "beas kund"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Solang / Dhundi, Manali",
+      "hi": "सोलंग / धुंडी, मनाली"
+    },
+    "totalDays": 4,
+    "walkingDays": 3,
+    "maxAltitudeM": 3700,
+    "distanceKm": 16,
+    "dailyHours": "3–6",
     "difficulty": "easy-moderate",
-    "months": [5, 6, 7, 8, 9, 10], "bestMonths": [6, 9],
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bestMonths": [
+      6,
+      9
+    ],
     "guide": "recommended",
-    "types": ["beginner"], "landscapes": ["lake", "glacier", "meadow"],
-    "highlight": { "en": "The glacial source lake of the Beas river below Hanuman Tibba.", "hi": "हनुमान टिब्बा के नीचे ब्यास नदी की हिमनदी उद्गम झील।" }
+    "types": [
+      "beginner"
+    ],
+    "landscapes": [
+      "lake",
+      "glacier",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "The glacial source lake of the Beas river below Hanuman Tibba.",
+      "hi": "हनुमान टिब्बा के नीचे ब्यास नदी की हिमनदी उद्गम झील।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Himalaya_Manali.jpg/960px-Himalaya_Manali.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Himalaya_Manali.jpg/500px-Himalaya_Manali.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Himalaya_Manali.jpg/1280px-Himalaya_Manali.jpg",
+      "width": 960,
+      "height": 613,
+      "scope": "route",
+      "alt": {
+        "en": "Snow-covered peaks rising above clouds, seen from Bakarthach near Beas Kund",
+        "hi": "ब्यास कुंड के पास बकरथाच से दिखती, बादलों के ऊपर बर्फ़ से ढकी चोटियाँ"
+      },
+      "subject": {
+        "en": "View from Bakarthach on the Beas Kund route",
+        "hi": "ब्यास कुंड मार्ग पर बकरथाच से दृश्य"
+      },
+      "author": "Sharad Yadav",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalaya_Manali.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "pin-bhaba-pass",
-    "name": { "en": "Pin Bhaba Pass", "hi": "पिन भाबा पास" },
-    "aliases": ["pin bhaba", "bhaba pass"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Kafnu, Kinnaur (ends at Mudh, Spiti)", "hi": "काफ़नू, किन्नौर (समापन मुद, स्पीति)" },
-    "totalDays": 8, "walkingDays": 6,
-    "maxAltitudeM": 4915, "distanceKm": 50, "dailyHours": "5–8",
+    "name": {
+      "en": "Pin Bhaba Pass",
+      "hi": "पिन भाबा पास"
+    },
+    "aliases": [
+      "pin bhaba",
+      "bhaba pass"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Kafnu, Kinnaur (ends at Mudh, Spiti)",
+      "hi": "काफ़नू, किन्नौर (समापन मुद, स्पीति)"
+    },
+    "totalDays": 8,
+    "walkingDays": 6,
+    "maxAltitudeM": 4915,
+    "distanceKm": 50,
+    "dailyHours": "5–8",
     "difficulty": "difficult",
-    "months": [7, 8, 9], "bestMonths": [7, 8, 9],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
     "guide": "recommended",
-    "types": ["high-altitude", "monsoon-friendly"], "landscapes": ["pass", "desert", "valley", "meadow"],
-    "highlight": { "en": "Green Kinnaur forest on one side, the bare Pin valley of Spiti on the other.", "hi": "एक ओर किन्नौर का हरा जंगल, दूसरी ओर स्पीति की सूनी पिन घाटी।" }
+    "types": [
+      "high-altitude",
+      "monsoon-friendly"
+    ],
+    "landscapes": [
+      "pass",
+      "desert",
+      "valley",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "Green Kinnaur forest on one side, the bare Pin valley of Spiti on the other.",
+      "hi": "एक ओर किन्नौर का हरा जंगल, दूसरी ओर स्पीति की सूनी पिन घाटी।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg/960px-Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg/500px-Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg/1280px-Bhaba_Pass%2C_Himachal_Pradesh%2C_India.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Wide snowy saddle of Bhaba Pass with cloud rising from the valley",
+        "hi": "भाबा पास की चौड़ी बर्फ़ीली काठी, घाटी से उठते बादल"
+      },
+      "author": "Mike Shaw",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bhaba_Pass,_Himachal_Pradesh,_India.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "pin-parvati-pass",
-    "name": { "en": "Pin Parvati Pass", "hi": "पिन पार्वती पास" },
-    "aliases": ["pin parvati"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Barshaini, Parvati valley (ends at Mudh, Spiti)", "hi": "बरशैनी, पार्वती घाटी (समापन मुद, स्पीति)" },
-    "totalDays": 11, "walkingDays": 10,
-    "maxAltitudeM": 5319, "distanceKm": 110, "dailyHours": "5–9",
+    "name": {
+      "en": "Pin Parvati Pass",
+      "hi": "पिन पार्वती पास"
+    },
+    "aliases": [
+      "pin parvati"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Barshaini, Parvati valley (ends at Mudh, Spiti)",
+      "hi": "बरशैनी, पार्वती घाटी (समापन मुद, स्पीति)"
+    },
+    "totalDays": 11,
+    "walkingDays": 10,
+    "maxAltitudeM": 5319,
+    "distanceKm": 110,
+    "dailyHours": "5–9",
     "difficulty": "very-difficult",
-    "months": [7, 8, 9], "bestMonths": [8, 9],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Crosses protected areas including Pin Valley National Park; permits and an experienced support team are needed.", "hi": "पिन वैली राष्ट्रीय उद्यान सहित संरक्षित क्षेत्रों से होकर; परमिट और अनुभवी सहायता दल आवश्यक।" },
-    "types": ["high-altitude", "expedition"], "landscapes": ["pass", "glacier", "valley", "desert"],
-    "highlight": { "en": "A long, remote crossing with a glaciated pass above 5,000 m.", "hi": "5,000 मी. से ऊपर हिमाच्छादित दर्रे वाला लंबा, दूरस्थ पार।" },
-    "limitations": { "en": "Glacier travel and crevasse risk; for experienced trekkers only.", "hi": "ग्लेशियर पर चलना और दरारों का जोखिम; केवल अनुभवी ट्रेकर्स के लिए।" }
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "bestMonths": [
+      8,
+      9
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Crosses protected areas including Pin Valley National Park; permits and an experienced support team are needed.",
+      "hi": "पिन वैली राष्ट्रीय उद्यान सहित संरक्षित क्षेत्रों से होकर; परमिट और अनुभवी सहायता दल आवश्यक।"
+    },
+    "types": [
+      "high-altitude",
+      "expedition"
+    ],
+    "landscapes": [
+      "pass",
+      "glacier",
+      "valley",
+      "desert"
+    ],
+    "highlight": {
+      "en": "A long, remote crossing with a glaciated pass above 5,000 m.",
+      "hi": "5,000 मी. से ऊपर हिमाच्छादित दर्रे वाला लंबा, दूरस्थ पार।"
+    },
+    "limitations": {
+      "en": "Glacier travel and crevasse risk; for experienced trekkers only.",
+      "hi": "ग्लेशियर पर चलना और दरारों का जोखिम; केवल अनुभवी ट्रेकर्स के लिए।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg/960px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg/500px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg/1280px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-1.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "A trekker beside grey Mantalai lake on the Pin Parvati route, with snow on the slopes",
+        "hi": "पिन पार्वती मार्ग पर धूसर मंतलाई झील के किनारे एक ट्रेकर, ढलानों पर बर्फ़"
+      },
+      "author": "Bharatkaistha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantalai_Lake_(Pin_Parvati-20000_ft.)-1.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "kheerganga",
-    "name": { "en": "Kheerganga", "hi": "खीरगंगा" },
-    "aliases": ["kheer ganga", "khirganga"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Barshaini, Parvati valley", "hi": "बरशैनी, पार्वती घाटी" },
-    "totalDays": 2, "walkingDays": 2,
-    "maxAltitudeM": 2960, "distanceKm": 24, "dailyHours": "4–5",
+    "name": {
+      "en": "Kheerganga",
+      "hi": "खीरगंगा"
+    },
+    "aliases": [
+      "kheer ganga",
+      "khirganga"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Barshaini, Parvati valley",
+      "hi": "बरशैनी, पार्वती घाटी"
+    },
+    "totalDays": 2,
+    "walkingDays": 2,
+    "maxAltitudeM": 2960,
+    "distanceKm": 24,
+    "dailyHours": "4–5",
     "difficulty": "easy",
-    "months": [3, 4, 5, 6, 9, 10, 11], "bestMonths": [4, 5, 10],
+    "months": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "bestMonths": [
+      4,
+      5,
+      10
+    ],
     "guide": "not-required",
-    "types": ["weekend", "beginner", "pilgrimage"], "landscapes": ["forest", "meadow"],
-    "highlight": { "en": "A forest walk to a meadow with a natural hot spring and a small Shiva shrine.", "hi": "जंगल से होकर एक मैदान तक, जहाँ प्राकृतिक गर्म पानी का कुंड और एक छोटा शिव मंदिर है।" },
-    "verification": { "status": "unverified", "localCheck": { "en": "Camping and commercial structures at the top have been regulated by the authorities; check current overnight rules.", "hi": "ऊपर कैंपिंग और व्यावसायिक ढाँचों को प्रशासन ने नियंत्रित किया है; रात्रि ठहराव के वर्तमान नियम जाँचें।" } }
+    "types": [
+      "weekend",
+      "beginner",
+      "pilgrimage"
+    ],
+    "landscapes": [
+      "forest",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "A forest walk to a meadow with a natural hot spring and a small Shiva shrine.",
+      "hi": "जंगल से होकर एक मैदान तक, जहाँ प्राकृतिक गर्म पानी का कुंड और एक छोटा शिव मंदिर है।"
+    },
+    "verification": {
+      "status": "unverified",
+      "localCheck": {
+        "en": "Camping and commercial structures at the top have been regulated by the authorities; check current overnight rules.",
+        "hi": "ऊपर कैंपिंग और व्यावसायिक ढाँचों को प्रशासन ने नियंत्रित किया है; रात्रि ठहराव के वर्तमान नियम जाँचें।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Kheerganga_NP.jpg/960px-Kheerganga_NP.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Kheerganga_NP.jpg/500px-Kheerganga_NP.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Kheerganga_NP.jpg/1280px-Kheerganga_NP.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "Fresh snow on the meadow at Kheerganga, with a bare tree and forested slopes",
+        "hi": "खीरगंगा के मैदान पर ताज़ा बर्फ़, एक सूखा पेड़ और जंगल से ढकी ढलानें"
+      },
+      "author": "Vishrutpanday",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kheerganga_NP.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "chandrakhani-pass",
-    "name": { "en": "Chandrakhani Pass", "hi": "चंद्रखणी पास" },
-    "aliases": ["chandrakhani", "malana"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Rumsu, near Naggar (ends towards Malana)", "hi": "रूमसू, नग्गर के पास (समापन मलाणा की ओर)" },
-    "totalDays": 4, "walkingDays": 3,
-    "maxAltitudeM": 3660, "distanceKm": 24, "dailyHours": "4–6",
+    "name": {
+      "en": "Chandrakhani Pass",
+      "hi": "चंद्रखणी पास"
+    },
+    "aliases": [
+      "chandrakhani",
+      "malana"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Rumsu, near Naggar (ends towards Malana)",
+      "hi": "रूमसू, नग्गर के पास (समापन मलाणा की ओर)"
+    },
+    "totalDays": 4,
+    "walkingDays": 3,
+    "maxAltitudeM": 3660,
+    "distanceKm": 24,
+    "dailyHours": "4–6",
     "difficulty": "easy-moderate",
-    "months": [4, 5, 6, 9, 10], "bestMonths": [5, 10],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      10
+    ],
     "guide": "recommended",
-    "types": ["beginner"], "landscapes": ["pass", "meadow", "forest", "village"],
-    "highlight": { "en": "Open ridge meadows with views of the Pir Panjal and Parvati ranges.", "hi": "पीर पंजाल और पार्वती श्रृंखलाओं के दृश्यों वाले खुले रिज मैदान।" },
-    "limitations": { "en": "Malana village has strict local customs about touching people and property; follow your guide.", "hi": "मलाणा गाँव में लोगों और संपत्ति को छूने के बारे में सख़्त स्थानीय परंपराएँ हैं; गाइड का पालन करें।" }
+    "types": [
+      "beginner"
+    ],
+    "landscapes": [
+      "pass",
+      "meadow",
+      "forest",
+      "village"
+    ],
+    "highlight": {
+      "en": "Open ridge meadows with views of the Pir Panjal and Parvati ranges.",
+      "hi": "पीर पंजाल और पार्वती श्रृंखलाओं के दृश्यों वाले खुले रिज मैदान।"
+    },
+    "limitations": {
+      "en": "Malana village has strict local customs about touching people and property; follow your guide.",
+      "hi": "मलाणा गाँव में लोगों और संपत्ति को छूने के बारे में सख़्त स्थानीय परंपराएँ हैं; गाइड का पालन करें।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg/960px-Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg/500px-Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg/1280px-Chanderkhani_Pass%2C_Himalayas%2C_YHAI_2017-06-11_08-44-08uty.jpg",
+      "width": 960,
+      "height": 638,
+      "scope": "route",
+      "alt": {
+        "en": "Green ridges of Chandrakhani Pass with a snowy range on the horizon",
+        "hi": "चंद्रखणी पास की हरी रिज, क्षितिज पर बर्फ़ीली श्रृंखला"
+      },
+      "author": "Shivendrahans",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chanderkhani_Pass,_Himalayas,_YHAI_2017-06-11_08-44-08uty.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "sar-pass",
-    "name": { "en": "Sar Pass", "hi": "सर पास" },
-    "aliases": ["sarpass"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Kasol / Grahan (ends at Barshaini)", "hi": "कसोल / ग्रहण (समापन बरशैनी)" },
-    "totalDays": 5, "walkingDays": 5,
-    "maxAltitudeM": 4200, "distanceKm": 48, "dailyHours": "4–8",
+    "name": {
+      "en": "Sar Pass",
+      "hi": "सर पास"
+    },
+    "aliases": [
+      "sarpass"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Kasol / Grahan (ends at Barshaini)",
+      "hi": "कसोल / ग्रहण (समापन बरशैनी)"
+    },
+    "totalDays": 5,
+    "walkingDays": 5,
+    "maxAltitudeM": 4200,
+    "distanceKm": 48,
+    "dailyHours": "4–8",
     "difficulty": "moderate",
-    "months": [5, 6], "bestMonths": [5, 6],
+    "months": [
+      5,
+      6
+    ],
+    "bestMonths": [
+      5,
+      6
+    ],
     "guide": "recommended",
-    "types": [], "landscapes": ["pass", "forest", "meadow"],
-    "highlight": { "en": "A snowfield crossing and a long natural snow slide on the descent.", "hi": "बर्फ़ के मैदान को पार करना और उतराई में लंबी प्राकृतिक बर्फ़ फिसलन।" }
+    "types": [],
+    "landscapes": [
+      "pass",
+      "forest",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "A snowfield crossing and a long natural snow slide on the descent.",
+      "hi": "बर्फ़ के मैदान को पार करना और उतराई में लंबी प्राकृतिक बर्फ़ फिसलन।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sar_Pass_top.jpg/960px-Sar_Pass_top.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sar_Pass_top.jpg/500px-Sar_Pass_top.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sar_Pass_top.jpg/1280px-Sar_Pass_top.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "Small lake on the grassy top near Sar Pass, with a figure standing in the mist",
+        "hi": "सर पास के पास घास वाली चोटी पर छोटी झील, धुंध में खड़ा एक व्यक्ति"
+      },
+      "author": "Sair18791",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sar_Pass_top.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "parashar-lake",
-    "name": { "en": "Parashar Lake", "hi": "पराशर झील" },
-    "aliases": ["prashar lake", "parashar"],
-    "countries": ["india"], "region": "himachal",
-    "start": { "en": "Baggi, near Mandi", "hi": "बग्गी, मंडी के पास" },
-    "totalDays": 2, "walkingDays": 2,
-    "maxAltitudeM": 2730, "distanceKm": 16, "dailyHours": "3–4",
+    "name": {
+      "en": "Parashar Lake",
+      "hi": "पराशर झील"
+    },
+    "aliases": [
+      "prashar lake",
+      "parashar"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "himachal",
+    "start": {
+      "en": "Baggi, near Mandi",
+      "hi": "बग्गी, मंडी के पास"
+    },
+    "totalDays": 2,
+    "walkingDays": 2,
+    "maxAltitudeM": 2730,
+    "distanceKm": 16,
+    "dailyHours": "3–4",
     "difficulty": "easy",
-    "months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12], "bestMonths": [4, 5, 10, 11],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      4,
+      5,
+      10,
+      11
+    ],
     "guide": "not-required",
-    "types": ["weekend", "beginner", "family", "pilgrimage"], "landscapes": ["lake", "meadow", "forest"],
-    "highlight": { "en": "A pagoda-style temple beside a small lake with a floating island.", "hi": "तैरते टापू वाली छोटी झील के किनारे पैगोडा-शैली का मंदिर।" }
+    "types": [
+      "weekend",
+      "beginner",
+      "family",
+      "pilgrimage"
+    ],
+    "landscapes": [
+      "lake",
+      "meadow",
+      "forest"
+    ],
+    "highlight": {
+      "en": "A pagoda-style temple beside a small lake with a floating island.",
+      "hi": "तैरते टापू वाली छोटी झील के किनारे पैगोडा-शैली का मंदिर।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Parashar_lake_from_vantage_point.jpg/960px-Parashar_lake_from_vantage_point.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Parashar_lake_from_vantage_point.jpg/500px-Parashar_lake_from_vantage_point.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Parashar_lake_from_vantage_point.jpg/1280px-Parashar_lake_from_vantage_point.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Parashar lake and its temple seen from above, with white wildflowers in front",
+        "hi": "ऊपर से दिखती पराशर झील और मंदिर, सामने सफ़ेद जंगली फूल"
+      },
+      "author": "Phototraveller1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parashar_lake_from_vantage_point.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   }
 ]

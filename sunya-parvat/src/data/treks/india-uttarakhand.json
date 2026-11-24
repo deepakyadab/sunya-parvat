@@ -1,157 +1,796 @@
 [
   {
     "id": "kuari-pass",
-    "name": { "en": "Kuari Pass", "hi": "कुआरी पास" },
-    "aliases": ["kuari", "curzon trail", "lord curzon trail"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Dhak / Tugasi, near Joshimath", "hi": "ढाक / तुगासी, जोशीमठ के पास" },
-    "totalDays": 6, "walkingDays": 4,
-    "durationNote": { "en": "Trail days from the roadhead; travel from Rishikesh/Haridwar to the start is usually a full day each way.", "hi": "सड़क के अंतिम बिंदु से ट्रेक के दिन; ऋषिकेश/हरिद्वार से आने-जाने में आमतौर पर एक-एक पूरा दिन लगता है।" },
-    "maxAltitudeM": 3815, "distanceKm": 33, "dailyHours": "4–6",
+    "name": {
+      "en": "Kuari Pass",
+      "hi": "कुआरी पास"
+    },
+    "aliases": [
+      "kuari",
+      "curzon trail",
+      "lord curzon trail"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Dhak / Tugasi, near Joshimath",
+      "hi": "ढाक / तुगासी, जोशीमठ के पास"
+    },
+    "totalDays": 6,
+    "walkingDays": 4,
+    "durationNote": {
+      "en": "Trail days from the roadhead; travel from Rishikesh/Haridwar to the start is usually a full day each way.",
+      "hi": "सड़क के अंतिम बिंदु से ट्रेक के दिन; ऋषिकेश/हरिद्वार से आने-जाने में आमतौर पर एक-एक पूरा दिन लगता है।"
+    },
+    "maxAltitudeM": 3815,
+    "distanceKm": 33,
+    "dailyHours": "4–6",
     "difficulty": "easy-moderate",
-    "months": [1, 2, 3, 4, 5, 10, 11, 12], "bestMonths": [12, 1, 2, 3],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      12,
+      1,
+      2,
+      3
+    ],
     "guide": "recommended",
-    "types": ["beginner", "winter"], "landscapes": ["meadow", "forest", "pass"],
-    "highlight": { "en": "Close views of Nanda Devi, Dronagiri and Hathi–Ghoda Parbat from a gentle pass.", "hi": "एक सहज दर्रे से नंदा देवी, द्रोणागिरी और हाथी–घोड़ा पर्वत के क़रीबी दृश्य।" },
-    "suits": { "en": "First-timers who want big Himalayan views without a hard summit push.", "hi": "पहली बार जाने वाले, जो कठिन शिखर चढ़ाई के बिना बड़े हिमालयी दृश्य चाहते हैं।" },
-    "editorial": { "label": "editors-pick", "reason": { "en": "Our recommended first Himalayan pass for winter.", "hi": "सर्दियों के पहले हिमालयी दर्रे के लिए हमारी सिफ़ारिश।" } }
+    "types": [
+      "beginner",
+      "winter"
+    ],
+    "landscapes": [
+      "meadow",
+      "forest",
+      "pass"
+    ],
+    "highlight": {
+      "en": "Close views of Nanda Devi, Dronagiri and Hathi–Ghoda Parbat from a gentle pass.",
+      "hi": "एक सहज दर्रे से नंदा देवी, द्रोणागिरी और हाथी–घोड़ा पर्वत के क़रीबी दृश्य।"
+    },
+    "suits": {
+      "en": "First-timers who want big Himalayan views without a hard summit push.",
+      "hi": "पहली बार जाने वाले, जो कठिन शिखर चढ़ाई के बिना बड़े हिमालयी दृश्य चाहते हैं।"
+    },
+    "editorial": {
+      "label": "editors-pick",
+      "reason": {
+        "en": "Our recommended first Himalayan pass for winter.",
+        "hi": "सर्दियों के पहले हिमालयी दर्रे के लिए हमारी सिफ़ारिश।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dunagiri_from_Kuari_Pass.jpg/960px-Dunagiri_from_Kuari_Pass.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dunagiri_from_Kuari_Pass.jpg/500px-Dunagiri_from_Kuari_Pass.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Dunagiri_from_Kuari_Pass.jpg/1280px-Dunagiri_from_Kuari_Pass.jpg",
+      "width": 960,
+      "height": 638,
+      "scope": "route",
+      "alt": {
+        "en": "Dunagiri peak glowing in pink evening light, seen from Kuari Pass",
+        "hi": "कुआरी पास से दिखती, शाम की गुलाबी रोशनी में द्रोणागिरी चोटी"
+      },
+      "author": "Sumodm",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunagiri_from_Kuari_Pass.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "dayara-bugyal",
-    "name": { "en": "Dayara Bugyal", "hi": "दयारा बुग्याल" },
-    "aliases": ["dayara", "bakaria top"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Raithal or Barsu, Uttarkashi", "hi": "रैथल या बारसू, उत्तरकाशी" },
-    "totalDays": 6, "walkingDays": 4,
-    "maxAltitudeM": 3750, "distanceKm": 21, "dailyHours": "3–5",
+    "name": {
+      "en": "Dayara Bugyal",
+      "hi": "दयारा बुग्याल"
+    },
+    "aliases": [
+      "dayara",
+      "bakaria top"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Raithal or Barsu, Uttarkashi",
+      "hi": "रैथल या बारसू, उत्तरकाशी"
+    },
+    "totalDays": 6,
+    "walkingDays": 4,
+    "maxAltitudeM": 3750,
+    "distanceKm": 21,
+    "dailyHours": "3–5",
     "difficulty": "easy-moderate",
-    "months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12], "bestMonths": [12, 1, 2, 3],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      12,
+      1,
+      2,
+      3
+    ],
     "guide": "recommended",
-    "types": ["beginner", "family", "winter"], "landscapes": ["meadow", "forest"],
-    "highlight": { "en": "One of the widest high meadows in Uttarakhand, snow-covered in winter.", "hi": "उत्तराखंड के सबसे विस्तृत ऊँचे बुग्यालों में से एक, सर्दियों में बर्फ़ से ढका।" },
-    "verification": { "status": "unverified", "localCheck": { "en": "Overnight camping on Uttarakhand bugyals has been restricted by court orders; confirm where camps are currently permitted.", "hi": "अदालती आदेशों से उत्तराखंड के बुग्यालों पर रात्रि कैंपिंग प्रतिबंधित रही है; पुष्टि करें कि अभी कहाँ कैंप की अनुमति है।" } }
+    "types": [
+      "beginner",
+      "family",
+      "winter"
+    ],
+    "landscapes": [
+      "meadow",
+      "forest"
+    ],
+    "highlight": {
+      "en": "One of the widest high meadows in Uttarakhand, snow-covered in winter.",
+      "hi": "उत्तराखंड के सबसे विस्तृत ऊँचे बुग्यालों में से एक, सर्दियों में बर्फ़ से ढका।"
+    },
+    "verification": {
+      "status": "unverified",
+      "localCheck": {
+        "en": "Overnight camping on Uttarakhand bugyals has been restricted by court orders; confirm where camps are currently permitted.",
+        "hi": "अदालती आदेशों से उत्तराखंड के बुग्यालों पर रात्रि कैंपिंग प्रतिबंधित रही है; पुष्टि करें कि अभी कहाँ कैंप की अनुमति है।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Dayara_Bugyal_%2849011110098%29.jpg/960px-Dayara_Bugyal_%2849011110098%29.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Dayara_Bugyal_%2849011110098%29.jpg/500px-Dayara_Bugyal_%2849011110098%29.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Dayara_Bugyal_%2849011110098%29.jpg/1280px-Dayara_Bugyal_%2849011110098%29.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Grassy slopes of Dayara Bugyal edged by forest under low cloud",
+        "hi": "निचले बादलों के नीचे जंगल से घिरी दयारा बुग्याल की घास वाली ढलानें"
+      },
+      "author": "Mike Prince from Bangalore, India",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dayara_Bugyal_(49011110098).jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "har-ki-dun",
-    "name": { "en": "Har Ki Dun", "hi": "हर की दून" },
-    "aliases": ["harkidun", "har ki doon"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Sankri / Taluka", "hi": "सांकरी / तालुका" },
-    "totalDays": 7, "walkingDays": 5,
-    "maxAltitudeM": 3566, "distanceKm": 47, "dailyHours": "5–7",
+    "name": {
+      "en": "Har Ki Dun",
+      "hi": "हर की दून"
+    },
+    "aliases": [
+      "harkidun",
+      "har ki doon"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Sankri / Taluka",
+      "hi": "सांकरी / तालुका"
+    },
+    "totalDays": 7,
+    "walkingDays": 5,
+    "maxAltitudeM": 3566,
+    "distanceKm": 47,
+    "dailyHours": "5–7",
     "difficulty": "easy-moderate",
-    "months": [4, 5, 6, 9, 10, 11, 12], "bestMonths": [4, 5, 10, 11],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      4,
+      5,
+      10,
+      11
+    ],
     "guide": "recommended",
-    "permits": { "en": "Govind National Park entry permit required.", "hi": "गोविंद राष्ट्रीय उद्यान का प्रवेश परमिट आवश्यक।" },
-    "types": ["beginner", "family"], "landscapes": ["valley", "village", "forest"],
-    "highlight": { "en": "Old wooden villages of Osla and Seema below the Swargarohini peaks.", "hi": "स्वर्गारोहिणी चोटियों के नीचे ओसला और सीमा के पुराने लकड़ी के गाँव।" },
-    "editorial": { "label": "classic", "reason": { "en": "A long-established valley walk with strong village culture.", "hi": "गाँव की संस्कृति से भरी, लंबे समय से चली आ रही घाटी की पदयात्रा।" } }
+    "permits": {
+      "en": "Govind National Park entry permit required.",
+      "hi": "गोविंद राष्ट्रीय उद्यान का प्रवेश परमिट आवश्यक।"
+    },
+    "types": [
+      "beginner",
+      "family"
+    ],
+    "landscapes": [
+      "valley",
+      "village",
+      "forest"
+    ],
+    "highlight": {
+      "en": "Old wooden villages of Osla and Seema below the Swargarohini peaks.",
+      "hi": "स्वर्गारोहिणी चोटियों के नीचे ओसला और सीमा के पुराने लकड़ी के गाँव।"
+    },
+    "editorial": {
+      "label": "classic",
+      "reason": {
+        "en": "A long-established valley walk with strong village culture.",
+        "hi": "गाँव की संस्कृति से भरी, लंबे समय से चली आ रही घाटी की पदयात्रा।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Entering_Har_Ki_Dun.JPG/960px-Entering_Har_Ki_Dun.JPG",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Entering_Har_Ki_Dun.JPG/500px-Entering_Har_Ki_Dun.JPG",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Entering_Har_Ki_Dun.JPG/1280px-Entering_Har_Ki_Dun.JPG",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "River winding through the Har Ki Dun valley, with conifers and rocky peaks",
+        "hi": "हर की दून घाटी में बहती नदी, देवदार के पेड़ों और चट्टानी चोटियों के साथ"
+      },
+      "author": "Omkar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entering_Har_Ki_Dun.JPG",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "nag-tibba",
-    "name": { "en": "Nag Tibba", "hi": "नाग टिब्बा" },
-    "aliases": ["nagtibba"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Pantwari, near Mussoorie", "hi": "पंतवाड़ी, मसूरी के पास" },
-    "totalDays": 2, "walkingDays": 2,
-    "maxAltitudeM": 3022, "distanceKm": 16, "dailyHours": "4–5",
+    "name": {
+      "en": "Nag Tibba",
+      "hi": "नाग टिब्बा"
+    },
+    "aliases": [
+      "nagtibba"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Pantwari, near Mussoorie",
+      "hi": "पंतवाड़ी, मसूरी के पास"
+    },
+    "totalDays": 2,
+    "walkingDays": 2,
+    "maxAltitudeM": 3022,
+    "distanceKm": 16,
+    "dailyHours": "4–5",
     "difficulty": "easy",
-    "months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12], "bestMonths": [10, 11, 12, 1],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      10,
+      11,
+      12,
+      1
+    ],
     "guide": "recommended",
-    "types": ["weekend", "beginner", "family"], "landscapes": ["summit", "forest"],
-    "highlight": { "en": "A short summit near Dehradun with a wide view of the Bandarpoonch range.", "hi": "देहरादून के पास एक छोटा शिखर, बंदरपूँछ श्रृंखला के विस्तृत दृश्य के साथ।" }
+    "types": [
+      "weekend",
+      "beginner",
+      "family"
+    ],
+    "landscapes": [
+      "summit",
+      "forest"
+    ],
+    "highlight": {
+      "en": "A short summit near Dehradun with a wide view of the Bandarpoonch range.",
+      "hi": "देहरादून के पास एक छोटा शिखर, बंदरपूँछ श्रृंखला के विस्तृत दृश्य के साथ।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Nag_Tibba_02.jpg/960px-Nag_Tibba_02.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Nag_Tibba_02.jpg/500px-Nag_Tibba_02.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Nag_Tibba_02.jpg/1280px-Nag_Tibba_02.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "Terraced green hillsides on the way to Nag Tibba under a cloudy sky",
+        "hi": "बादलों भरे आसमान के नीचे नाग टिब्बा के रास्ते में सीढ़ीदार हरी पहाड़ियाँ"
+      },
+      "author": "Bhuwan Mahajan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nag_Tibba_02.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "chopta-chandrashila",
-    "name": { "en": "Chopta – Tungnath – Chandrashila", "hi": "चोपता – तुंगनाथ – चंद्रशिला" },
-    "aliases": ["chopta", "chandrashila", "tungnath", "deoriatal"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Chopta (often combined with Deoria Tal from Sari)", "hi": "चोपता (अक्सर सारी से देवरिया ताल के साथ)" },
-    "totalDays": 4, "walkingDays": 3,
-    "maxAltitudeM": 4000, "distanceKm": 20, "dailyHours": "3–6",
+    "name": {
+      "en": "Chopta – Tungnath – Chandrashila",
+      "hi": "चोपता – तुंगनाथ – चंद्रशिला"
+    },
+    "aliases": [
+      "chopta",
+      "chandrashila",
+      "tungnath",
+      "deoriatal"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Chopta (often combined with Deoria Tal from Sari)",
+      "hi": "चोपता (अक्सर सारी से देवरिया ताल के साथ)"
+    },
+    "totalDays": 4,
+    "walkingDays": 3,
+    "maxAltitudeM": 4000,
+    "distanceKm": 20,
+    "dailyHours": "3–6",
     "difficulty": "easy-moderate",
-    "months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12], "bestMonths": [10, 11, 12, 3, 4],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      10,
+      11,
+      12,
+      3,
+      4
+    ],
     "guide": "recommended",
-    "permits": { "en": "Lies in Kedarnath Wildlife Sanctuary; forest entry rules apply. Tungnath temple is closed in winter.", "hi": "केदारनाथ वन्यजीव अभयारण्य में स्थित; वन प्रवेश नियम लागू। तुंगनाथ मंदिर सर्दियों में बंद रहता है।" },
-    "types": ["beginner", "pilgrimage", "weekend"], "landscapes": ["summit", "meadow", "lake"],
-    "highlight": { "en": "Tungnath, among the highest Shiva temples, then a 360° summit view.", "hi": "सबसे ऊँचे शिव मंदिरों में से एक तुंगनाथ, फिर शिखर से 360° दृश्य।" },
-    "editorial": { "label": "popular", "reason": { "en": "Short, accessible and widely visited.", "hi": "छोटा, सुलभ और बहुत लोकप्रिय।" } }
+    "permits": {
+      "en": "Lies in Kedarnath Wildlife Sanctuary; forest entry rules apply. Tungnath temple is closed in winter.",
+      "hi": "केदारनाथ वन्यजीव अभयारण्य में स्थित; वन प्रवेश नियम लागू। तुंगनाथ मंदिर सर्दियों में बंद रहता है।"
+    },
+    "types": [
+      "beginner",
+      "pilgrimage",
+      "weekend"
+    ],
+    "landscapes": [
+      "summit",
+      "meadow",
+      "lake"
+    ],
+    "highlight": {
+      "en": "Tungnath, among the highest Shiva temples, then a 360° summit view.",
+      "hi": "सबसे ऊँचे शिव मंदिरों में से एक तुंगनाथ, फिर शिखर से 360° दृश्य।"
+    },
+    "editorial": {
+      "label": "popular",
+      "reason": {
+        "en": "Short, accessible and widely visited.",
+        "hi": "छोटा, सुलभ और बहुत लोकप्रिय।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Himalayan_Peaks_from_Tungnath.jpg/960px-Himalayan_Peaks_from_Tungnath.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Himalayan_Peaks_from_Tungnath.jpg/500px-Himalayan_Peaks_from_Tungnath.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Himalayan_Peaks_from_Tungnath.jpg/1280px-Himalayan_Peaks_from_Tungnath.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Snow peaks rising above a sea of clouds, seen from Tungnath",
+        "hi": "तुंगनाथ से दिखती, बादलों के समुद्र के ऊपर उठती बर्फ़ीली चोटियाँ"
+      },
+      "author": "Padmanabhan07",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_Peaks_from_Tungnath.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "gaumukh-tapovan",
-    "name": { "en": "Gaumukh – Tapovan", "hi": "गौमुख – तपोवन" },
-    "aliases": ["gaumukh", "tapovan", "gangotri glacier"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Gangotri", "hi": "गंगोत्री" },
-    "totalDays": 7, "walkingDays": 5,
-    "maxAltitudeM": 4460, "distanceKm": 46, "dailyHours": "5–7",
+    "name": {
+      "en": "Gaumukh – Tapovan",
+      "hi": "गौमुख – तपोवन"
+    },
+    "aliases": [
+      "gaumukh",
+      "tapovan",
+      "gangotri glacier"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Gangotri",
+      "hi": "गंगोत्री"
+    },
+    "totalDays": 7,
+    "walkingDays": 5,
+    "maxAltitudeM": 4460,
+    "distanceKm": 46,
+    "dailyHours": "5–7",
     "difficulty": "difficult",
-    "months": [5, 6, 9, 10], "bestMonths": [5, 6, 9, 10],
-    "guide": "recommended", "specialPermit": true,
-    "permits": { "en": "Gangotri National Park permit with a daily cap on trekkers; obtain in Uttarkashi or as currently specified.", "hi": "गंगोत्री राष्ट्रीय उद्यान परमिट, जिसमें प्रतिदिन ट्रेकर्स की सीमा तय है; उत्तरकाशी से या वर्तमान नियम के अनुसार लें।" },
-    "types": ["pilgrimage", "high-altitude"], "landscapes": ["glacier", "valley"],
-    "highlight": { "en": "The snout of the Gangotri glacier, source of the Bhagirathi, beneath Shivling.", "hi": "शिवलिंग पर्वत के नीचे, भागीरथी के उद्गम गंगोत्री ग्लेशियर का मुख।" },
-    "limitations": { "en": "Rockfall-prone moraine above Gaumukh; route conditions change yearly.", "hi": "गौमुख के ऊपर पत्थर गिरने वाला मोरेन; रास्ते की स्थिति हर साल बदलती है।" }
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "guide": "recommended",
+    "specialPermit": true,
+    "permits": {
+      "en": "Gangotri National Park permit with a daily cap on trekkers; obtain in Uttarkashi or as currently specified.",
+      "hi": "गंगोत्री राष्ट्रीय उद्यान परमिट, जिसमें प्रतिदिन ट्रेकर्स की सीमा तय है; उत्तरकाशी से या वर्तमान नियम के अनुसार लें।"
+    },
+    "types": [
+      "pilgrimage",
+      "high-altitude"
+    ],
+    "landscapes": [
+      "glacier",
+      "valley"
+    ],
+    "highlight": {
+      "en": "The snout of the Gangotri glacier, source of the Bhagirathi, beneath Shivling.",
+      "hi": "शिवलिंग पर्वत के नीचे, भागीरथी के उद्गम गंगोत्री ग्लेशियर का मुख।"
+    },
+    "limitations": {
+      "en": "Rockfall-prone moraine above Gaumukh; route conditions change yearly.",
+      "hi": "गौमुख के ऊपर पत्थर गिरने वाला मोरेन; रास्ते की स्थिति हर साल बदलती है।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gaumukh_Glacier.jpg/960px-Gaumukh_Glacier.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gaumukh_Glacier.jpg/500px-Gaumukh_Glacier.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gaumukh_Glacier.jpg/1280px-Gaumukh_Glacier.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Ice cliffs at Gaumukh, the snout of the Gangotri glacier, above a boulder-strewn riverbed",
+        "hi": "गौमुख की बर्फ़ीली दीवार — गंगोत्री ग्लेशियर का मुख, नीचे पत्थरों से भरी नदी"
+      },
+      "author": "ShekharRawat07",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaumukh_Glacier.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "pindari-glacier",
-    "name": { "en": "Pindari Glacier", "hi": "पिंडारी ग्लेशियर" },
-    "aliases": ["pindari"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Kharkiya / Loharkhet, Bageshwar", "hi": "खरकिया / लोहारखेत, बागेश्वर" },
-    "totalDays": 6, "walkingDays": 5,
-    "maxAltitudeM": 3660, "distanceKm": 56, "dailyHours": "5–7",
+    "name": {
+      "en": "Pindari Glacier",
+      "hi": "पिंडारी ग्लेशियर"
+    },
+    "aliases": [
+      "pindari"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Kharkiya / Loharkhet, Bageshwar",
+      "hi": "खरकिया / लोहारखेत, बागेश्वर"
+    },
+    "totalDays": 6,
+    "walkingDays": 5,
+    "maxAltitudeM": 3660,
+    "distanceKm": 56,
+    "dailyHours": "5–7",
     "difficulty": "moderate",
-    "months": [4, 5, 6, 9, 10, 11], "bestMonths": [5, 6, 10],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "bestMonths": [
+      5,
+      6,
+      10
+    ],
     "guide": "recommended",
-    "types": ["beginner"], "landscapes": ["glacier", "valley", "forest", "village"],
-    "highlight": { "en": "A Kumaon valley walk ending at the zero point below the Pindari glacier.", "hi": "कुमाऊँ की घाटी की पदयात्रा, जो पिंडारी ग्लेशियर के नीचे ज़ीरो पॉइंट पर समाप्त होती है।" },
-    "editorial": { "label": "quieter", "reason": { "en": "Sees far fewer groups than Garhwal's popular routes.", "hi": "गढ़वाल के लोकप्रिय रास्तों की तुलना में बहुत कम समूह आते हैं।" } }
+    "types": [
+      "beginner"
+    ],
+    "landscapes": [
+      "glacier",
+      "valley",
+      "forest",
+      "village"
+    ],
+    "highlight": {
+      "en": "A Kumaon valley walk ending at the zero point below the Pindari glacier.",
+      "hi": "कुमाऊँ की घाटी की पदयात्रा, जो पिंडारी ग्लेशियर के नीचे ज़ीरो पॉइंट पर समाप्त होती है।"
+    },
+    "editorial": {
+      "label": "quieter",
+      "reason": {
+        "en": "Sees far fewer groups than Garhwal's popular routes.",
+        "hi": "गढ़वाल के लोकप्रिय रास्तों की तुलना में बहुत कम समूह आते हैं।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg/960px-Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg/500px-Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg/1280px-Pindari_Glacier%2C_Bageshwar%2C_in_Indian_Himalayas%2C_Uttarakhand.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Trail through a green meadow leading towards the snowy peaks above Pindari glacier",
+        "hi": "हरे मैदान से होकर पिंडारी ग्लेशियर के ऊपर की बर्फ़ीली चोटियों की ओर जाता रास्ता"
+      },
+      "author": "Harshit SR",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pindari_Glacier,_Bageshwar,_in_Indian_Himalayas,_Uttarakhand.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "rupin-pass",
-    "name": { "en": "Rupin Pass", "hi": "रुपिन पास" },
-    "aliases": ["rupin"],
-    "countries": ["india"], "region": "uttarakhand",
-    "area": { "en": "Uttarakhand to Himachal Pradesh", "hi": "उत्तराखंड से हिमाचल प्रदेश" },
-    "start": { "en": "Dhaula (ends at Sangla, Kinnaur)", "hi": "धौला (समापन सांगला, किन्नौर में)" },
-    "totalDays": 8, "walkingDays": 7,
-    "maxAltitudeM": 4650, "distanceKm": 52, "dailyHours": "5–8",
+    "name": {
+      "en": "Rupin Pass",
+      "hi": "रुपिन पास"
+    },
+    "aliases": [
+      "rupin"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "area": {
+      "en": "Uttarakhand to Himachal Pradesh",
+      "hi": "उत्तराखंड से हिमाचल प्रदेश"
+    },
+    "start": {
+      "en": "Dhaula (ends at Sangla, Kinnaur)",
+      "hi": "धौला (समापन सांगला, किन्नौर में)"
+    },
+    "totalDays": 8,
+    "walkingDays": 7,
+    "maxAltitudeM": 4650,
+    "distanceKm": 52,
+    "dailyHours": "5–8",
     "difficulty": "difficult",
-    "months": [5, 6, 9, 10], "bestMonths": [5, 6, 9],
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9
+    ],
     "guide": "recommended",
-    "types": ["high-altitude"], "landscapes": ["pass", "valley", "village", "forest"],
-    "highlight": { "en": "Hanging villages, a three-tier waterfall and a snow gully to the pass.", "hi": "लटकते से गाँव, तीन-स्तरीय झरना और दर्रे तक बर्फ़ीली घाटी।" },
-    "limitations": { "en": "One-way crossing between states; return transport needs planning.", "hi": "दो राज्यों के बीच एकतरफ़ा पार; वापसी का परिवहन पहले से तय करें।" }
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "pass",
+      "valley",
+      "village",
+      "forest"
+    ],
+    "highlight": {
+      "en": "Hanging villages, a three-tier waterfall and a snow gully to the pass.",
+      "hi": "लटकते से गाँव, तीन-स्तरीय झरना और दर्रे तक बर्फ़ीली घाटी।"
+    },
+    "limitations": {
+      "en": "One-way crossing between states; return transport needs planning.",
+      "hi": "दो राज्यों के बीच एकतरफ़ा पार; वापसी का परिवहन पहले से तय करें।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rupin_Pass.jpg/960px-Rupin_Pass.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rupin_Pass.jpg/500px-Rupin_Pass.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rupin_Pass.jpg/1280px-Rupin_Pass.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "Stone cairns and prayer flags on the snowy top of Rupin Pass",
+        "hi": "रुपिन पास की बर्फ़ीली चोटी पर पत्थरों के ढेर और प्रार्थना झंडे"
+      },
+      "author": "Nikitaparwani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rupin_Pass.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "bali-pass",
-    "name": { "en": "Bali Pass", "hi": "बाली पास" },
-    "aliases": ["bali"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Sankri (ends near Yamunotri)", "hi": "सांकरी (समापन यमुनोत्री के पास)" },
-    "totalDays": 8, "walkingDays": 7,
-    "maxAltitudeM": 4950, "distanceKm": 60, "dailyHours": "5–9",
+    "name": {
+      "en": "Bali Pass",
+      "hi": "बाली पास"
+    },
+    "aliases": [
+      "bali"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Sankri (ends near Yamunotri)",
+      "hi": "सांकरी (समापन यमुनोत्री के पास)"
+    },
+    "totalDays": 8,
+    "walkingDays": 7,
+    "maxAltitudeM": 4950,
+    "distanceKm": 60,
+    "dailyHours": "5–9",
     "difficulty": "very-difficult",
-    "months": [5, 6, 9, 10], "bestMonths": [6, 9],
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      6,
+      9
+    ],
     "guide": "required",
-    "types": ["high-altitude", "expedition"], "landscapes": ["pass", "valley", "meadow"],
-    "highlight": { "en": "A steep, exposed pass linking Har Ki Dun valley with Yamunotri.", "hi": "हर की दून घाटी को यमुनोत्री से जोड़ने वाला खड़ा, खुला दर्रा।" },
-    "limitations": { "en": "Exposed descent; not suitable without prior high-altitude pass experience.", "hi": "खुली ढलान वाली उतराई; ऊँचे दर्रे के अनुभव के बिना उपयुक्त नहीं।" }
+    "types": [
+      "high-altitude",
+      "expedition"
+    ],
+    "landscapes": [
+      "pass",
+      "valley",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "A steep, exposed pass linking Har Ki Dun valley with Yamunotri.",
+      "hi": "हर की दून घाटी को यमुनोत्री से जोड़ने वाला खड़ा, खुला दर्रा।"
+    },
+    "limitations": {
+      "en": "Exposed descent; not suitable without prior high-altitude pass experience.",
+      "hi": "खुली ढलान वाली उतराई; ऊँचे दर्रे के अनुभव के बिना उपयुक्त नहीं।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg/960px-Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg/500px-Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg/1280px-Ruinsara_tal%2CDhumdhar_kandi_pass_1991_-_panoramio.jpg",
+      "width": 960,
+      "height": 614,
+      "scope": "route",
+      "alt": {
+        "en": "Ruinsara Tal lake in a green valley with tents on its shore",
+        "hi": "हरी घाटी में रुइनसारा ताल, किनारे पर टेंट"
+      },
+      "subject": {
+        "en": "Ruinsara Tal, a camp on the approach to Bali Pass (1991)",
+        "hi": "रुइनसारा ताल, बाली पास के रास्ते का एक कैंप (1991)"
+      },
+      "author": "Biswajit Majumdar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ruinsara_tal,Dhumdhar_kandi_pass_1991_-_panoramio.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "ali-bedni-bugyal",
-    "name": { "en": "Ali – Bedni Bugyal", "hi": "आली – बेदनी बुग्याल" },
-    "aliases": ["ali bugyal", "bedni bugyal", "bedni"],
-    "countries": ["india"], "region": "uttarakhand",
-    "start": { "en": "Lohajung / Wan, Chamoli", "hi": "लोहाजंग / वाण, चमोली" },
-    "totalDays": 6, "walkingDays": 5,
-    "maxAltitudeM": 3600, "distanceKm": null, "dailyHours": "4–6",
+    "name": {
+      "en": "Ali – Bedni Bugyal",
+      "hi": "आली – बेदनी बुग्याल"
+    },
+    "aliases": [
+      "ali bugyal",
+      "bedni bugyal",
+      "bedni"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "uttarakhand",
+    "start": {
+      "en": "Lohajung / Wan, Chamoli",
+      "hi": "लोहाजंग / वाण, चमोली"
+    },
+    "totalDays": 6,
+    "walkingDays": 5,
+    "maxAltitudeM": 3600,
+    "distanceKm": null,
+    "dailyHours": "4–6",
     "difficulty": "moderate",
-    "months": [5, 6, 9, 10], "bestMonths": [5, 9, 10],
-    "guide": "recommended", "specialPermit": true,
-    "types": [], "landscapes": ["meadow", "forest"],
-    "highlight": { "en": "Two of the largest high-altitude meadows in the Garhwal Himalaya.", "hi": "गढ़वाल हिमालय के दो सबसे बड़े ऊँचाई वाले बुग्याल।" },
-    "verification": { "status": "unverified", "localCheck": { "en": "A 2018 Uttarakhand High Court order restricted overnight stays on bugyals, including Ali and Bedni. Confirm the current rules and camp locations with the forest department before planning.", "hi": "2018 के उत्तराखंड हाईकोर्ट आदेश ने आली और बेदनी सहित बुग्यालों पर रात्रि ठहराव प्रतिबंधित किया। योजना से पहले वन विभाग से वर्तमान नियम और कैंप स्थान की पुष्टि करें।" } }
+    "months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "bestMonths": [
+      5,
+      9,
+      10
+    ],
+    "guide": "recommended",
+    "specialPermit": true,
+    "types": [],
+    "landscapes": [
+      "meadow",
+      "forest"
+    ],
+    "highlight": {
+      "en": "Two of the largest high-altitude meadows in the Garhwal Himalaya.",
+      "hi": "गढ़वाल हिमालय के दो सबसे बड़े ऊँचाई वाले बुग्याल।"
+    },
+    "verification": {
+      "status": "unverified",
+      "localCheck": {
+        "en": "A 2018 Uttarakhand High Court order restricted overnight stays on bugyals, including Ali and Bedni. Confirm the current rules and camp locations with the forest department before planning.",
+        "hi": "2018 के उत्तराखंड हाईकोर्ट आदेश ने आली और बेदनी सहित बुग्यालों पर रात्रि ठहराव प्रतिबंधित किया। योजना से पहले वन विभाग से वर्तमान नियम और कैंप स्थान की पुष्टि करें।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ali_Bugyal.jpg/960px-Ali_Bugyal.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ali_Bugyal.jpg/500px-Ali_Bugyal.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ali_Bugyal.jpg/1280px-Ali_Bugyal.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Rolling green meadow of Ali Bugyal under a blue sky",
+        "hi": "नीले आसमान के नीचे आली बुग्याल का लहरदार हरा मैदान"
+      },
+      "author": "Vaibhav Dautkhani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ali_Bugyal.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   }
 ]

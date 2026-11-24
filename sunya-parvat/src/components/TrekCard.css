@@ -6,6 +6,24 @@
 }
 .trek-visual--tall { aspect-ratio: auto; height: 100%; }
 .trek-visual svg, .trek-visual img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.trek-visual img { filter: saturate(0.88) contrast(1.02); background: var(--bg-3); }
+.trek-visual__scope {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.6rem;
+  font-size: 0.68rem;
+  padding: 0.15rem 0.5rem;
+  background: rgba(10, 10, 8, 0.78);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+  z-index: 1;
+}
+.trek-visual__scope--quiet { color: var(--text-muted); }
+
+.photo-credit { font-size: 0.75rem; color: var(--text-muted); line-height: 1.5; }
+.photo-credit a { color: var(--text-secondary); text-decoration: underline; text-underline-offset: 2px; }
+.photo-credit a:hover { color: var(--text-primary); }
+.photo-credit__scope { color: var(--text-secondary); }
 
 .tcard {
   position: relative;

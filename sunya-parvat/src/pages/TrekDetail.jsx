@@ -7,8 +7,9 @@ import { useLang } from '../i18n';
 import { useAsk } from '../components/AskSunya';
 import { SaveButton, CompareToggle } from '../components/TrekCard';
 import TrekCard from '../components/TrekCard';
-import TrekVisual from '../components/TrekVisual';
+import TrekVisual, { PhotoCredit } from '../components/TrekVisual';
 import Itinerary from '../components/Itinerary';
+import EnquiryForm from '../components/EnquiryForm';
 import Tx, { Fact, NotVerified } from '../components/Tx';
 import { relatedTreks } from '../lib/catalog';
 import * as fmt from '../lib/format';
@@ -77,7 +78,7 @@ export function TrekView({ trek, preview = false }) {
   return (
     <article className="td">
       <header className="td__hero">
-        <TrekVisual trek={trek} tall className="td__visual" />
+        <TrekVisual trek={trek} tall className="td__visual" priority showScope={false} />
         <div className="td__hero-shade" />
         <div className="container td__hero-content">
           {!preview && (
@@ -101,6 +102,7 @@ export function TrekView({ trek, preview = false }) {
               </button>
             </div>
           )}
+          <div className="td__credit"><PhotoCredit trek={trek} /></div>
         </div>
       </header>
 
@@ -219,13 +221,13 @@ export function TrekView({ trek, preview = false }) {
           ))}
 
           {!preview && (
-            <section className="td-enquire">
-              <h2 className="td-section__title">{t('td.enquireTitle')}</h2>
+            <section className="td-enquire" id={anchor('enquire')} aria-labelledby={`${anchor('enquire')}-h`}>
+              <h2 id={`${anchor('enquire')}-h`} className="td-section__title">{t('td.enquireTitle')}</h2>
               <p className="td__p">{t('td.enquireText')}</p>
-              <div className="td__actions">
-                <button type="button" className="btn btn--primary" onClick={() => openAsk(lang === 'hi' ? `${tx(trek.name)} के बारे में बताइए` : `Tell me about ${trek.name.en}`)}>{t('td.ask')}</button>
-                <Link to={`/connect?trek=${trek.id}`} className="btn btn--ghost">{t('td.writeToUs')}</Link>
+              <div className="td__actions" style={{ marginBottom: '1.6rem' }}>
+                <button type="button" className="btn btn--ghost btn--sm" onClick={() => openAsk(lang === 'hi' ? `${tx(trek.name)} के बारे में बताइए` : `Tell me about ${trek.name.en}`)}>{t('td.ask')}</button>
               </div>
+              <EnquiryForm trek={trek} idPrefix={`enq-${trek.id}`} compact />
             </section>
           )}
 

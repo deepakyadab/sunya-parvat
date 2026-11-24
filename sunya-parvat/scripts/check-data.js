@@ -54,6 +54,17 @@ const { loadTreks, importEsm } = require('./lib');
     });
     if (it.length && t.totalDays != null && it.length !== t.totalDays) warn(`itinerary has ${it.length} days but totalDays is ${t.totalDays}`);
 
+    const img = t.image;
+    if (!img) warn('no photo yet (placeholder shown)');
+    else {
+      ['src', 'sourceUrl', 'license', 'author'].forEach(k => { if (!img[k]) err(`image.${k} missing`); });
+      if (!img.alt || !img.alt.en) err('image.alt.en missing');
+      if (!img.alt || !img.alt.hi) warn('image.alt.hi missing');
+      if (!['route', 'regional'].includes(img.scope)) err('image.scope must be "route" or "regional"');
+      if (/\bNC\b|\bND\b|non-?commercial|no ?deriv|^GFDL/i.test(img.license || '')) err(`image license "${img.license}" is not suitable (NC/ND, or GFDL-only which needs the full license text)`);
+      if (img.licenseUrl == null && !/public domain|cc0|pd/i.test(img.license || '')) warn('image.licenseUrl missing');
+    }
+
     (t.journal || []).forEach(a => { if (!articleIds.has(a)) err(`unknown journal article "${a}"`); });
 
     ['totalDays', 'maxAltitudeM', 'start'].forEach(k => { if (t[k] == null) warn(`${k} unknown (shown as "Not verified")`); });
@@ -63,7 +74,10 @@ const { loadTreks, importEsm } = require('./lib');
   });
 
   const unverified = warnings.filter(w => w.endsWith('facts not yet verified')).length;
-  console.log(`Checked ${treks.length} treks: ${errors.length} errors, ${warnings.length - unverified} warnings, ${unverified} unverified.`);
+  const noPhoto = warnings.filter(w => w.endsWith('placeholder shown)')).length;
+  const regional = treks.filter(t => t.image && t.image.scope === 'regional').length;
+  console.log(`Checked ${treks.length} treks: ${errors.length} errors, ${warnings.length - unverified - noPhoto} warnings, ${unverified} unverified.`);
+  console.log(`Photos: ${treks.length - noPhoto} with photo (${regional} regional), ${noPhoto} placeholder.`);
   if (process.argv.includes('--verbose')) warnings.forEach(w => console.log('  warn ' + w));
   errors.forEach(e => console.error('  ERROR ' + e));
   process.exit(errors.length ? 1 : 0);

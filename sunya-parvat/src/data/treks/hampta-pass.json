@@ -1,60 +1,242 @@
 {
   "id": "hampta-pass",
-  "legacyIds": ["hampta-pass-crossing"],
-  "name": { "en": "Hampta Pass", "hi": "हम्टा पास" },
-  "title": { "en": "The Crossing at Hampta", "hi": "हम्टा का पार" },
-  "tagline": { "en": "Two worlds, one pass between them", "hi": "दो दुनियाएँ, बीच में एक दर्रा" },
-  "aliases": ["hampta", "hamta", "hamta pass"],
-  "countries": ["india"], "region": "himachal",
-  "area": { "en": "Kullu valley to Lahaul", "hi": "कुल्लू घाटी से लाहौल" },
-  "start": { "en": "Jobra, near Manali", "hi": "जोबरा, मनाली के पास" },
-  "end": { "en": "Chatru, Lahaul (drive back to Manali)", "hi": "छतरू, लाहौल (मनाली तक ड्राइव)" },
-  "totalDays": 5, "walkingDays": 4,
-  "durationNote": { "en": "5 days Manali to Manali: four walking days and a drive back from Chatru on day 5. A Chandratal side trip, when the road is open, adds a day. No buffer day is included.", "hi": "मनाली से मनाली 5 दिन: चार दिन पैदल और पाँचवें दिन छतरू से वापसी ड्राइव। सड़क खुली हो तो चंद्रताल का एक दिन जुड़ता है। कोई बफ़र दिन शामिल नहीं।" },
-  "maxAltitudeM": 4270, "distanceKm": 26, "dailyHours": "4–8",
+  "legacyIds": [
+    "hampta-pass-crossing"
+  ],
+  "name": {
+    "en": "Hampta Pass",
+    "hi": "हम्टा पास"
+  },
+  "title": {
+    "en": "The Crossing at Hampta",
+    "hi": "हम्टा का पार"
+  },
+  "tagline": {
+    "en": "Two worlds, one pass between them",
+    "hi": "दो दुनियाएँ, बीच में एक दर्रा"
+  },
+  "aliases": [
+    "hampta",
+    "hamta",
+    "hamta pass"
+  ],
+  "countries": [
+    "india"
+  ],
+  "region": "himachal",
+  "area": {
+    "en": "Kullu valley to Lahaul",
+    "hi": "कुल्लू घाटी से लाहौल"
+  },
+  "start": {
+    "en": "Jobra, near Manali",
+    "hi": "जोबरा, मनाली के पास"
+  },
+  "end": {
+    "en": "Chatru, Lahaul (drive back to Manali)",
+    "hi": "छतरू, लाहौल (मनाली तक ड्राइव)"
+  },
+  "totalDays": 5,
+  "walkingDays": 4,
+  "durationNote": {
+    "en": "5 days Manali to Manali: four walking days and a drive back from Chatru on day 5. A Chandratal side trip, when the road is open, adds a day. No buffer day is included.",
+    "hi": "मनाली से मनाली 5 दिन: चार दिन पैदल और पाँचवें दिन छतरू से वापसी ड्राइव। सड़क खुली हो तो चंद्रताल का एक दिन जुड़ता है। कोई बफ़र दिन शामिल नहीं।"
+  },
+  "maxAltitudeM": 4270,
+  "distanceKm": 26,
+  "dailyHours": "4–8",
   "difficulty": "moderate",
-  "months": [6, 7, 8, 9], "bestMonths": [7, 8, 9],
+  "months": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "bestMonths": [
+    7,
+    8,
+    9
+  ],
   "restDays": 0,
   "guide": "recommended",
-  "permits": { "en": "Forest/camping permits are handled locally; a permit is also needed to drive onward from Chatru towards Chandratal and Spiti in some seasons.", "hi": "वन/कैंपिंग परमिट स्थानीय स्तर पर; कुछ मौसमों में छतरू से चंद्रताल और स्पीति की ओर जाने के लिए भी परमिट चाहिए।" },
-  "types": ["monsoon-friendly"], "landscapes": ["pass", "valley", "desert", "meadow"],
-  "highlight": { "en": "A sudden change from green Kullu valley to the barren landscape of Lahaul at the pass.", "hi": "दर्रे पर हरी कुल्लू घाटी से लाहौल के बंजर परिदृश्य में अचानक बदलाव।" },
-  "suits": { "en": "Fit beginners ready for one long pass day, and monsoon-season trekkers (Lahaul lies in a rain shadow).", "hi": "एक लंबे दर्रे वाले दिन के लिए तैयार फ़िट शुरुआती, और मानसून में ट्रेक करने वाले (लाहौल वर्षा-छाया में है)।" },
-  "limitations": { "en": "River crossings can be high in the afternoon; the pass day is long and steep on the descent.", "hi": "दोपहर में नदी पार करना कठिन हो सकता है; दर्रे का दिन लंबा है और उतराई खड़ी।" },
-  "overview": { "en": "The Hampta Pass connects two different Himalayan worlds. On one side, green and lush Kullu. On the other, the stark brown slopes of Lahaul along the Chandra river. The crossing teaches you that change happens exactly at the threshold.", "hi": "हम्टा पास दो अलग हिमालयी दुनियाओं को जोड़ता है। एक ओर हरी-भरी कुल्लू घाटी। दूसरी ओर चंद्रा नदी के किनारे लाहौल की सूखी भूरी ढलानें। यह पार सिखाता है कि बदलाव ठीक दहलीज़ पर होता है।" },
-  "highlights": [
-    { "en": "Meadow camps at Chika and Balu Ka Ghera", "hi": "छिका और बालू का घेरा के मैदानी कैंप" },
-    { "en": "The view into Lahaul from the 4,270 m pass", "hi": "4,270 मी. दर्रे से लाहौल का दृश्य" },
-    { "en": "Optional drive to Chandratal lake", "hi": "चंद्रताल झील तक वैकल्पिक ड्राइव" }
+  "permits": {
+    "en": "Forest/camping permits are handled locally; a permit is also needed to drive onward from Chatru towards Chandratal and Spiti in some seasons.",
+    "hi": "वन/कैंपिंग परमिट स्थानीय स्तर पर; कुछ मौसमों में छतरू से चंद्रताल और स्पीति की ओर जाने के लिए भी परमिट चाहिए।"
+  },
+  "types": [
+    "monsoon-friendly"
   ],
-  "reach": { "en": "Overnight bus from Delhi to Manali (12–14 hours), or fly to Bhuntar (Kullu) and drive about 2 hours. Jobra is a short drive from Manali.", "hi": "दिल्ली से मनाली रात की बस (12–14 घंटे), या भुंतर (कुल्लू) तक उड़ान और लगभग 2 घंटे की ड्राइव। जोबरा मनाली से थोड़ी दूरी पर है।" },
-  "fitness": { "en": "5 km in under 40 minutes, and comfort with a 6–7 hour day.", "hi": "40 मिनट से कम में 5 किमी, और 6–7 घंटे के दिन में सहजता।" },
-  "gear": { "en": "Waterproof shoes or sandals for river crossings, rain jacket, warm layer for the pass, trekking poles.", "hi": "नदी पार के लिए वाटरप्रूफ़ जूते या सैंडल, रेन जैकेट, दर्रे के लिए गर्म परत, ट्रेकिंग पोल।" },
-  "stay": { "en": "Tents throughout the trail.", "hi": "पूरे रास्ते पर टेंट।" },
-  "journal": ["seasonal-planning", "fitness-for-trekking"],
+  "landscapes": [
+    "pass",
+    "valley",
+    "desert",
+    "meadow"
+  ],
+  "highlight": {
+    "en": "A sudden change from green Kullu valley to the barren landscape of Lahaul at the pass.",
+    "hi": "दर्रे पर हरी कुल्लू घाटी से लाहौल के बंजर परिदृश्य में अचानक बदलाव।"
+  },
+  "suits": {
+    "en": "Fit beginners ready for one long pass day, and monsoon-season trekkers (Lahaul lies in a rain shadow).",
+    "hi": "एक लंबे दर्रे वाले दिन के लिए तैयार फ़िट शुरुआती, और मानसून में ट्रेक करने वाले (लाहौल वर्षा-छाया में है)।"
+  },
+  "limitations": {
+    "en": "River crossings can be high in the afternoon; the pass day is long and steep on the descent.",
+    "hi": "दोपहर में नदी पार करना कठिन हो सकता है; दर्रे का दिन लंबा है और उतराई खड़ी।"
+  },
+  "overview": {
+    "en": "The Hampta Pass connects two different Himalayan worlds. On one side, green and lush Kullu. On the other, the stark brown slopes of Lahaul along the Chandra river. The crossing teaches you that change happens exactly at the threshold.",
+    "hi": "हम्टा पास दो अलग हिमालयी दुनियाओं को जोड़ता है। एक ओर हरी-भरी कुल्लू घाटी। दूसरी ओर चंद्रा नदी के किनारे लाहौल की सूखी भूरी ढलानें। यह पार सिखाता है कि बदलाव ठीक दहलीज़ पर होता है।"
+  },
+  "highlights": [
+    {
+      "en": "Meadow camps at Chika and Balu Ka Ghera",
+      "hi": "छिका और बालू का घेरा के मैदानी कैंप"
+    },
+    {
+      "en": "The view into Lahaul from the 4,270 m pass",
+      "hi": "4,270 मी. दर्रे से लाहौल का दृश्य"
+    },
+    {
+      "en": "Optional drive to Chandratal lake",
+      "hi": "चंद्रताल झील तक वैकल्पिक ड्राइव"
+    }
+  ],
+  "reach": {
+    "en": "Overnight bus from Delhi to Manali (12–14 hours), or fly to Bhuntar (Kullu) and drive about 2 hours. Jobra is a short drive from Manali.",
+    "hi": "दिल्ली से मनाली रात की बस (12–14 घंटे), या भुंतर (कुल्लू) तक उड़ान और लगभग 2 घंटे की ड्राइव। जोबरा मनाली से थोड़ी दूरी पर है।"
+  },
+  "fitness": {
+    "en": "5 km in under 40 minutes, and comfort with a 6–7 hour day.",
+    "hi": "40 मिनट से कम में 5 किमी, और 6–7 घंटे के दिन में सहजता।"
+  },
+  "gear": {
+    "en": "Waterproof shoes or sandals for river crossings, rain jacket, warm layer for the pass, trekking poles.",
+    "hi": "नदी पार के लिए वाटरप्रूफ़ जूते या सैंडल, रेन जैकेट, दर्रे के लिए गर्म परत, ट्रेकिंग पोल।"
+  },
+  "stay": {
+    "en": "Tents throughout the trail.",
+    "hi": "पूरे रास्ते पर टेंट।"
+  },
+  "journal": [
+    "seasonal-planning",
+    "fitness-for-trekking"
+  ],
   "itinerary": [
-    { "day": 1, "kind": "trek", "route": { "en": "Manali → Jobra → Chika", "hi": "मनाली → जोबरा → छिका" },
-      "description": { "en": "Short drive, then a gentle walk through forest to the first meadow camp.", "hi": "छोटी ड्राइव, फिर जंगल से होकर पहले मैदानी कैंप तक हल्की पदयात्रा।" },
-      "distanceKm": 3, "hours": "2–3", "altitudeM": 3100,
-      "overnight": { "en": "Tents, Chika", "hi": "टेंट, छिका" },
-      "reflection": "The mountains here feel friendly. Do not be fooled by friendliness. Learn your pace now." },
-    { "day": 2, "kind": "trek", "route": { "en": "Chika → Balu Ka Ghera", "hi": "छिका → बालू का घेरा" },
-      "description": { "en": "Valley walk with a couple of stream crossings.", "hi": "कुछ नालों को पार करते हुए घाटी की पदयात्रा।" },
-      "distanceKm": 7, "ascentM": 500, "hours": "5–6", "altitudeM": 3600,
-      "overnight": { "en": "Tents, Balu Ka Ghera", "hi": "टेंट, बालू का घेरा" },
-      "reflection": "Glacial streams cross the valley. You wake to cold water and silence. This is the last green night." },
-    { "day": 3, "kind": "summit", "route": { "en": "Balu Ka Ghera → Hampta Pass → Shea Goru", "hi": "बालू का घेरा → हम्टा पास → शिया गोरू" },
-      "description": { "en": "Early start to the pass, then a steep descent into Lahaul.", "hi": "दर्रे के लिए सुबह जल्दी, फिर लाहौल में खड़ी उतराई।" },
-      "distanceKm": 9, "ascentM": 670, "descentM": 420, "hours": "8–9", "altitudeM": 4270,
-      "overnight": { "en": "Tents, Shea Goru", "hi": "टेंट, शिया गोरू" },
-      "reflection": "And then you are on the other side. The world is brown and vast and alien. The mountain did not warn you." },
-    { "day": 4, "kind": "trek", "route": { "en": "Shea Goru → Chatru", "hi": "शिया गोरू → छतरू" },
-      "description": { "en": "Walk down to the Chandra valley.", "hi": "चंद्रा घाटी तक नीचे उतरें।" },
-      "distanceKm": 7, "descentM": 490, "hours": "4–5", "altitudeM": 3360,
-      "overnight": { "en": "Tents, Chatru", "hi": "टेंट, छतरू" },
-      "reflection": "The Chandra river runs through a brown valley. You feel you've entered a different country of the mind." },
-    { "day": 5, "kind": "travel", "route": { "en": "Chatru → Manali (optional Chandratal first)", "hi": "छतरू → मनाली (पहले वैकल्पिक चंद्रताल)" },
-      "description": { "en": "Drive back over Atal Tunnel or Rohtang, depending on road status.", "hi": "सड़क की स्थिति अनुसार अटल टनल या रोहतांग से वापसी।" },
-      "hours": "3–6 (drive)" }
-  ]
+    {
+      "day": 1,
+      "kind": "trek",
+      "route": {
+        "en": "Manali → Jobra → Chika",
+        "hi": "मनाली → जोबरा → छिका"
+      },
+      "description": {
+        "en": "Short drive, then a gentle walk through forest to the first meadow camp.",
+        "hi": "छोटी ड्राइव, फिर जंगल से होकर पहले मैदानी कैंप तक हल्की पदयात्रा।"
+      },
+      "distanceKm": 3,
+      "hours": "2–3",
+      "altitudeM": 3100,
+      "overnight": {
+        "en": "Tents, Chika",
+        "hi": "टेंट, छिका"
+      },
+      "reflection": "The mountains here feel friendly. Do not be fooled by friendliness. Learn your pace now."
+    },
+    {
+      "day": 2,
+      "kind": "trek",
+      "route": {
+        "en": "Chika → Balu Ka Ghera",
+        "hi": "छिका → बालू का घेरा"
+      },
+      "description": {
+        "en": "Valley walk with a couple of stream crossings.",
+        "hi": "कुछ नालों को पार करते हुए घाटी की पदयात्रा।"
+      },
+      "distanceKm": 7,
+      "ascentM": 500,
+      "hours": "5–6",
+      "altitudeM": 3600,
+      "overnight": {
+        "en": "Tents, Balu Ka Ghera",
+        "hi": "टेंट, बालू का घेरा"
+      },
+      "reflection": "Glacial streams cross the valley. You wake to cold water and silence. This is the last green night."
+    },
+    {
+      "day": 3,
+      "kind": "summit",
+      "route": {
+        "en": "Balu Ka Ghera → Hampta Pass → Shea Goru",
+        "hi": "बालू का घेरा → हम्टा पास → शिया गोरू"
+      },
+      "description": {
+        "en": "Early start to the pass, then a steep descent into Lahaul.",
+        "hi": "दर्रे के लिए सुबह जल्दी, फिर लाहौल में खड़ी उतराई।"
+      },
+      "distanceKm": 9,
+      "ascentM": 670,
+      "descentM": 420,
+      "hours": "8–9",
+      "altitudeM": 4270,
+      "overnight": {
+        "en": "Tents, Shea Goru",
+        "hi": "टेंट, शिया गोरू"
+      },
+      "reflection": "And then you are on the other side. The world is brown and vast and alien. The mountain did not warn you."
+    },
+    {
+      "day": 4,
+      "kind": "trek",
+      "route": {
+        "en": "Shea Goru → Chatru",
+        "hi": "शिया गोरू → छतरू"
+      },
+      "description": {
+        "en": "Walk down to the Chandra valley.",
+        "hi": "चंद्रा घाटी तक नीचे उतरें।"
+      },
+      "distanceKm": 7,
+      "descentM": 490,
+      "hours": "4–5",
+      "altitudeM": 3360,
+      "overnight": {
+        "en": "Tents, Chatru",
+        "hi": "टेंट, छतरू"
+      },
+      "reflection": "The Chandra river runs through a brown valley. You feel you've entered a different country of the mind."
+    },
+    {
+      "day": 5,
+      "kind": "travel",
+      "route": {
+        "en": "Chatru → Manali (optional Chandratal first)",
+        "hi": "छतरू → मनाली (पहले वैकल्पिक चंद्रताल)"
+      },
+      "description": {
+        "en": "Drive back over Atal Tunnel or Rohtang, depending on road status.",
+        "hi": "सड़क की स्थिति अनुसार अटल टनल या रोहतांग से वापसी।"
+      },
+      "hours": "3–6 (drive)"
+    }
+  ],
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hampta_Pass_Himachal_Pradesh_India.jpg/960px-Hampta_Pass_Himachal_Pradesh_India.jpg",
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hampta_Pass_Himachal_Pradesh_India.jpg/500px-Hampta_Pass_Himachal_Pradesh_India.jpg",
+    "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Hampta_Pass_Himachal_Pradesh_India.jpg/1280px-Hampta_Pass_Himachal_Pradesh_India.jpg",
+    "width": 960,
+    "height": 639,
+    "scope": "route",
+    "alt": {
+      "en": "Rocky valley near Hampta Pass with snow peaks half hidden in cloud",
+      "hi": "हम्टा पास के पास चट्टानी घाटी, बादलों में आधी छिपी बर्फ़ीली चोटियाँ"
+    },
+    "author": "Raja Selvaraj",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hampta_Pass_Himachal_Pradesh_India.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
 }

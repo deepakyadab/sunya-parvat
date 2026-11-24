@@ -1,68 +1,269 @@
 {
   "id": "brahmatal",
-  "legacyIds": ["brahmatal-winter-circuit"],
-  "name": { "en": "Brahmatal", "hi": "ब्रह्मताल" },
-  "title": { "en": "Brahmatal in Winter", "hi": "सर्दियों में ब्रह्मताल" },
-  "tagline": { "en": "The frozen lake and the silence of Trishul", "hi": "जमी हुई झील और त्रिशूल का मौन" },
-  "aliases": ["brahmataal", "brahma tal"],
-  "countries": ["india"], "region": "uttarakhand",
-  "area": { "en": "Chamoli district", "hi": "चमोली ज़िला" },
-  "start": { "en": "Lohajung", "hi": "लोहाजंग" },
-  "end": { "en": "Lohajung", "hi": "लोहाजंग" },
-  "totalDays": 6, "walkingDays": 4,
-  "durationNote": { "en": "6 days Kathgodam to Kathgodam: day 1 and day 6 are road travel (about 9–10 hours each). 4 walking days; no buffer day.", "hi": "काठगोदाम से काठगोदाम 6 दिन: पहला और छठा दिन सड़क यात्रा (लगभग 9–10 घंटे)। 4 दिन पैदल; कोई बफ़र दिन नहीं।" },
+  "legacyIds": [
+    "brahmatal-winter-circuit"
+  ],
+  "name": {
+    "en": "Brahmatal",
+    "hi": "ब्रह्मताल"
+  },
+  "title": {
+    "en": "Brahmatal in Winter",
+    "hi": "सर्दियों में ब्रह्मताल"
+  },
+  "tagline": {
+    "en": "The frozen lake and the silence of Trishul",
+    "hi": "जमी हुई झील और त्रिशूल का मौन"
+  },
+  "aliases": [
+    "brahmataal",
+    "brahma tal"
+  ],
+  "countries": [
+    "india"
+  ],
+  "region": "uttarakhand",
+  "area": {
+    "en": "Chamoli district",
+    "hi": "चमोली ज़िला"
+  },
+  "start": {
+    "en": "Lohajung",
+    "hi": "लोहाजंग"
+  },
+  "end": {
+    "en": "Lohajung",
+    "hi": "लोहाजंग"
+  },
+  "totalDays": 6,
+  "walkingDays": 4,
+  "durationNote": {
+    "en": "6 days Kathgodam to Kathgodam: day 1 and day 6 are road travel (about 9–10 hours each). 4 walking days; no buffer day.",
+    "hi": "काठगोदाम से काठगोदाम 6 दिन: पहला और छठा दिन सड़क यात्रा (लगभग 9–10 घंटे)। 4 दिन पैदल; कोई बफ़र दिन नहीं।"
+  },
   "maxAltitudeM": 3734,
-  "altitudeNote": { "en": "Brahmatal top is commonly cited at about 3,734 m. An earlier version of this site said 3,862 m; that figure has not been confirmed.", "hi": "ब्रह्मताल टॉप की ऊँचाई आमतौर पर लगभग 3,734 मी. बताई जाती है। इस साइट के पुराने संस्करण में 3,862 मी. लिखा था; उसकी पुष्टि नहीं हुई है।" },
-  "distanceKm": 24, "dailyHours": "4–7",
+  "altitudeNote": {
+    "en": "Brahmatal top is commonly cited at about 3,734 m. An earlier version of this site said 3,862 m; that figure has not been confirmed.",
+    "hi": "ब्रह्मताल टॉप की ऊँचाई आमतौर पर लगभग 3,734 मी. बताई जाती है। इस साइट के पुराने संस्करण में 3,862 मी. लिखा था; उसकी पुष्टि नहीं हुई है।"
+  },
+  "distanceKm": 24,
+  "dailyHours": "4–7",
   "difficulty": "moderate",
-  "months": [12, 1, 2, 3, 4], "bestMonths": [12, 1, 2],
+  "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+  ],
+  "bestMonths": [
+    12,
+    1,
+    2
+  ],
   "restDays": 0,
   "guide": "recommended",
-  "permits": { "en": "Forest department permits arranged in Lohajung; check whether camping locations have changed.", "hi": "लोहाजंग में वन विभाग का परमिट; जाँचें कि कैंप स्थान बदले तो नहीं।" },
-  "types": ["winter"], "landscapes": ["lake", "summit", "forest", "ridge"],
-  "highlight": { "en": "Uninterrupted views of Trishul and Nanda Ghunti from a winter ridge.", "hi": "सर्दियों की एक रिज से त्रिशूल और नंदा घुंटी के बेरोक दृश्य।" },
-  "suits": { "en": "Fit beginners or second-time trekkers wanting a winter trek with big views.", "hi": "फ़िट शुरुआती या दूसरी बार जाने वाले, जो बड़े दृश्यों वाला सर्दियों का ट्रेक चाहते हैं।" },
-  "limitations": { "en": "Long drive from Kathgodam; deep snow can slow summit day.", "hi": "काठगोदाम से लंबी ड्राइव; गहरी बर्फ़ शिखर के दिन को धीमा कर सकती है।" },
-  "editorial": { "label": "quieter", "reason": { "en": "A calmer winter alternative to Kedarkantha.", "hi": "केदारकांठा का शांत सर्दियों वाला विकल्प।" } },
-  "overview": { "en": "A winter trail through rhododendron forest to frozen lakes, with Trishul and Nanda Ghunti close above. People who do Brahmatal in winter often find themselves unable to explain what it gave them.", "hi": "बुरांश के जंगल से होकर जमी झीलों तक सर्दियों का रास्ता, ऊपर पास में त्रिशूल और नंदा घुंटी। जो लोग सर्दियों में ब्रह्मताल जाते हैं, अक्सर समझा नहीं पाते कि उन्हें क्या मिला।" },
-  "highlights": [
-    { "en": "Bekaltal, a forest lake", "hi": "बेकलताल, जंगल की झील" },
-    { "en": "Brahmatal lake, often frozen in January", "hi": "ब्रह्मताल झील, जनवरी में अक्सर जमी हुई" },
-    { "en": "Ridge views of Trishul and Nanda Ghunti", "hi": "रिज से त्रिशूल और नंदा घुंटी के दृश्य" }
+  "permits": {
+    "en": "Forest department permits arranged in Lohajung; check whether camping locations have changed.",
+    "hi": "लोहाजंग में वन विभाग का परमिट; जाँचें कि कैंप स्थान बदले तो नहीं।"
+  },
+  "types": [
+    "winter"
   ],
-  "reach": { "en": "Nearest railway station: Kathgodam. Lohajung is about 210–230 km by road (9–10 hours) via Gwaldam and Debal.", "hi": "निकटतम रेलवे स्टेशन: काठगोदाम। लोहाजंग सड़क से लगभग 210–230 किमी (9–10 घंटे) है, ग्वालदम और देवाल होते हुए।" },
-  "fitness": { "en": "Build to 5 km in under 40 minutes and hill walks with a loaded pack.", "hi": "40 मिनट से कम में 5 किमी और भारी बैग के साथ पहाड़ी चढ़ाई का अभ्यास करें।" },
-  "gear": { "en": "Winter layers and a down jacket, waterproof shoes, microspikes and gaiters, sunglasses, headlamp.", "hi": "सर्दियों की परतें और डाउन जैकेट, वाटरप्रूफ़ जूते, माइक्रोस्पाइक और गेटर, धूप का चश्मा, हेडलैम्प।" },
-  "stay": { "en": "Homestay in Lohajung, tents on the trail.", "hi": "लोहाजंग में होमस्टे, रास्ते पर टेंट।" },
-  "journal": ["choosing-your-first-trek", "altitude-awareness"],
+  "landscapes": [
+    "lake",
+    "summit",
+    "forest",
+    "ridge"
+  ],
+  "highlight": {
+    "en": "Uninterrupted views of Trishul and Nanda Ghunti from a winter ridge.",
+    "hi": "सर्दियों की एक रिज से त्रिशूल और नंदा घुंटी के बेरोक दृश्य।"
+  },
+  "suits": {
+    "en": "Fit beginners or second-time trekkers wanting a winter trek with big views.",
+    "hi": "फ़िट शुरुआती या दूसरी बार जाने वाले, जो बड़े दृश्यों वाला सर्दियों का ट्रेक चाहते हैं।"
+  },
+  "limitations": {
+    "en": "Long drive from Kathgodam; deep snow can slow summit day.",
+    "hi": "काठगोदाम से लंबी ड्राइव; गहरी बर्फ़ शिखर के दिन को धीमा कर सकती है।"
+  },
+  "editorial": {
+    "label": "quieter",
+    "reason": {
+      "en": "A calmer winter alternative to Kedarkantha.",
+      "hi": "केदारकांठा का शांत सर्दियों वाला विकल्प।"
+    }
+  },
+  "overview": {
+    "en": "A winter trail through rhododendron forest to frozen lakes, with Trishul and Nanda Ghunti close above. People who do Brahmatal in winter often find themselves unable to explain what it gave them.",
+    "hi": "बुरांश के जंगल से होकर जमी झीलों तक सर्दियों का रास्ता, ऊपर पास में त्रिशूल और नंदा घुंटी। जो लोग सर्दियों में ब्रह्मताल जाते हैं, अक्सर समझा नहीं पाते कि उन्हें क्या मिला।"
+  },
+  "highlights": [
+    {
+      "en": "Bekaltal, a forest lake",
+      "hi": "बेकलताल, जंगल की झील"
+    },
+    {
+      "en": "Brahmatal lake, often frozen in January",
+      "hi": "ब्रह्मताल झील, जनवरी में अक्सर जमी हुई"
+    },
+    {
+      "en": "Ridge views of Trishul and Nanda Ghunti",
+      "hi": "रिज से त्रिशूल और नंदा घुंटी के दृश्य"
+    }
+  ],
+  "reach": {
+    "en": "Nearest railway station: Kathgodam. Lohajung is about 210–230 km by road (9–10 hours) via Gwaldam and Debal.",
+    "hi": "निकटतम रेलवे स्टेशन: काठगोदाम। लोहाजंग सड़क से लगभग 210–230 किमी (9–10 घंटे) है, ग्वालदम और देवाल होते हुए।"
+  },
+  "fitness": {
+    "en": "Build to 5 km in under 40 minutes and hill walks with a loaded pack.",
+    "hi": "40 मिनट से कम में 5 किमी और भारी बैग के साथ पहाड़ी चढ़ाई का अभ्यास करें।"
+  },
+  "gear": {
+    "en": "Winter layers and a down jacket, waterproof shoes, microspikes and gaiters, sunglasses, headlamp.",
+    "hi": "सर्दियों की परतें और डाउन जैकेट, वाटरप्रूफ़ जूते, माइक्रोस्पाइक और गेटर, धूप का चश्मा, हेडलैम्प।"
+  },
+  "stay": {
+    "en": "Homestay in Lohajung, tents on the trail.",
+    "hi": "लोहाजंग में होमस्टे, रास्ते पर टेंट।"
+  },
+  "journal": [
+    "choosing-your-first-trek",
+    "altitude-awareness"
+  ],
   "itinerary": [
-    { "day": 1, "kind": "travel", "route": { "en": "Kathgodam → Lohajung", "hi": "काठगोदाम → लोहाजंग" },
-      "description": { "en": "Full day on mountain roads.", "hi": "पहाड़ी सड़कों पर पूरा दिन।" },
-      "hours": "9–10 (drive)", "altitudeM": 2300,
-      "overnight": { "en": "Homestay, Lohajung", "hi": "होमस्टे, लोहाजंग" },
-      "reflection": "A small ridge village. The air here is already cleaned of the city. You eat well. You sleep at 8pm without apology." },
-    { "day": 2, "kind": "trek", "route": { "en": "Lohajung → Bekaltal", "hi": "लोहाजंग → बेकलताल" },
-      "description": { "en": "Through village fields and oak forest to the lake.", "hi": "गाँव के खेतों और बाँज के जंगल से होकर झील तक।" },
-      "distanceKm": 6, "hours": "5–6", "altitudeM": 2950,
-      "overnight": { "en": "Tents near Bekaltal", "hi": "बेकलताल के पास टेंट" },
-      "reflection": "Through dense forest to a lake surrounded by trees. In winter it is partially frozen. The stillness here is complete." },
-    { "day": 3, "kind": "trek", "route": { "en": "Bekaltal → Brahmatal camp", "hi": "बेकलताल → ब्रह्मताल कैंप" },
-      "description": { "en": "Climb out of the forest onto the ridge; first full views of Trishul.", "hi": "जंगल से निकलकर रिज पर; त्रिशूल के पहले पूरे दृश्य।" },
-      "distanceKm": 6, "hours": "5–6", "altitudeM": 3200,
-      "overnight": { "en": "Tents", "hi": "टेंट" },
-      "reflection": "The namesake lake, frozen over. Trishul and Nanda Ghunti rise above you." },
-    { "day": 4, "kind": "summit", "route": { "en": "Brahmatal top and back to camp", "hi": "ब्रह्मताल टॉप और वापस कैंप" },
-      "description": { "en": "Early climb to the top for a 360° view, then return.", "hi": "360° दृश्य के लिए सुबह जल्दी चढ़ाई, फिर वापसी।" },
-      "distanceKm": 6, "hours": "6–7", "altitudeM": 3734,
-      "overnight": { "en": "Tents", "hi": "टेंट" },
-      "reflection": "The 360° view is a kind of permission to feel awe without irony." },
-    { "day": 5, "kind": "trek", "route": { "en": "Camp → Lohajung", "hi": "कैंप → लोहाजंग" },
-      "description": { "en": "Long descent through forest.", "hi": "जंगल से होकर लंबी उतराई।" },
-      "distanceKm": 8, "hours": "5–6", "altitudeM": 2300,
-      "overnight": { "en": "Homestay, Lohajung", "hi": "होमस्टे, लोहाजंग" },
-      "reflection": "Through a different forest, a different kind of quiet." },
-    { "day": 6, "kind": "travel", "route": { "en": "Lohajung → Kathgodam", "hi": "लोहाजंग → काठगोदाम" },
-      "description": { "en": "Drive back.", "hi": "वापसी की ड्राइव।" }, "hours": "9–10 (drive)",
-      "reflection": "The journey back is also a carrying." }
-  ]
+    {
+      "day": 1,
+      "kind": "travel",
+      "route": {
+        "en": "Kathgodam → Lohajung",
+        "hi": "काठगोदाम → लोहाजंग"
+      },
+      "description": {
+        "en": "Full day on mountain roads.",
+        "hi": "पहाड़ी सड़कों पर पूरा दिन।"
+      },
+      "hours": "9–10 (drive)",
+      "altitudeM": 2300,
+      "overnight": {
+        "en": "Homestay, Lohajung",
+        "hi": "होमस्टे, लोहाजंग"
+      },
+      "reflection": "A small ridge village. The air here is already cleaned of the city. You eat well. You sleep at 8pm without apology."
+    },
+    {
+      "day": 2,
+      "kind": "trek",
+      "route": {
+        "en": "Lohajung → Bekaltal",
+        "hi": "लोहाजंग → बेकलताल"
+      },
+      "description": {
+        "en": "Through village fields and oak forest to the lake.",
+        "hi": "गाँव के खेतों और बाँज के जंगल से होकर झील तक।"
+      },
+      "distanceKm": 6,
+      "hours": "5–6",
+      "altitudeM": 2950,
+      "overnight": {
+        "en": "Tents near Bekaltal",
+        "hi": "बेकलताल के पास टेंट"
+      },
+      "reflection": "Through dense forest to a lake surrounded by trees. In winter it is partially frozen. The stillness here is complete."
+    },
+    {
+      "day": 3,
+      "kind": "trek",
+      "route": {
+        "en": "Bekaltal → Brahmatal camp",
+        "hi": "बेकलताल → ब्रह्मताल कैंप"
+      },
+      "description": {
+        "en": "Climb out of the forest onto the ridge; first full views of Trishul.",
+        "hi": "जंगल से निकलकर रिज पर; त्रिशूल के पहले पूरे दृश्य।"
+      },
+      "distanceKm": 6,
+      "hours": "5–6",
+      "altitudeM": 3200,
+      "overnight": {
+        "en": "Tents",
+        "hi": "टेंट"
+      },
+      "reflection": "The namesake lake, frozen over. Trishul and Nanda Ghunti rise above you."
+    },
+    {
+      "day": 4,
+      "kind": "summit",
+      "route": {
+        "en": "Brahmatal top and back to camp",
+        "hi": "ब्रह्मताल टॉप और वापस कैंप"
+      },
+      "description": {
+        "en": "Early climb to the top for a 360° view, then return.",
+        "hi": "360° दृश्य के लिए सुबह जल्दी चढ़ाई, फिर वापसी।"
+      },
+      "distanceKm": 6,
+      "hours": "6–7",
+      "altitudeM": 3734,
+      "overnight": {
+        "en": "Tents",
+        "hi": "टेंट"
+      },
+      "reflection": "The 360° view is a kind of permission to feel awe without irony."
+    },
+    {
+      "day": 5,
+      "kind": "trek",
+      "route": {
+        "en": "Camp → Lohajung",
+        "hi": "कैंप → लोहाजंग"
+      },
+      "description": {
+        "en": "Long descent through forest.",
+        "hi": "जंगल से होकर लंबी उतराई।"
+      },
+      "distanceKm": 8,
+      "hours": "5–6",
+      "altitudeM": 2300,
+      "overnight": {
+        "en": "Homestay, Lohajung",
+        "hi": "होमस्टे, लोहाजंग"
+      },
+      "reflection": "Through a different forest, a different kind of quiet."
+    },
+    {
+      "day": 6,
+      "kind": "travel",
+      "route": {
+        "en": "Lohajung → Kathgodam",
+        "hi": "लोहाजंग → काठगोदाम"
+      },
+      "description": {
+        "en": "Drive back.",
+        "hi": "वापसी की ड्राइव।"
+      },
+      "hours": "9–10 (drive)",
+      "reflection": "The journey back is also a carrying."
+    }
+  ],
+  "image": {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Brahmatal.jpg/960px-Brahmatal.jpg",
+    "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Brahmatal.jpg/500px-Brahmatal.jpg",
+    "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Brahmatal.jpg/1280px-Brahmatal.jpg",
+    "width": 960,
+    "height": 586,
+    "scope": "route",
+    "alt": {
+      "en": "Frozen Brahmatal lake in deep snow, with a lone trekker on the shore",
+      "hi": "गहरी बर्फ़ में जमी ब्रह्मताल झील, किनारे पर एक अकेला ट्रेकर"
+    },
+    "author": "Arijit95jitu",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brahmatal.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
 }

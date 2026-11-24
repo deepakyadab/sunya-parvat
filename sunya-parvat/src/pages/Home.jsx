@@ -7,6 +7,7 @@ import FindMyTrek from '../components/FindMyTrek';
 import { treks } from '../data/treks';
 import { seasons } from '../data/taxonomy';
 import { articles } from '../data/journal';
+import { HERO_PHOTO } from '../data/sitePhotos';
 import { useLang } from '../i18n';
 import usePageMeta from '../lib/usePageMeta';
 import './Home.css';
@@ -37,10 +38,13 @@ export default function Home() {
       <section className="hero">
         <motion.div className="hero__bg" style={{ y: heroY }}>
           <img
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=70"
-            alt=""
+            src={HERO_PHOTO.src}
+            srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
+            sizes="100vw"
+            alt={tx(HERO_PHOTO.alt)}
             className="hero__img"
             fetchpriority="high"
+            decoding="async"
           />
         </motion.div>
         <div className="hero__shade" />
@@ -64,6 +68,10 @@ export default function Home() {
           </form>
 
           <p className="hero__stats">{t('home.stats', { n: treks.length, c: countries })}</p>
+          <p className="hero__credit">
+            {tx(HERO_PHOTO.alt)}. {t('photo.credit')}: <a href={HERO_PHOTO.sourceUrl} target="_blank" rel="noreferrer">{HERO_PHOTO.author}</a>,{' '}
+            <a href={HERO_PHOTO.licenseUrl} target="_blank" rel="noreferrer license">{HERO_PHOTO.license}</a>
+          </p>
         </div>
       </section>
 

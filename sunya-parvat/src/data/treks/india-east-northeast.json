@@ -1,97 +1,479 @@
 [
   {
     "id": "goechala",
-    "name": { "en": "Goechala", "hi": "गोएचा ला" },
-    "aliases": ["goecha la", "goechala pass", "kanchenjunga view"],
-    "countries": ["india"], "region": "sikkim",
-    "start": { "en": "Yuksom, West Sikkim", "hi": "युकसोम, पश्चिम सिक्किम" },
-    "totalDays": 11, "walkingDays": 9,
+    "name": {
+      "en": "Goechala",
+      "hi": "गोएचा ला"
+    },
+    "aliases": [
+      "goecha la",
+      "goechala pass",
+      "kanchenjunga view"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "sikkim",
+    "start": {
+      "en": "Yuksom, West Sikkim",
+      "hi": "युकसोम, पश्चिम सिक्किम"
+    },
+    "totalDays": 11,
+    "walkingDays": 9,
     "maxAltitudeM": 4600,
-    "altitudeNote": { "en": "Treks usually stop at View Point 1 (about 4,600 m); the pass beyond is generally not open to trekkers.", "hi": "ट्रेक आमतौर पर व्यू पॉइंट 1 (लगभग 4,600 मी.) पर रुकते हैं; आगे का दर्रा आमतौर पर ट्रेकर्स के लिए खुला नहीं।" },
-    "distanceKm": 90, "dailyHours": "5–9",
+    "altitudeNote": {
+      "en": "Treks usually stop at View Point 1 (about 4,600 m); the pass beyond is generally not open to trekkers.",
+      "hi": "ट्रेक आमतौर पर व्यू पॉइंट 1 (लगभग 4,600 मी.) पर रुकते हैं; आगे का दर्रा आमतौर पर ट्रेकर्स के लिए खुला नहीं।"
+    },
+    "distanceKm": 90,
+    "dailyHours": "5–9",
     "difficulty": "difficult",
-    "months": [3, 4, 5, 10, 11], "bestMonths": [4, 10, 11],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Khangchendzonga National Park permit from Yuksom; foreign nationals need a Restricted Area Permit and must trek in a registered group.", "hi": "युकसोम से कंचनजंगा राष्ट्रीय उद्यान परमिट; विदेशी नागरिकों को प्रतिबंधित क्षेत्र परमिट और पंजीकृत समूह में ट्रेक करना आवश्यक।" },
-    "types": ["high-altitude"], "landscapes": ["lake", "forest", "glacier", "pass"],
-    "highlight": { "en": "Sunrise on Kanchenjunga at close range, past Samiti lake.", "hi": "समिति झील के पास से कंचनजंगा पर क़रीब से सूर्योदय।" },
-    "editorial": { "label": "classic", "reason": { "en": "The defining trek of Sikkim.", "hi": "सिक्किम का प्रमुख ट्रेक।" } }
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "bestMonths": [
+      4,
+      10,
+      11
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Khangchendzonga National Park permit from Yuksom; foreign nationals need a Restricted Area Permit and must trek in a registered group.",
+      "hi": "युकसोम से कंचनजंगा राष्ट्रीय उद्यान परमिट; विदेशी नागरिकों को प्रतिबंधित क्षेत्र परमिट और पंजीकृत समूह में ट्रेक करना आवश्यक।"
+    },
+    "types": [
+      "high-altitude"
+    ],
+    "landscapes": [
+      "lake",
+      "forest",
+      "glacier",
+      "pass"
+    ],
+    "highlight": {
+      "en": "Sunrise on Kanchenjunga at close range, past Samiti lake.",
+      "hi": "समिति झील के पास से कंचनजंगा पर क़रीब से सूर्योदय।"
+    },
+    "editorial": {
+      "label": "classic",
+      "reason": {
+        "en": "The defining trek of Sikkim.",
+        "hi": "सिक्किम का प्रमुख ट्रेक।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/960px-Kangch-Goechala.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/500px-Kangch-Goechala.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kangch-Goechala.jpg/1280px-Kangch-Goechala.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Kangchenjunga's snow-covered face between dark ridges, seen from Goecha La",
+        "hi": "गोएचा ला से दिखता, गहरी रिजों के बीच कंचनजंगा का बर्फ़ से ढका मुख"
+      },
+      "author": "Ashinpt at enwiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kangch-Goechala.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "dzongri",
-    "name": { "en": "Dzongri", "hi": "ज़ोंगरी" },
-    "aliases": ["dzongri top", "dzongri la"],
-    "countries": ["india"], "region": "sikkim",
-    "start": { "en": "Yuksom", "hi": "युकसोम" },
-    "totalDays": 7, "walkingDays": 5,
-    "maxAltitudeM": 4170, "distanceKm": 50, "dailyHours": "5–7",
+    "name": {
+      "en": "Dzongri",
+      "hi": "ज़ोंगरी"
+    },
+    "aliases": [
+      "dzongri top",
+      "dzongri la"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "sikkim",
+    "start": {
+      "en": "Yuksom",
+      "hi": "युकसोम"
+    },
+    "totalDays": 7,
+    "walkingDays": 5,
+    "maxAltitudeM": 4170,
+    "distanceKm": 50,
+    "dailyHours": "5–7",
     "difficulty": "moderate",
-    "months": [3, 4, 5, 10, 11, 12], "bestMonths": [4, 10, 11],
-    "guide": "required", "specialPermit": true,
-    "permits": { "en": "Same permits as Goechala (Khangchendzonga National Park; RAP for foreign nationals).", "hi": "गोएचा ला जैसे ही परमिट (कंचनजंगा राष्ट्रीय उद्यान; विदेशियों के लिए RAP)।" },
-    "types": [], "landscapes": ["ridge", "forest", "summit"],
-    "highlight": { "en": "A shorter route with a wide dawn view of the Kanchenjunga massif from Dzongri top.", "hi": "ज़ोंगरी टॉप से कंचनजंगा पर्वत-समूह का विस्तृत भोर दृश्य, छोटे मार्ग पर।" }
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      4,
+      10,
+      11
+    ],
+    "guide": "required",
+    "specialPermit": true,
+    "permits": {
+      "en": "Same permits as Goechala (Khangchendzonga National Park; RAP for foreign nationals).",
+      "hi": "गोएचा ला जैसे ही परमिट (कंचनजंगा राष्ट्रीय उद्यान; विदेशियों के लिए RAP)।"
+    },
+    "types": [],
+    "landscapes": [
+      "ridge",
+      "forest",
+      "summit"
+    ],
+    "highlight": {
+      "en": "A shorter route with a wide dawn view of the Kanchenjunga massif from Dzongri top.",
+      "hi": "ज़ोंगरी टॉप से कंचनजंगा पर्वत-समूह का विस्तृत भोर दृश्य, छोटे मार्ग पर।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg/960px-Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg/500px-Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg/1280px-Kanchenjunga_Massif_From_Dzongri_Top_%28148146457%29.jpeg",
+      "width": 960,
+      "height": 536,
+      "scope": "route",
+      "alt": {
+        "en": "Snowy Kangchenjunga massif above brown autumn slopes, seen from Dzongri top",
+        "hi": "ज़ोंगरी टॉप से दिखता, भूरी शरद ढलानों के ऊपर बर्फ़ीला कंचनजंगा पर्वत-समूह"
+      },
+      "author": "Narayan Jambunathan",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchenjunga_Massif_From_Dzongri_Top_(148146457).jpeg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "sandakphu-phalut",
-    "name": { "en": "Sandakphu – Phalut (Singalila Ridge)", "hi": "संदकफू – फालुट (सिंगालीला रिज)" },
-    "aliases": ["sandakphu", "phalut", "singalila", "singalila ridge"],
-    "countries": ["india"], "region": "west-bengal",
-    "area": { "en": "Singalila National Park, along the India–Nepal border", "hi": "सिंगालीला राष्ट्रीय उद्यान, भारत–नेपाल सीमा के साथ" },
-    "start": { "en": "Manebhanjan / Chitrey, near Darjeeling", "hi": "मानेभंजन / चित्रे, दार्जिलिंग के पास" },
-    "totalDays": 6, "walkingDays": 5,
-    "durationNote": { "en": "The Singalila Ridge can be walked as a shorter 3–4 day Sandakphu round trip, or extended to Phalut as here.", "hi": "सिंगालीला रिज को 3–4 दिन के संदकफू आने-जाने के रूप में भी किया जा सकता है, या यहाँ की तरह फालुट तक बढ़ाया जा सकता है।" },
-    "maxAltitudeM": 3636, "distanceKm": 65, "dailyHours": "5–7",
+    "name": {
+      "en": "Sandakphu – Phalut (Singalila Ridge)",
+      "hi": "संदकफू – फालुट (सिंगालीला रिज)"
+    },
+    "aliases": [
+      "sandakphu",
+      "phalut",
+      "singalila",
+      "singalila ridge"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "west-bengal",
+    "area": {
+      "en": "Singalila National Park, along the India–Nepal border",
+      "hi": "सिंगालीला राष्ट्रीय उद्यान, भारत–नेपाल सीमा के साथ"
+    },
+    "start": {
+      "en": "Manebhanjan / Chitrey, near Darjeeling",
+      "hi": "मानेभंजन / चित्रे, दार्जिलिंग के पास"
+    },
+    "totalDays": 6,
+    "walkingDays": 5,
+    "durationNote": {
+      "en": "The Singalila Ridge can be walked as a shorter 3–4 day Sandakphu round trip, or extended to Phalut as here.",
+      "hi": "सिंगालीला रिज को 3–4 दिन के संदकफू आने-जाने के रूप में भी किया जा सकता है, या यहाँ की तरह फालुट तक बढ़ाया जा सकता है।"
+    },
+    "maxAltitudeM": 3636,
+    "distanceKm": 65,
+    "dailyHours": "5–7",
     "difficulty": "moderate",
-    "months": [3, 4, 5, 10, 11, 12], "bestMonths": [4, 10, 11],
+    "months": [
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      4,
+      10,
+      11
+    ],
     "guide": "required",
-    "permits": { "en": "Singalila National Park entry; hiring a local guide at Manebhanjan is mandatory.", "hi": "सिंगालीला राष्ट्रीय उद्यान प्रवेश; मानेभंजन से स्थानीय गाइड लेना अनिवार्य।" },
-    "types": ["beginner"], "landscapes": ["ridge", "forest", "village"],
-    "highlight": { "en": "One ridge with Everest, Lhotse, Makalu and Kanchenjunga on the horizon.", "hi": "एक ही रिज से क्षितिज पर एवरेस्ट, ल्होत्से, मकालू और कंचनजंगा।" },
-    "editorial": { "label": "editors-pick", "reason": { "en": "Big-peak views with teahouse-style lodges at moderate altitude.", "hi": "मध्यम ऊँचाई पर टीहाउस-शैली के लॉज के साथ बड़े शिखरों के दृश्य।" } }
+    "permits": {
+      "en": "Singalila National Park entry; hiring a local guide at Manebhanjan is mandatory.",
+      "hi": "सिंगालीला राष्ट्रीय उद्यान प्रवेश; मानेभंजन से स्थानीय गाइड लेना अनिवार्य।"
+    },
+    "types": [
+      "beginner"
+    ],
+    "landscapes": [
+      "ridge",
+      "forest",
+      "village"
+    ],
+    "highlight": {
+      "en": "One ridge with Everest, Lhotse, Makalu and Kanchenjunga on the horizon.",
+      "hi": "एक ही रिज से क्षितिज पर एवरेस्ट, ल्होत्से, मकालू और कंचनजंगा।"
+    },
+    "editorial": {
+      "label": "editors-pick",
+      "reason": {
+        "en": "Big-peak views with teahouse-style lodges at moderate altitude.",
+        "hi": "मध्यम ऊँचाई पर टीहाउस-शैली के लॉज के साथ बड़े शिखरों के दृश्य।"
+      }
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg/960px-A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg/500px-A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg/1280px-A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg",
+      "width": 960,
+      "height": 720,
+      "scope": "route",
+      "alt": {
+        "en": "Prayer flags at Sandakphu with the Kangchenjunga range along the far horizon",
+        "hi": "संदकफू पर प्रार्थना झंडे, दूर क्षितिज पर कंचनजंगा श्रृंखला"
+      },
+      "author": "Rajat63ghosh",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_VIEW_OF_MT.KANCHANJUNGA_FROM_SANDAKPHU.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "dzukou-valley",
-    "name": { "en": "Dzukou Valley", "hi": "ज़ुकू घाटी" },
-    "aliases": ["dzukou", "dzuko"],
-    "countries": ["india"], "region": "nagaland",
-    "start": { "en": "Viswema or Zakhama, near Kohima", "hi": "विस्वेमा या ज़ाखामा, कोहिमा के पास" },
-    "totalDays": 2, "walkingDays": 2,
-    "maxAltitudeM": 2450, "distanceKm": 20, "dailyHours": "3–5",
+    "name": {
+      "en": "Dzukou Valley",
+      "hi": "ज़ुकू घाटी"
+    },
+    "aliases": [
+      "dzukou",
+      "dzuko"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "nagaland",
+    "start": {
+      "en": "Viswema or Zakhama, near Kohima",
+      "hi": "विस्वेमा या ज़ाखामा, कोहिमा के पास"
+    },
+    "totalDays": 2,
+    "walkingDays": 2,
+    "maxAltitudeM": 2450,
+    "distanceKm": 20,
+    "dailyHours": "3–5",
     "difficulty": "easy-moderate",
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "bestMonths": [6, 7, 10, 11],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bestMonths": [
+      6,
+      7,
+      10,
+      11
+    ],
     "guide": "recommended",
-    "permits": { "en": "Indian visitors from outside Nagaland need an Inner Line Permit; foreign nationals register with local authorities.", "hi": "नागालैंड के बाहर के भारतीयों को इनर लाइन परमिट चाहिए; विदेशी नागरिक स्थानीय प्रशासन में पंजीकरण करें।" },
-    "types": ["weekend", "beginner", "monsoon-friendly"], "landscapes": ["valley", "meadow"],
-    "highlight": { "en": "Rolling bamboo-grass hills on the Nagaland–Manipur border, with seasonal lilies.", "hi": "नागालैंड–मणिपुर सीमा पर बाँस-घास की लहरदार पहाड़ियाँ, मौसमी लिली के साथ।" }
+    "permits": {
+      "en": "Indian visitors from outside Nagaland need an Inner Line Permit; foreign nationals register with local authorities.",
+      "hi": "नागालैंड के बाहर के भारतीयों को इनर लाइन परमिट चाहिए; विदेशी नागरिक स्थानीय प्रशासन में पंजीकरण करें।"
+    },
+    "types": [
+      "weekend",
+      "beginner",
+      "monsoon-friendly"
+    ],
+    "landscapes": [
+      "valley",
+      "meadow"
+    ],
+    "highlight": {
+      "en": "Rolling bamboo-grass hills on the Nagaland–Manipur border, with seasonal lilies.",
+      "hi": "नागालैंड–मणिपुर सीमा पर बाँस-घास की लहरदार पहाड़ियाँ, मौसमी लिली के साथ।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/960px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/500px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/1280px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg",
+      "width": 960,
+      "height": 540,
+      "scope": "route",
+      "alt": {
+        "en": "Rolling green hills of Dzukou valley covered in bamboo grass",
+        "hi": "बाँस-घास से ढकी ज़ुकू घाटी की लहरदार हरी पहाड़ियाँ"
+      },
+      "author": "Original: Samudra Bikash Hazarika Derivative work: UnpetitproleX",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "nongriat-root-bridges",
-    "name": { "en": "Nongriat & the Living Root Bridges", "hi": "नोंग्रियात और जीवित जड़ पुल" },
-    "aliases": ["nongriat", "double decker", "living root bridge", "root bridges"],
-    "countries": ["india"], "region": "meghalaya",
-    "start": { "en": "Tyrna, near Sohra (Cherrapunji)", "hi": "तिरना, सोहरा (चेरापूंजी) के पास" },
-    "totalDays": 2, "walkingDays": 2,
-    "maxAltitudeM": null, "distanceKm": 8, "dailyHours": "3–4",
+    "name": {
+      "en": "Nongriat & the Living Root Bridges",
+      "hi": "नोंग्रियात और जीवित जड़ पुल"
+    },
+    "aliases": [
+      "nongriat",
+      "double decker",
+      "living root bridge",
+      "root bridges"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "meghalaya",
+    "start": {
+      "en": "Tyrna, near Sohra (Cherrapunji)",
+      "hi": "तिरना, सोहरा (चेरापूंजी) के पास"
+    },
+    "totalDays": 2,
+    "walkingDays": 2,
+    "maxAltitudeM": null,
+    "distanceKm": 8,
+    "dailyHours": "3–4",
     "difficulty": "easy-moderate",
-    "months": [10, 11, 12, 1, 2, 3, 4], "bestMonths": [10, 11, 3],
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bestMonths": [
+      10,
+      11,
+      3
+    ],
     "guide": "not-required",
-    "types": ["weekend", "family"], "landscapes": ["forest", "village", "valley"],
-    "highlight": { "en": "Several thousand steps down to the double-decker root bridge and natural pools.", "hi": "कई हज़ार सीढ़ियाँ उतरकर डबल-डेकर जड़ पुल और प्राकृतिक कुंडों तक।" },
-    "limitations": { "en": "The climb back up the steps is the hard part; slippery in rain.", "hi": "सीढ़ियाँ वापस चढ़ना कठिन हिस्सा है; बारिश में फिसलन।" }
+    "types": [
+      "weekend",
+      "family"
+    ],
+    "landscapes": [
+      "forest",
+      "village",
+      "valley"
+    ],
+    "highlight": {
+      "en": "Several thousand steps down to the double-decker root bridge and natural pools.",
+      "hi": "कई हज़ार सीढ़ियाँ उतरकर डबल-डेकर जड़ पुल और प्राकृतिक कुंडों तक।"
+    },
+    "limitations": {
+      "en": "The climb back up the steps is the hard part; slippery in rain.",
+      "hi": "सीढ़ियाँ वापस चढ़ना कठिन हिस्सा है; बारिश में फिसलन।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg/960px-Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg/500px-Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg/1280px-Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district%2C_Meghalaya_JEG7387.jpg",
+      "width": 960,
+      "height": 636,
+      "scope": "route",
+      "alt": {
+        "en": "The double-decker living root bridge over a stream in Nongriat's forest",
+        "hi": "नोंग्रियात के जंगल में एक धारा के ऊपर डबल-डेकर जीवित जड़ पुल"
+      },
+      "author": "PJeganathan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Living_root_bridges_of_Nongriat_village_in_East_Khasi_Hills_district,_Meghalaya_JEG7387.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   },
   {
     "id": "david-scott-trail",
-    "name": { "en": "David Scott Trail", "hi": "डेविड स्कॉट ट्रेल" },
-    "aliases": ["david scott", "mawphlang"],
-    "countries": ["india"], "region": "meghalaya",
-    "start": { "en": "Mawphlang (ends at Lad Mawphlang)", "hi": "मावफ़्लांग (समापन लाड मावफ़्लांग)" },
-    "totalDays": 1, "walkingDays": 1,
-    "maxAltitudeM": null, "distanceKm": 16, "dailyHours": "5–6",
+    "name": {
+      "en": "David Scott Trail",
+      "hi": "डेविड स्कॉट ट्रेल"
+    },
+    "aliases": [
+      "david scott",
+      "mawphlang"
+    ],
+    "countries": [
+      "india"
+    ],
+    "region": "meghalaya",
+    "start": {
+      "en": "Mawphlang (ends at Lad Mawphlang)",
+      "hi": "मावफ़्लांग (समापन लाड मावफ़्लांग)"
+    },
+    "totalDays": 1,
+    "walkingDays": 1,
+    "maxAltitudeM": null,
+    "distanceKm": 16,
+    "dailyHours": "5–6",
     "difficulty": "easy-moderate",
-    "months": [10, 11, 12, 1, 2, 3, 4], "bestMonths": [10, 11, 12],
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bestMonths": [
+      10,
+      11,
+      12
+    ],
     "guide": "recommended",
-    "types": ["weekend", "family"], "landscapes": ["valley", "forest", "village"],
-    "highlight": { "en": "A 19th-century bridle path through Khasi hills, rivers and villages.", "hi": "खासी पहाड़ियों, नदियों और गाँवों से होकर 19वीं सदी का घोड़ा-मार्ग।" }
+    "types": [
+      "weekend",
+      "family"
+    ],
+    "landscapes": [
+      "valley",
+      "forest",
+      "village"
+    ],
+    "highlight": {
+      "en": "A 19th-century bridle path through Khasi hills, rivers and villages.",
+      "hi": "खासी पहाड़ियों, नदियों और गाँवों से होकर 19वीं सदी का घोड़ा-मार्ग।"
+    },
+    "image": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Stony_Arc_Bridge.jpg/960px-Stony_Arc_Bridge.jpg",
+      "srcSmall": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Stony_Arc_Bridge.jpg/500px-Stony_Arc_Bridge.jpg",
+      "srcLarge": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Stony_Arc_Bridge.jpg/1280px-Stony_Arc_Bridge.jpg",
+      "width": 960,
+      "height": 640,
+      "scope": "route",
+      "alt": {
+        "en": "Old stone arch bridge over a stream on the David Scott Trail, surrounded by greenery",
+        "hi": "डेविड स्कॉट ट्रेल पर एक धारा के ऊपर पुराना पत्थर का मेहराबदार पुल, चारों ओर हरियाली"
+      },
+      "author": "Wann Majaw",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stony_Arc_Bridge.jpg",
+      "source": "Wikimedia Commons",
+      "retrieved": "2026-11-24"
+    }
   }
 ]
