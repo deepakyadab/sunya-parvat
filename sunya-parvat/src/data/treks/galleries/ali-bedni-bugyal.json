@@ -1,0 +1,70 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Trisul_peak_from_bedni_bugyal.jpg/960px-Trisul_peak_from_bedni_bugyal.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Trisul_peak_from_bedni_bugyal.jpg/500px-Trisul_peak_from_bedni_bugyal.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Trisul_peak_from_bedni_bugyal.jpg/1280px-Trisul_peak_from_bedni_bugyal.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "Trisul peak seen from Bedni Bugyal"
+    },
+    "author": "Yash Soorma",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trisul_peak_from_bedni_bugyal.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg/960px-Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg/500px-Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg/1280px-Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg",
+    "width": 960,
+    "height": 573,
+    "scope": "route",
+    "alt": {
+      "en": "The trail from Bedni Bugyal to Ali Bugyal"
+    },
+    "author": "Biswajit Majumdar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Way_to_Ali_bugyal_from_Bedni_bugyal_-_panoramio.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Meadows_of_Ali_Bugyal.jpg/960px-Meadows_of_Ali_Bugyal.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Meadows_of_Ali_Bugyal.jpg/500px-Meadows_of_Ali_Bugyal.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Meadows_of_Ali_Bugyal.jpg/1280px-Meadows_of_Ali_Bugyal.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Meadows on the way to Ali Bugyal"
+    },
+    "author": "RitabaN GuhA",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meadows_of_Ali_Bugyal.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg/960px-Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg/500px-Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg/1280px-Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "Chaukhamba seen from Bedni Bugyal"
+    },
+    "author": "Biswajit Majumdar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chowkhamba_from_Bedni_Bugyal_-_panoramio.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

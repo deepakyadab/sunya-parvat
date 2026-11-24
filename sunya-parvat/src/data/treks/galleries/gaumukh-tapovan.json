@@ -1,0 +1,53 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Terminus_of_Gangotri_Glacier_in_2017.jpg/960px-Terminus_of_Gangotri_Glacier_in_2017.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Terminus_of_Gangotri_Glacier_in_2017.jpg/500px-Terminus_of_Gangotri_Glacier_in_2017.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Terminus_of_Gangotri_Glacier_in_2017.jpg/1280px-Terminus_of_Gangotri_Glacier_in_2017.jpg",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "The snout of the Gangotri Glacier at Gaumukh"
+    },
+    "author": "Pathupawar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminus_of_Gangotri_Glacier_in_2017.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bhagirath_kharak.jpg/960px-Bhagirath_kharak.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bhagirath_kharak.jpg/500px-Bhagirath_kharak.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Bhagirath_kharak.jpg/1280px-Bhagirath_kharak.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "The Gangotri Glacier below Bhagirathi peaks, seen from Tapovan"
+    },
+    "author": "Phani2",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bhagirath_kharak.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gangotri_glacier_snout.jpg/960px-Gangotri_glacier_snout.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gangotri_glacier_snout.jpg/500px-Gangotri_glacier_snout.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gangotri_glacier_snout.jpg/1280px-Gangotri_glacier_snout.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "The terminus of the Gangotri Glacier at Gaumukh"
+    },
+    "author": "gbSk at Flickr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gangotri_glacier_snout.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

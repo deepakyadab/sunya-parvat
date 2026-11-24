@@ -1,0 +1,36 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Mount_Jomolhari_2016.jpg/960px-Mount_Jomolhari_2016.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Mount_Jomolhari_2016.jpg/500px-Mount_Jomolhari_2016.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Mount_Jomolhari_2016.jpg/1280px-Mount_Jomolhari_2016.jpg",
+    "width": 960,
+    "height": 634,
+    "scope": "route",
+    "alt": {
+      "en": "Mount Jomolhari, Bhutan"
+    },
+    "author": "Martyn Smith",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Jomolhari_2016.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg/960px-Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg/500px-Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg/1280px-Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "Jomolhari seen from just below Nyile La, on the Jangothang side"
+    },
+    "author": "Christopher Fynn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Jomolhari_from_below_Neleyla_2009-10-10_a.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

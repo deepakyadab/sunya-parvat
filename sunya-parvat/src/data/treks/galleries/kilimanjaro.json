@@ -1,0 +1,36 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg/960px-Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg/500px-Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg/1280px-Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "Kibo, the snow-capped summit cone of Kilimanjaro"
+    },
+    "author": "Antony Trivet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro_Dormant_Volcano_In_United_Republic_Of_Tanzania_kibo_Mawenzi_Shira_Highest_Peaks-3.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Kilimanjaro_Tanzania.jpg/960px-Kilimanjaro_Tanzania.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Kilimanjaro_Tanzania.jpg/500px-Kilimanjaro_Tanzania.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Kilimanjaro_Tanzania.jpg/1280px-Kilimanjaro_Tanzania.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "Mount Kilimanjaro above the clouds"
+    },
+    "author": "Wvuijk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_Tanzania.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

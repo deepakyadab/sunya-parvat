@@ -1,0 +1,53 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Way_to_Brahmatal_.jpg/960px-Way_to_Brahmatal_.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Way_to_Brahmatal_.jpg/500px-Way_to_Brahmatal_.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Way_to_Brahmatal_.jpg/1280px-Way_to_Brahmatal_.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "Snowy trail on the way to Brahmatal"
+    },
+    "author": "Arijit95jitu",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Way_to_Brahmatal_.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg/960px-Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg/500px-Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg/1280px-Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Tents on the Bekaltal–Brahmatal route above Lohajung"
+    },
+    "author": "Daniel Romanson",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tents_at_Bekal-Brahma_Tal_Route_in_Lohajung.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Panoramic_view_of_Brahma_tal_with_camps.jpg/960px-Panoramic_view_of_Brahma_tal_with_camps.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Panoramic_view_of_Brahma_tal_with_camps.jpg/500px-Panoramic_view_of_Brahma_tal_with_camps.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Panoramic_view_of_Brahma_tal_with_camps.jpg/1280px-Panoramic_view_of_Brahma_tal_with_camps.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Camps beside Brahmatal under snow peaks"
+    },
+    "author": "Photos Worldwide",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Brahma_tal_with_camps.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg/960px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg/500px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg/1280px-Mantalai_Lake_%28Pin_Parvati-20000_ft.%29-4.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Snow peaks on the Pin Parvati Pass route"
+    },
+    "author": "Bharatkaistha",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantalai_Lake_(Pin_Parvati-20000_ft.)-4.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Flower_blooms_in_the_Pin_Parvati_Valley.JPG/960px-Flower_blooms_in_the_Pin_Parvati_Valley.JPG",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Flower_blooms_in_the_Pin_Parvati_Valley.JPG/500px-Flower_blooms_in_the_Pin_Parvati_Valley.JPG",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Flower_blooms_in_the_Pin_Parvati_Valley.JPG/1280px-Flower_blooms_in_the_Pin_Parvati_Valley.JPG",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "Wildflowers in bloom in the Parvati valley"
+    },
+    "author": "Slopetrotter",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flower_blooms_in_the_Pin_Parvati_Valley.JPG",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

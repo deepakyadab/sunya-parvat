@@ -16,6 +16,9 @@ const { loadTreks, importEsm } = require('./lib');
   const diffIds = tax.difficulties.map(d => d.id);
   const articleIds = new Set(articles.map(a => a.id));
 
+  // The same Commons file can be written with "," or "%2C", spaces or underscores.
+  const fileKey = u => { try { return decodeURIComponent(String(u || '').split(/File:|\/wiki\//).pop()).replace(/ /g, '_').toLowerCase(); } catch (e) { return String(u); } };
+
   // Galleries: src/data/treks/galleries/<trek-id>.json
   const fs = require('fs');
   const path = require('path');
@@ -101,10 +104,10 @@ const { loadTreks, importEsm } = require('./lib');
       if (!g.alt || !g.alt.en) err(`${gat}: alt.en missing`);
       if (!['route', 'regional'].includes(g.scope)) err(`${gat}: scope must be "route" or "regional"`);
       if (/\bNC\b|\bND\b|non-?commercial|no ?deriv|^GFDL/i.test(g.license || '')) err(`${gat}: license "${g.license}" is not suitable`);
-      if (t.image && g.sourceUrl === t.image.sourceUrl) err(`${gat}: repeats the hero photo`);
+      if (t.image && fileKey(g.sourceUrl) === fileKey(t.image.sourceUrl)) err(`${gat}: repeats the hero photo`);
     });
     const seenSrc = new Set();
-    gallery.forEach(g => { if (seenSrc.has(g.sourceUrl)) err(`gallery repeats ${g.sourceUrl}`); seenSrc.add(g.sourceUrl); });
+    gallery.forEach(g => { const k = fileKey(g.sourceUrl); if (seenSrc.has(k)) err(`gallery repeats ${g.sourceUrl}`); seenSrc.add(k); });
 
     const img = t.image;
     if (!img) warn('no photo yet (placeholder shown)');

@@ -105,6 +105,9 @@ export default function TrekGallery({ trek, photos }) {
   const triggers = useRef([]);
   if (!photos.length) return null;
   const name = tx(trek.name);
+  // 3-column grid, first photo 2×2: widen the last tile so the final row is never ragged.
+  const spare = photos.length >= 3 ? (photos.length + 3) % 3 : 0;
+  const lastSpan = spare === 1 ? 3 : spare === 2 ? 2 : 1;
 
   const close = () => {
     const i = open;
@@ -117,7 +120,7 @@ export default function TrekGallery({ trek, photos }) {
     <div className="gallery">
       <ul className={`gallery__grid gallery__grid--${Math.min(photos.length, 5)}`}>
         {photos.map((p, i) => (
-          <li key={p.sourceUrl} className="gallery__item">
+          <li key={p.sourceUrl} className={`gallery__item${i === photos.length - 1 && lastSpan > 1 ? ` gallery__item--span${lastSpan}` : ''}`}>
             <button type="button" className="gallery__btn" ref={el => { triggers.current[i] = el; }}
               onClick={() => setOpen(i)} aria-label={t('gallery.open', { n: i + 1, total: photos.length, alt: tx(p.alt) })}>
               <img src={p.srcSmall || p.src} srcSet={srcSet(p)}

@@ -10,7 +10,7 @@
 */
 import React, { useEffect, useMemo, useState } from 'react';
 import { allTreks, normalise } from '../data/treks';
-import { countries, regions, difficulties, experienceTypes, landscapes, months, dayKinds, guideRules, editorialLabels } from '../data/taxonomy';
+import { countries, regions, divisions, difficulties, experienceTypes, landscapes, months, dayKinds, guideRules, editorialLabels } from '../data/taxonomy';
 import { useLang } from '../i18n';
 import { storage } from '../lib/storage';
 import { TrekView } from './TrekDetail';
@@ -234,7 +234,14 @@ export default function Editor() {
               <div className="ed-grid">
                 <label className="ed-field"><span className="ed-label">Id (URL)</span><input className="field" value={c.id} onChange={e => set('id', e.target.value.trim().toLowerCase())} /></label>
                 <label className="ed-field"><span className="ed-label">Region</span>
-                  <select className="field" value={c.region} onChange={e => set('region', e.target.value)}>{Object.entries(regions).map(([id, r]) => <option key={id} value={id}>{r.en}</option>)}</select></label>
+                  <select className="field" value={c.region} onChange={e => { set('region', e.target.value); set('division', null); }}>{Object.entries(regions).map(([id, r]) => <option key={id} value={id}>{r.en}</option>)}</select></label>
+                {Object.values(divisions).some(d => d.region === c.region) && (
+                  <label className="ed-field"><span className="ed-label">Division</span>
+                    <select className="field" value={c.division || ''} onChange={e => set('division', e.target.value || null)}>
+                      <option value="">Not set</option>
+                      {Object.entries(divisions).filter(([, d]) => d.region === c.region).map(([id, d]) => <option key={id} value={id}>{d.en}</option>)}
+                    </select></label>
+                )}
                 <label className="ed-field"><span className="ed-label">Difficulty</span>
                   <select className="field" value={c.difficulty} onChange={e => set('difficulty', e.target.value)}>{difficulties.map(d => <option key={d.id} value={d.id}>{d.en}</option>)}</select></label>
                 <label className="ed-field"><span className="ed-label">Guide</span>

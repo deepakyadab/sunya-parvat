@@ -1,0 +1,70 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Nag_Tibba_01.jpg/960px-Nag_Tibba_01.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Nag_Tibba_01.jpg/500px-Nag_Tibba_01.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Nag_Tibba_01.jpg/1280px-Nag_Tibba_01.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Forest trail on the trek to Nag Tibba"
+    },
+    "author": "Bhuwan Mahajan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nag_Tibba_01.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/A_watering_hole_%2815590575594%29.jpg/960px-A_watering_hole_%2815590575594%29.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/A_watering_hole_%2815590575594%29.jpg/500px-A_watering_hole_%2815590575594%29.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/A_watering_hole_%2815590575594%29.jpg/1280px-A_watering_hole_%2815590575594%29.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "A spring beside the Nag Tibba trail"
+    },
+    "author": "Ashish Gupta from Noida, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_watering_hole_(15590575594).jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Nag_Devta_temple_%2816211680471%29.jpg/960px-Nag_Devta_temple_%2816211680471%29.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Nag_Devta_temple_%2816211680471%29.jpg/500px-Nag_Devta_temple_%2816211680471%29.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Nag_Devta_temple_%2816211680471%29.jpg/1280px-Nag_Devta_temple_%2816211680471%29.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "The Nag Devta temple at the upper campsite on Nag Tibba"
+    },
+    "author": "Ashish Gupta from Noida, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nag_Devta_temple_(16211680471).jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Naaga_Tibba_Track_Entry_start.jpg/960px-Naaga_Tibba_Track_Entry_start.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Naaga_Tibba_Track_Entry_start.jpg/500px-Naaga_Tibba_Track_Entry_start.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Naaga_Tibba_Track_Entry_start.jpg/1280px-Naaga_Tibba_Track_Entry_start.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "The entrance arch at the start of the Nag Tibba trail"
+    },
+    "author": "Daniel Romanson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naaga_Tibba_Track_Entry_start.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

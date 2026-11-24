@@ -1,0 +1,70 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kanchnjunga.jpg/960px-Kanchnjunga.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kanchnjunga.jpg/500px-Kanchnjunga.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kanchnjunga.jpg/1280px-Kanchnjunga.jpg",
+    "width": 960,
+    "height": 638,
+    "scope": "route",
+    "alt": {
+      "en": "Kangchenjunga above the glacier on the Nepal side"
+    },
+    "author": "Nir gurung",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchnjunga.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Kanchanjunga_mountain_range_02.jpg/960px-Kanchanjunga_mountain_range_02.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Kanchanjunga_mountain_range_02.jpg/500px-Kanchanjunga_mountain_range_02.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Kanchanjunga_mountain_range_02.jpg/1280px-Kanchanjunga_mountain_range_02.jpg",
+    "width": 960,
+    "height": 640,
+    "scope": "route",
+    "alt": {
+      "en": "The Kangchenjunga massif from the north-west"
+    },
+    "author": "King james007",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchanjunga_mountain_range_02.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kangchenjunga_PangPema.JPG/960px-Kangchenjunga_PangPema.JPG",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kangchenjunga_PangPema.JPG/500px-Kangchenjunga_PangPema.JPG",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Kangchenjunga_PangPema.JPG/1280px-Kangchenjunga_PangPema.JPG",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Kangchenjunga from Pangpema, the north base camp"
+    },
+    "author": "Tomabarker",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kangchenjunga_PangPema.JPG",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kanchenjunga_seen_from_north.JPG/960px-Kanchenjunga_seen_from_north.JPG",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kanchenjunga_seen_from_north.JPG/500px-Kanchenjunga_seen_from_north.JPG",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kanchenjunga_seen_from_north.JPG/1280px-Kanchenjunga_seen_from_north.JPG",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "The north face of Kangchenjunga"
+    },
+    "author": "Sherparinji",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanchenjunga_seen_from_north.JPG",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

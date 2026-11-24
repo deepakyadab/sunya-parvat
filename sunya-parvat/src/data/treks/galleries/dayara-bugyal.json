@@ -1,0 +1,53 @@
+[
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg/960px-En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg/500px-En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg/1280px-En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg",
+    "width": 960,
+    "height": 540,
+    "scope": "route",
+    "alt": {
+      "en": "Gui camp on the way to Dayara Bugyal"
+    },
+    "author": "Satdeep Gill",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:En_route_to_Dayara_Bugyal_at_Gui_camp_03.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Trek_Route_to_Dayara_Bugyal.jpg/960px-Trek_Route_to_Dayara_Bugyal.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Trek_Route_to_Dayara_Bugyal.jpg/500px-Trek_Route_to_Dayara_Bugyal.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Trek_Route_to_Dayara_Bugyal.jpg/1280px-Trek_Route_to_Dayara_Bugyal.jpg",
+    "width": 960,
+    "height": 720,
+    "scope": "route",
+    "alt": {
+      "en": "Himalayan peaks seen from Natin village on the Dayara Bugyal route"
+    },
+    "author": "Mkmittalddn",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trek_Route_to_Dayara_Bugyal.jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  },
+  {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Dayara_Bugyal_Trek_%2849011710251%29.jpg/960px-Dayara_Bugyal_Trek_%2849011710251%29.jpg",
+    "srcSmall": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Dayara_Bugyal_Trek_%2849011710251%29.jpg/500px-Dayara_Bugyal_Trek_%2849011710251%29.jpg",
+    "srcLarge": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Dayara_Bugyal_Trek_%2849011710251%29.jpg/1280px-Dayara_Bugyal_Trek_%2849011710251%29.jpg",
+    "width": 960,
+    "height": 574,
+    "scope": "route",
+    "alt": {
+      "en": "Open slopes on the Dayara Bugyal trek"
+    },
+    "author": "Mike Prince from Bangalore, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dayara_Bugyal_Trek_(49011710251).jpg",
+    "source": "Wikimedia Commons",
+    "retrieved": "2026-11-24"
+  }
+]

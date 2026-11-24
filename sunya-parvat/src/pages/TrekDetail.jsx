@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { getTrek, isLegacyId, treks } from '../data/treks';
 import { getArticle } from '../data/journal';
@@ -54,6 +54,13 @@ export function TrekView({ trek, preview = false }) {
   const v = trek.verification || {};
   const photos = useGallery(trek.id);
   const sections = photos.length ? ['overview', 'photos', ...SECTIONS.slice(1)] : SECTIONS;
+  // The gallery loads after the page, so a link straight to #<id>-photos needs a nudge.
+  useEffect(() => {
+    if (photos.length && window.location.hash === `#${trek.id}-photos`) {
+      const el = document.getElementById(`${trek.id}-photos`);
+      if (el) el.scrollIntoView();
+    }
+  }, [photos.length, trek.id]);
 
   const facts = [
     [t('facts.location'), fmt.location(trek, lang)],
