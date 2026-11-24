@@ -143,9 +143,10 @@ its own title, description and a plain-HTML summary. It also writes `sitemap.xml
   replace an `image` block whenever you have your own.
 - **Merged entry.** "Singalila Ridge" is merged into Sandakphu–Phalut (same ridge).
   Zanskar, from the live site, is not in this catalog yet.
-- **Email delivery.** Needs a Resend account and environment variables before it works in
-  production. Real inbox delivery to sunyaparvat@gmail.com has not been tested yet
-  (see "Contact and trek enquiries").
+- **Email delivery.** Confirmed working on 24 November 2026: a test enquiry sent from the
+  local site through Resend arrived in sunyaparvat@gmail.com. For the live site, add the
+  same environment variables in Vercel and send one more test after deploying (see
+  "Contact and trek enquiries").
 
 ## Trek photos
 

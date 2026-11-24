@@ -16,7 +16,8 @@ export default function CompareTray() {
     return () => clearTimeout(id);
   }, [notice, clearNotice]);
 
-  if (!compare.length || pathname.startsWith('/compare') || pathname.startsWith('/editor')) {
+  // Hidden where it would cover the main task (comparison itself, the editor, the contact form).
+  if (!compare.length || pathname.startsWith('/compare') || pathname.startsWith('/editor') || pathname.startsWith('/connect')) {
     return notice ? <div className="toast" role="status">{t(notice, { max: MAX_COMPARE })}</div> : null;
   }
 
