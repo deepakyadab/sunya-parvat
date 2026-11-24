@@ -25,6 +25,7 @@
     "india"
   ],
   "region": "uttarakhand",
+  "division": "garhwal",
   "area": {
     "en": "Nanda Devi Biosphere Reserve, Chamoli",
     "hi": "नंदा देवी बायोस्फ़ीयर रिज़र्व, चमोली"
@@ -216,7 +217,7 @@
     },
     {
       "day": 4,
-      "kind": "trek",
+      "kind": "buffer",
       "route": {
         "en": "Second valley day (optional)",
         "hi": "घाटी का दूसरा दिन (वैकल्पिक)"

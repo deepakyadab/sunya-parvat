@@ -5,8 +5,14 @@
   To add a new region or type: add it here, then use its id in a trek file.
 */
 
+/*
+  `aliases` are other names and common spellings visitors type. They are resolved to
+  the id by src/lib/places.js, so they never create a second region in the filters.
+  Small spelling slips in longer names (e.g. "Uttrakhand", "Himchal") are also
+  tolerated there, so aliases only need real alternate names.
+*/
 export const countries = {
-  india: { en: 'India', hi: 'भारत' },
+  india: { en: 'India', hi: 'भारत', aliases: ['bharat', 'hindustan'] },
   nepal: { en: 'Nepal', hi: 'नेपाल' },
   bhutan: { en: 'Bhutan', hi: 'भूटान' },
   france: { en: 'France', hi: 'फ़्रांस' },
@@ -17,34 +23,34 @@ export const countries = {
   tanzania: { en: 'Tanzania', hi: 'तंज़ानिया' },
   kenya: { en: 'Kenya', hi: 'केन्या' },
   iceland: { en: 'Iceland', hi: 'आइसलैंड' },
-  scotland: { en: 'Scotland (UK)', hi: 'स्कॉटलैंड (यूके)' },
+  scotland: { en: 'Scotland (UK)', hi: 'स्कॉटलैंड (यूके)', aliases: ['united kingdom', 'britain', 'great britain', 'स्कॉटलैंड'] },
   chile: { en: 'Chile', hi: 'चिली' },
   australia: { en: 'Australia', hi: 'ऑस्ट्रेलिया' },
   japan: { en: 'Japan', hi: 'जापान' },
 };
 
 export const regions = {
-  uttarakhand: { country: 'india', en: 'Uttarakhand', hi: 'उत्तराखंड' },
-  himachal: { country: 'india', en: 'Himachal Pradesh', hi: 'हिमाचल प्रदेश' },
-  kashmir: { country: 'india', en: 'Jammu & Kashmir', hi: 'जम्मू और कश्मीर' },
-  ladakh: { country: 'india', en: 'Ladakh', hi: 'लद्दाख' },
+  uttarakhand: { country: 'india', en: 'Uttarakhand', hi: 'उत्तराखंड', aliases: ['uttaranchal', 'uttrakhand', 'uttarkhand', 'उत्तराखण्ड', 'उत्तरांचल'] },
+  himachal: { country: 'india', en: 'Himachal Pradesh', hi: 'हिमाचल प्रदेश', aliases: ['himachal', 'hp', 'हिमाचल'] },
+  kashmir: { country: 'india', en: 'Jammu & Kashmir', hi: 'जम्मू और कश्मीर', aliases: ['kashmir', 'j&k', 'jk', 'jammu kashmir', 'कश्मीर', 'जम्मू कश्मीर'] },
+  ladakh: { country: 'india', en: 'Ladakh', hi: 'लद्दाख', aliases: ['ladak'] },
   sikkim: { country: 'india', en: 'Sikkim', hi: 'सिक्किम' },
-  'west-bengal': { country: 'india', en: 'West Bengal', hi: 'पश्चिम बंगाल' },
+  'west-bengal': { country: 'india', en: 'West Bengal', hi: 'पश्चिम बंगाल', aliases: ['bengal', 'wb'] },
   nagaland: { country: 'india', en: 'Nagaland', hi: 'नागालैंड' },
   meghalaya: { country: 'india', en: 'Meghalaya', hi: 'मेघालय' },
   karnataka: { country: 'india', en: 'Karnataka', hi: 'कर्नाटक' },
   kerala: { country: 'india', en: 'Kerala', hi: 'केरल' },
   maharashtra: { country: 'india', en: 'Maharashtra', hi: 'महाराष्ट्र' },
-  khumbu: { country: 'nepal', en: 'Khumbu (Everest)', hi: 'खुम्बू (एवरेस्ट)' },
-  annapurna: { country: 'nepal', en: 'Annapurna', hi: 'अन्नपूर्णा' },
+  khumbu: { country: 'nepal', en: 'Khumbu (Everest)', hi: 'खुम्बू (एवरेस्ट)', aliases: ['khumbu', 'everest region', 'solukhumbu', 'खुम्बू'] },
+  annapurna: { country: 'nepal', en: 'Annapurna', hi: 'अन्नपूर्णा', aliases: ['annapurna region'] },
   langtang: { country: 'nepal', en: 'Langtang', hi: 'लांगटांग' },
   manaslu: { country: 'nepal', en: 'Manaslu', hi: 'मनास्लु' },
   'east-nepal': { country: 'nepal', en: 'Eastern Nepal', hi: 'पूर्वी नेपाल' },
   mustang: { country: 'nepal', en: 'Mustang', hi: 'मुस्तांग' },
-  paro: { country: 'bhutan', en: 'Paro & Thimphu', hi: 'पारो और थिम्फू' },
-  alps: { country: 'france', en: 'Mont Blanc massif', hi: 'मों ब्लां पर्वत-समूह' },
-  galicia: { country: 'spain', en: 'Northern Spain', hi: 'उत्तरी स्पेन' },
-  cusco: { country: 'peru', en: 'Cusco region', hi: 'कुस्को क्षेत्र' },
+  paro: { country: 'bhutan', en: 'Paro & Thimphu', hi: 'पारो और थिम्फू', aliases: ['paro', 'thimphu'] },
+  alps: { country: 'france', en: 'Mont Blanc massif', hi: 'मों ब्लां पर्वत-समूह', aliases: ['mont blanc', 'alps', 'chamonix'] },
+  galicia: { country: 'spain', en: 'Northern Spain', hi: 'उत्तरी स्पेन', aliases: ['galicia'] },
+  cusco: { country: 'peru', en: 'Cusco region', hi: 'कुस्को क्षेत्र', aliases: ['cusco', 'cuzco'] },
   kilimanjaro: { country: 'tanzania', en: 'Kilimanjaro region', hi: 'किलिमंजारो क्षेत्र' },
   'mount-kenya': { country: 'kenya', en: 'Mount Kenya', hi: 'माउंट केन्या' },
   'south-iceland': { country: 'iceland', en: 'South Iceland highlands', hi: 'दक्षिण आइसलैंड हाइलैंड्स' },
@@ -52,6 +58,15 @@ export const regions = {
   patagonia: { country: 'chile', en: 'Patagonia', hi: 'पेटागोनिया' },
   tasmania: { country: 'australia', en: 'Tasmania', hi: 'तस्मानिया' },
   kii: { country: 'japan', en: 'Kii Peninsula', hi: 'की प्रायद्वीप' },
+};
+
+/*
+  Divisions inside a region, used where a visitor is likely to search by them.
+  A trek's optional `division` field must use one of these ids.
+*/
+export const divisions = {
+  garhwal: { region: 'uttarakhand', en: 'Garhwal', hi: 'गढ़वाल', aliases: ['gadhwal'] },
+  kumaon: { region: 'uttarakhand', en: 'Kumaon', hi: 'कुमाऊँ', aliases: ['kumaun', 'कुमाऊं'] },
 };
 
 /* Difficulty is ordered: the index is used for sorting and matching. */

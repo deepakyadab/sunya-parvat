@@ -54,6 +54,27 @@ Rules the data follows:
   rest), `route`, `description`, `distanceKm`, `ascentM`, `descentM`, `hours`,
   `altitudeM`, `overnight`, `meals`, `notes` and an optional English `reflection`.
 
+### Places, search and region filters
+
+All place names go through one vocabulary: `regions`, `countries` and `divisions` in
+`src/data/taxonomy.js`, resolved by `src/lib/places.js`. The directory dropdowns, the
+search box, shared URLs, trek-page breadcrumbs and Ask Sunya all use it, so they can't
+disagree.
+
+- A trek's `region` must be a region id (e.g. `uttarakhand`). Optional `division`
+  (`garhwal`, `kumaon`) must belong to that region.
+- Visitors can type the label, the id, an `alias` (Uttaranchal, J&K, HP, उत्तराखण्ड …) or a
+  small misspelling of a longer name (Uttrakhand, Himchal). All resolve to the same id, so
+  no duplicate regions appear. Add new alternate names as `aliases`, never as new regions.
+- URLs are normalised: `?region=Uttarakhand&country=India` is rewritten to
+  `?country=india&region=uttarakhand`. Unknown values are dropped instead of silently
+  showing zero results. A region wins over a conflicting country.
+- Every filter click is a browser-history step, so Back and Forward step through filters.
+  Typing in search is not.
+- `npm run check-data` fails if one name points to two places.
+- Tests: `npm test -- --watchAll=false` runs `src/lib/search.test.js` against the real
+  trek files (every region, spelling variants, filter combinations, Ask Sunya answers).
+
 Expand the catalog in verified batches: add the treks, run `npm run check-data`, then
 set `verification.status: "verified"` with a `checkedOn` date and `sources` only after
 someone has actually checked them.
@@ -87,9 +108,21 @@ trip length, experience and landscape, and:
 - compares two treks and links to `/compare`;
 - suggests up to three treks, or asks a short follow-up if it doesn't have enough to go on;
 - points to journal articles for preparation topics;
-- says plainly when a trek isn't on the site, declines medical, live-weather and
-  booking/price questions, and gives 112 for emergencies in India;
+- lists the site's treks for a region, Garhwal/Kumaon, season, difficulty or landscape
+  question ("easy winter treks in Uttarakhand"), then asks a short follow-up to narrow it;
+- says plainly when a trek isn't on the site, declines medical and booking/price
+  questions, and gives 112 for emergencies in India;
 - replies in Hindi when the question is written in Devanagari.
+
+**Stable vs live information.** Everything Ask Sunya says comes from the stored trek
+record and is labelled with its verification status ("Not yet verified against an
+official source", or "last verified <date>" once `verification` is filled in). Any
+`verification.sources` are shown as links. **No live source is connected**: questions
+about today's weather, closures, transport, permit status or availability get a clear
+"Live conditions: not available" label plus the last stored information, never a guess.
+If a live source is added later, it must show its source and check time with every
+answer and fall back to this message when it fails. Ask Sunya is not a medical,
+emergency or official authority, and says so on the page.
 
 ## Language
 
@@ -181,6 +214,14 @@ Each trek's `image` block records where its photo comes from:
   soon" is shown (currently Warwan Valley).
 - **Speed.** Wikimedia's standard 500/960/1280 px renditions are served with
   `srcset`/`sizes`. Cards lazy-load; the trek hero loads first.
+- **Galleries.** Extra photos live in `src/data/treks/galleries/<trek-id>.json` (same
+  fields as `image`; see the README in that folder). They load only when the trek page
+  opens. The gallery is a grid on wide screens and a swipeable strip on phones; the viewer
+  supports arrow keys, Escape, swipe and focus return. Every photo is credited under the
+  gallery and in the viewer. Photos were taken only from Wikimedia Commons categories for
+  that specific route, approved by hand, then checked by eye on a contact sheet. Alt text
+  comes from the photographer's own Commons description, so it is English only and should
+  be reviewed. There are no captions, because Commons descriptions are not verified facts.
 - **Owner photos.** Put files in `public/images/treks/`, set `src` to `/images/treks/x.jpg`,
   `author` to the photographer, `license` to "Owner photo — all rights reserved" (or your
   chosen license), and `sourceUrl` to your site or Instagram post.

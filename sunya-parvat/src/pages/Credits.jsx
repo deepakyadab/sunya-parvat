@@ -39,6 +39,7 @@ export default function Credits() {
             ))}
           </tbody>
         </table>
+        <p className="note" style={{ marginTop: '2rem' }}>{t('credits.galleries')}</p>
         {without.length > 0 && (
           <p className="note" style={{ marginTop: '2rem' }}>{t('credits.pending', { n: without.length })} {without.map(x => tx(x.name)).join(', ')}.</p>
         )}

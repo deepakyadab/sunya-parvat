@@ -67,9 +67,17 @@ export function AskChat({ autoFocus = false, seed, onSeedUsed, onNavigate }) {
             {String(m.text).split('\n').map((line, j) => (
               <p key={j} className={line.startsWith('•') ? 'ask-msg__bullet' : line.startsWith('⚠') ? 'ask-msg__warn' : undefined}>{line}</p>
             ))}
+            {m.live && m.live.status === 'unavailable' && (
+              <p className="ask-msg__live">{t('ask.liveUnavailable')}</p>
+            )}
             {m.links && m.links.length > 0 && (
               <ul className="ask-msg__links">
                 {m.links.map(l => <li key={l.to}><Link to={l.to} onClick={onNavigate}>{l.label} →</Link></li>)}
+              </ul>
+            )}
+            {m.sources && m.sources.length > 0 && (
+              <ul className="ask-msg__links ask-msg__sources" aria-label={t('ask.sources')}>
+                {m.sources.map(s => <li key={s.href}><a href={s.href} target="_blank" rel="noopener noreferrer">{s.label} ↗</a></li>)}
               </ul>
             )}
             {m.disclaimer && <p className="ask-msg__disclaimer">{m.disclaimer}</p>}

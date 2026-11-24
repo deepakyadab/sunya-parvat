@@ -14,6 +14,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Dhak / Tugasi, near Joshimath",
       "hi": "ढाक / तुगासी, जोशीमठ के पास"
@@ -102,6 +103,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Raithal or Barsu, Uttarkashi",
       "hi": "रैथल या बारसू, उत्तरकाशी"
@@ -184,6 +186,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Sankri / Taluka",
       "hi": "सांकरी / तालुका"
@@ -266,6 +269,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Pantwari, near Mussoorie",
       "hi": "पंतवाड़ी, मसूरी के पास"
@@ -343,6 +347,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Chopta (often combined with Deoria Tal from Sari)",
       "hi": "चोपता (अक्सर सारी से देवरिया ताल के साथ)"
@@ -432,6 +437,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Gangotri",
       "hi": "गंगोत्री"
@@ -508,6 +514,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "kumaon",
     "start": {
       "en": "Kharkiya / Loharkhet, Bageshwar",
       "hi": "खरकिया / लोहारखेत, बागेश्वर"
@@ -584,6 +591,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "area": {
       "en": "Uttarakhand to Himachal Pradesh",
       "hi": "उत्तराखंड से हिमाचल प्रदेश"
@@ -659,6 +667,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Sankri (ends near Yamunotri)",
       "hi": "सांकरी (समापन यमुनोत्री के पास)"
@@ -735,6 +744,7 @@
       "india"
     ],
     "region": "uttarakhand",
+    "division": "garhwal",
     "start": {
       "en": "Lohajung / Wan, Chamoli",
       "hi": "लोहाजंग / वाण, चमोली"

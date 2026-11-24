@@ -48,12 +48,12 @@
 }
 .toast--raised { bottom: 6.5rem; }
 
+/* Phones: one slim bar (count + actions). Treks can still be removed on the compare page. */
 @media (max-width: 600px) {
   .ctray { bottom: 0; width: 100%; border-left: none; border-right: none; }
-  .ctray__inner { display: grid; grid-template-columns: 1fr auto; gap: 0.5rem 0.8rem; padding: 0.6rem 0.8rem; }
-  .ctray__title { align-self: center; }
-  .ctray__actions { grid-column: 2; grid-row: 1; margin: 0; gap: 0.6rem; }
-  .ctray__list { grid-column: 1 / -1; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
-  .ctray__chip { flex-shrink: 0; font-size: 0.8rem; }
+  .ctray__inner { flex-wrap: nowrap; gap: 0.6rem; padding: 0.5rem 0.8rem; padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px)); }
+  .ctray__list { display: none; }
+  .ctray__title { color: var(--text-secondary); }
+  .ctray__actions { gap: 0.6rem; }
   .ctray__hint { display: none; }
 }

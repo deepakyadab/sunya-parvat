@@ -194,4 +194,7 @@ html[lang='hi'] .link-subtle { text-transform: none; letter-spacing: 0.01em; fon
 /* Leave room for the compare tray at the bottom of the page */
 body:has(.ctray) .footer { padding-bottom: 7rem; }
 body:has(.ctray) .ask-launcher { bottom: 6.2rem; }
-@media (max-width: 600px) { body:has(.ctray) .ask-launcher { bottom: 7rem; } }
+@media (max-width: 600px) {
+  body:has(.ctray) .ask-launcher { bottom: 4.6rem; }
+  body:has(.ctray) .footer { padding-bottom: 5rem; }
+}

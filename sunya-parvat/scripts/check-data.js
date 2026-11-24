@@ -16,6 +16,36 @@ const { loadTreks, importEsm } = require('./lib');
   const diffIds = tax.difficulties.map(d => d.id);
   const articleIds = new Set(articles.map(a => a.id));
 
+  // Galleries: src/data/treks/galleries/<trek-id>.json
+  const fs = require('fs');
+  const path = require('path');
+  const gdir = path.join(__dirname, '..', 'src', 'data', 'treks', 'galleries');
+  const galleries = {};
+  if (fs.existsSync(gdir)) {
+    fs.readdirSync(gdir).filter(f => f.endsWith('.json')).forEach(f => {
+      const id = f.replace(/\.json$/, '');
+      try {
+        const g = JSON.parse(fs.readFileSync(path.join(gdir, f), 'utf8'));
+        if (!Array.isArray(g)) errors.push(`galleries/${f}: must be an array`);
+        else galleries[id] = g;
+      } catch (e) { errors.push(`galleries/${f}: ${e.message}`); }
+    });
+  }
+  const trekIdsAll = new Set(treks.map(t => t.id));
+  Object.keys(galleries).forEach(id => { if (!trekIdsAll.has(id)) errors.push(`galleries/${id}.json: no trek with that id`); });
+
+  // Place names: every alias must resolve to exactly one place.
+  const placeNames = new Map();
+  const norm = s => String(s).toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and ').replace(/[^\p{L}\p{M}\p{N}]+/gu, '').replace(/and/g, '');
+  [['division', tax.divisions], ['region', tax.regions], ['country', tax.countries]].forEach(([kind, map]) => {
+    Object.entries(map).forEach(([id, p]) => [id, p.en, p.hi, ...(p.aliases || [])].filter(Boolean).forEach(name => {
+      const k = norm(name);
+      const prev = placeNames.get(k);
+      if (prev && prev !== `${kind}:${id}`) errors.push(`place name "${name}" is used by both ${prev} and ${kind}:${id}`);
+      placeNames.set(k, `${kind}:${id}`);
+    }));
+  });
+
   treks.forEach(t => {
     const at = `${t.id || '(no id)'} [${t._file}]`;
     const err = m => errors.push(`${at}: ${m}`);
@@ -30,6 +60,10 @@ const { loadTreks, importEsm } = require('./lib');
     if (!t.name || !t.name.hi) warn('missing Hindi name');
     if (!t.highlight || !t.highlight.en) err('missing highlight.en');
     if (!tax.regions[t.region]) err(`unknown region "${t.region}"`);
+    if (t.division != null) {
+      if (!tax.divisions[t.division]) err(`unknown division "${t.division}"`);
+      else if (tax.divisions[t.division].region !== t.region) err(`division "${t.division}" is not in region "${t.region}"`);
+    }
     (t.countries || []).forEach(c => { if (!tax.countries[c]) err(`unknown country "${c}"`); });
     if (!diffIds.includes(t.difficulty)) err(`unknown difficulty "${t.difficulty}"`);
     (t.types || []).forEach(x => { if (!tax.experienceTypes[x]) err(`unknown type "${x}"`); });
@@ -52,7 +86,25 @@ const { loadTreks, importEsm } = require('./lib');
       if (d.kind && !tax.dayKinds[d.kind]) err(`day ${d.day} unknown kind "${d.kind}"`);
       if (d.altitudeM != null && t.maxAltitudeM != null && d.altitudeM > t.maxAltitudeM) err(`day ${d.day} altitude above trek maximum`);
     });
-    if (it.length && t.totalDays != null && it.length !== t.totalDays) warn(`itinerary has ${it.length} days but totalDays is ${t.totalDays}`);
+    if (it.length && t.totalDays != null && it.length !== t.totalDays) err(`itinerary has ${it.length} days but totalDays is ${t.totalDays}`);
+    // Walking days on the facts card must match the day-by-day plan
+    // (trekking, summit/pass and acclimatisation-hike days count as walking).
+    const walking = it.filter(d => !d.kind || ['trek', 'summit', 'acclimatisation'].includes(d.kind)).length;
+    if (it.length && t.walkingDays != null && walking !== t.walkingDays) err(`walkingDays is ${t.walkingDays} but the itinerary has ${walking} walking days`);
+    const itMax = Math.max(0, ...it.map(d => d.altitudeM || 0));
+    if (itMax && t.maxAltitudeM != null && itMax !== t.maxAltitudeM) warn(`highest itinerary day is ${itMax} m but maxAltitudeM is ${t.maxAltitudeM}`);
+
+    const gallery = galleries[t.id] || [];
+    gallery.forEach((g, i) => {
+      const gat = `gallery photo ${i + 1}`;
+      ['src', 'sourceUrl', 'license', 'author'].forEach(k => { if (!g[k]) err(`${gat}: ${k} missing`); });
+      if (!g.alt || !g.alt.en) err(`${gat}: alt.en missing`);
+      if (!['route', 'regional'].includes(g.scope)) err(`${gat}: scope must be "route" or "regional"`);
+      if (/\bNC\b|\bND\b|non-?commercial|no ?deriv|^GFDL/i.test(g.license || '')) err(`${gat}: license "${g.license}" is not suitable`);
+      if (t.image && g.sourceUrl === t.image.sourceUrl) err(`${gat}: repeats the hero photo`);
+    });
+    const seenSrc = new Set();
+    gallery.forEach(g => { if (seenSrc.has(g.sourceUrl)) err(`gallery repeats ${g.sourceUrl}`); seenSrc.add(g.sourceUrl); });
 
     const img = t.image;
     if (!img) warn('no photo yet (placeholder shown)');
@@ -78,6 +130,8 @@ const { loadTreks, importEsm } = require('./lib');
   const regional = treks.filter(t => t.image && t.image.scope === 'regional').length;
   console.log(`Checked ${treks.length} treks: ${errors.length} errors, ${warnings.length - unverified - noPhoto} warnings, ${unverified} unverified.`);
   console.log(`Photos: ${treks.length - noPhoto} with photo (${regional} regional), ${noPhoto} placeholder.`);
+  const gCounts = treks.map(t => (galleries[t.id] || []).length + (t.image ? 1 : 0));
+  console.log(`Galleries: ${Object.keys(galleries).length} treks have a gallery; ${gCounts.filter(n => n >= 5).length} treks have 5+ photos, ${gCounts.filter(n => n > 0 && n < 5).length} have 1–4, ${gCounts.filter(n => n === 0).length} have none.`);
   if (process.argv.includes('--verbose')) warnings.forEach(w => console.log('  warn ' + w));
   errors.forEach(e => console.error('  ERROR ' + e));
   process.exit(errors.length ? 1 : 0);

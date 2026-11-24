@@ -8,6 +8,7 @@ import { useAsk } from '../components/AskSunya';
 import { SaveButton, CompareToggle } from '../components/TrekCard';
 import TrekCard from '../components/TrekCard';
 import TrekVisual, { PhotoCredit } from '../components/TrekVisual';
+import TrekGallery, { useGallery } from '../components/TrekGallery';
 import Itinerary from '../components/Itinerary';
 import EnquiryForm from '../components/EnquiryForm';
 import Tx, { Fact, NotVerified } from '../components/Tx';
@@ -51,6 +52,8 @@ export function TrekView({ trek, preview = false }) {
   const related = preview ? [] : relatedTreks(treks, trek, 3);
   const reading = trek.journal.map(getArticle).filter(Boolean);
   const v = trek.verification || {};
+  const photos = useGallery(trek.id);
+  const sections = photos.length ? ['overview', 'photos', ...SECTIONS.slice(1)] : SECTIONS;
 
   const facts = [
     [t('facts.location'), fmt.location(trek, lang)],
@@ -110,7 +113,7 @@ export function TrekView({ trek, preview = false }) {
         <nav className="td__toc" aria-label={t('td.onThisPage')}>
           <p className="section-label">{t('td.onThisPage')}</p>
           <ol>
-            {SECTIONS.map(s => <li key={s}><a href={`#${anchor(s)}`}>{t(`td.${s}`)}</a></li>)}
+            {sections.map(s => <li key={s}><a href={`#${anchor(s)}`}>{t(`td.${s}`)}</a></li>)}
           </ol>
         </nav>
 
@@ -149,6 +152,8 @@ export function TrekView({ trek, preview = false }) {
               )}
             </>
           ))}
+
+          {photos.length > 0 && section('photos', t('td.photos'), <TrekGallery trek={trek} photos={photos} />)}
 
           {section('facts', t('td.facts'), (
             <dl className="facts-grid">

@@ -60,8 +60,11 @@ export default function TrekVisual({ trek, tall = false, className = '', priorit
       `${img.src} 960w`,
       img.srcLarge && `${img.srcLarge} 1280w`,
     ].filter(Boolean).join(', ');
+    // Large views paint the small rendition (usually cached from the cards) underneath,
+    // so the hero is never an empty dark box while the big file downloads.
+    const backdrop = tall && img.srcSmall ? { backgroundImage: `url("${img.srcSmall}")`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined;
     return (
-      <div className={cls}>
+      <div className={cls} style={backdrop}>
         <img
           src={tall ? img.src : img.srcSmall || img.src}
           srcSet={srcSet}

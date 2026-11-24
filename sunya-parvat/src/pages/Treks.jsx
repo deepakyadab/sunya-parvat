@@ -2,10 +2,10 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import TrekCard from '../components/TrekCard';
 import { treks } from '../data/treks';
-import { countries, regions, durationBuckets, months, seasons, difficulties, experienceTypes, landscapes } from '../data/taxonomy';
+import { countries, regions, divisions, durationBuckets, months, seasons, difficulties, experienceTypes, landscapes } from '../data/taxonomy';
 import { useLang } from '../i18n';
 import { useSaved } from '../context/SavedContext';
-import { applyFilters, filtersFromParams, filtersToParams, sortTreks, SORTS, activeFilterCount } from '../lib/catalog';
+import { applyFilters, filtersFromParams, filtersToParams, paramsAreCanonical, queryPlaces, sortTreks, SORTS, activeFilterCount } from '../lib/catalog';
 import usePageMeta from '../lib/usePageMeta';
 import './Treks.css';
 
@@ -38,16 +38,26 @@ export default function Treks() {
 
   usePageMeta({ title: t('dir.metaTitle'), description: t('meta.directory', { n: treks.length }), path: '/treks' });
 
-  const update = (patch, nextSort = sort) => {
+  // Rewrite hand-typed or old links (?region=Uttarakhand) to the catalog ids, so the
+  // URL, dropdowns, chips and results always describe the same filters.
+  useEffect(() => {
+    if (!paramsAreCanonical(params, filters, sort)) setParams(filtersToParams(filters, sort), { replace: true });
+  }, [params, filters, sort, setParams]);
+
+  // Each filter click is a history step (Back undoes it); typing in search is not.
+  const update = (patch, nextSort = sort, { replace = false } = {}) => {
     const next = { ...filters, ...patch };
     if (patch.country !== undefined && patch.country !== filters.country) next.region = '';
-    setParams(filtersToParams(next, nextSort), { replace: true });
+    setParams(filtersToParams(next, nextSort), { replace });
   };
   const toggleIn = (key, id) => update({ [key]: filters[key].includes(id) ? filters[key].filter(x => x !== id) : [...filters[key], id] });
-  const clearAll = () => setParams(sort !== 'recommended' ? { sort } : {}, { replace: true });
+  const clearAll = () => setParams(sort !== 'recommended' ? { sort } : {});
 
   const results = useMemo(() => sortTreks(applyFilters(treks, filters, saved), sort, lang), [filters, saved, sort, lang]);
   const nActive = activeFilterCount(filters);
+  const recognised = queryPlaces(filters.q)
+    .map(p => ({ region: regions, country: countries, division: divisions }[p.kind][p.id]))
+    .filter(Boolean);
 
   useEffect(() => {
     document.body.style.overflow = drawer ? 'hidden' : '';
@@ -124,7 +134,7 @@ export default function Treks() {
     <div className="page-wrapper dir">
       <header className="page-hero page-hero--small">
         <div className="container">
-          <p className="section-label">{t('nav.find')}</p>
+          <p className="section-label">{t('dir.eyebrow')}</p>
           <h1 className="page-title">{t('dir.title')}</h1>
           <p className="page-subtitle">{t('dir.subtitle', { n: treks.length })}</p>
         </div>
@@ -138,7 +148,7 @@ export default function Treks() {
             <div className="dir__search">
               <label htmlFor="dir-search" className="visually-hidden">{t('dir.search')}</label>
               <input id="dir-search" type="search" className="field" placeholder={t('dir.searchPlaceholder')}
-                value={filters.q} onChange={e => update({ q: e.target.value })} />
+                value={filters.q} onChange={e => update({ q: e.target.value }, sort, { replace: true })} />
             </div>
             <div className="dir__controls">
               <button type="button" className="btn btn--sm btn--ghost dir__filters-btn" onClick={() => setDrawer(true)} aria-haspopup="dialog">
@@ -157,6 +167,7 @@ export default function Treks() {
           <div className="dir__status">
             <p role="status" aria-live="polite" className="dir__count">
               {t('dir.count', { n: results.length, total: treks.length })}
+              {recognised.length > 0 && <span className="dir__matched"> · {t('dir.searchingIn', { places: recognised.map(p => tx(p)).join(', ') })}</span>}
             </p>
             {chips.length > 0 && (
               <ul className="chips" aria-label={t('dir.activeFilters')}>

@@ -1,17 +1,12 @@
-import { durationBuckets, difficultyIndex, regions, countries, seasons } from '../data/taxonomy';
+import {
+  durationBuckets, difficultyIndex, difficulties, experienceTypes, landscapes,
+  regions, countries, divisions, seasons,
+} from '../data/taxonomy';
+import { normaliseText, parseQuery, matchesPlaces, resolveRegionId, resolveCountryId } from './places';
+
+export { normaliseText };
 
 /* ---------- search ---------- */
-
-export function normaliseText(s) {
-  return String(s || '')
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/[–—-]/g, ' ')
-    .replace(/[^\p{L}\p{M}\p{N}\s]/gu, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
 
 function haystack(t) {
   if (!t._hay) {
@@ -19,6 +14,7 @@ function haystack(t) {
       t.id, t.name?.en, t.name?.hi, t.title?.en, t.title?.hi, ...t.aliases,
       t.start?.en, t.start?.hi, t.area?.en, t.highlight?.en, t.highlight?.hi,
       regions[t.region]?.en, regions[t.region]?.hi,
+      divisions[t.division]?.en, divisions[t.division]?.hi,
       ...t.countries.flatMap(c => [countries[c]?.en, countries[c]?.hi]),
     ];
     t._hay = normaliseText(parts.filter(Boolean).join(' '));
@@ -26,11 +22,33 @@ function haystack(t) {
   return t._hay;
 }
 
+/**
+ * Free-text search. Place names (any spelling the place vocabulary knows) match on the
+ * trek's region / country / division ids; every other word must appear in the trek's text.
+ */
+// Words that describe the search rather than the trek ("treks in …").
+const STOPWORDS = new Set(['trek', 'treks', 'trekking', 'hike', 'hikes', 'hiking', 'in', 'of', 'the', 'for', 'near', 'to', 'a', 'best',
+  'ट्रेक', 'ट्रेकिंग', 'में', 'के', 'की', 'का', 'लिए']);
+// Season words match the trek's open months (the same rule as the season filter).
+const SEASON_WORDS = {
+  winter: 'winter', winters: 'winter', सर्दी: 'winter', सर्दियों: 'winter',
+  spring: 'spring', वसंत: 'spring',
+  summer: 'monsoon', monsoon: 'monsoon', मानसून: 'monsoon', गर्मी: 'monsoon',
+  autumn: 'autumn', fall: 'autumn', शरद: 'autumn',
+};
+
 export function matchesQuery(t, q) {
-  const n = normaliseText(q);
-  if (!n) return true;
+  if (!normaliseText(q)) return true;
+  const { places, words } = parseQuery(q);
+  if (!matchesPlaces(t, places)) return false;
   const hay = haystack(t);
-  return n.split(' ').every(word => hay.includes(word));
+  return words.filter(w => !STOPWORDS.has(w)).every(word =>
+    SEASON_WORDS[word] ? t.seasons.includes(SEASON_WORDS[word]) : hay.includes(word));
+}
+
+/** Places the search box recognised, for the "Searching in …" note. */
+export function queryPlaces(q) {
+  return normaliseText(q) ? parseQuery(q).places : [];
 }
 
 /* ---------- filters ---------- */
@@ -42,16 +60,53 @@ export const EMPTY_FILTERS = {
 
 const LIST_KEYS = ['difficulty', 'type', 'landscape'];
 
+const VALID = {
+  duration: new Set(durationBuckets.map(b => b.id)),
+  season: new Set(seasons.map(s => s.id)),
+  difficulty: new Set(difficulties.map(d => d.id)),
+  type: new Set(Object.keys(experienceTypes)),
+  landscape: new Set(Object.keys(landscapes)),
+};
+const lower = v => String(v).trim().toLowerCase();
+
+/**
+ * Read filters from the URL and normalise them to catalog ids, so a shared or
+ * hand-typed link (?region=Uttarakhand, ?country=India, ?difficulty=Moderate)
+ * gives the same results, chips and dropdowns as clicking the filters.
+ * Unknown values are dropped rather than silently filtering everything out.
+ */
 export function filtersFromParams(params) {
   const f = { ...EMPTY_FILTERS };
-  Object.keys(EMPTY_FILTERS).forEach(k => {
-    const v = params.get(k);
-    if (v == null) return;
-    if (LIST_KEYS.includes(k)) f[k] = v.split(',').filter(Boolean);
-    else if (k === 'saved') f.saved = v === '1';
-    else f[k] = v;
+  const get = k => params.get(k);
+
+  f.q = (get('q') || '').slice(0, 120);
+  f.region = resolveRegionId(get('region')) || '';
+  f.country = resolveCountryId(get('country')) || '';
+  // A region already fixes its country. If a link names a different country,
+  // the more specific region wins instead of showing zero results.
+  if (f.region && f.country && regions[f.region].country !== f.country) f.country = '';
+
+  const dur = get('duration');
+  if (dur && VALID.duration.has(dur.trim())) f.duration = dur.trim();
+  const season = get('season') && lower(get('season'));
+  if (season && VALID.season.has(season)) f.season = season;
+  const month = Number(get('month'));
+  if (Number.isInteger(month) && month >= 1 && month <= 12) f.month = String(month);
+
+  ['difficulty', 'type', 'landscape'].forEach(k => {
+    const v = get(k);
+    if (!v) return;
+    f[k] = [...new Set(v.split(',').map(x => lower(x).replace(/\s+/g, '-')).filter(x => VALID[k].has(x)))];
   });
+  f.saved = get('saved') === '1';
   return f;
+}
+
+/** True when the URL already holds exactly the normalised filters (nothing to rewrite). */
+export function paramsAreCanonical(params, f, sort) {
+  const want = new URLSearchParams(filtersToParams(f, sort)).toString();
+  const have = new URLSearchParams([...params.entries()].filter(([k]) => k in EMPTY_FILTERS || k === 'sort')).toString();
+  return want === have;
 }
 
 export function filtersToParams(f, sort) {
