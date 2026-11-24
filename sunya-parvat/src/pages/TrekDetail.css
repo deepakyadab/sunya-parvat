@@ -1,0 +1,83 @@
+.td__hero { position: relative; min-height: 62vh; display: flex; align-items: flex-end; overflow: hidden; padding: 8rem 0 3rem; }
+.td__visual { position: absolute !important; inset: 0; aspect-ratio: auto; }
+.td__hero-shade { position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 5%, rgba(10, 10, 8, 0.55) 55%, rgba(10, 10, 8, 0.3)); }
+.td__hero-content { position: relative; z-index: 2; width: 100%; }
+.breadcrumb { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 1.2rem; }
+.breadcrumb a:hover { color: var(--text-primary); }
+.td__label { display: inline-block; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-accent); border: 1px solid rgba(201, 185, 154, 0.4); padding: 0.2rem 0.6rem; margin-bottom: 1rem; }
+.td__title { font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 300; line-height: 1.05; }
+.td__tagline { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.15rem, 2vw, 1.5rem); color: var(--text-accent); margin-top: 0.4rem; }
+.td__summary { margin-top: 1rem; color: var(--text-primary); font-size: 0.95rem; }
+.td__actions { display: flex; gap: 0.7rem; flex-wrap: wrap; align-items: center; margin-top: 1.4rem; }
+
+.td__layout { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; padding-top: 3rem; align-items: start; }
+.td__toc { position: sticky; top: 6rem; }
+.td__toc ol { list-style: none; margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.15rem; }
+.td__toc a { font-size: 0.88rem; color: var(--text-secondary); display: block; padding: 0.25rem 0; }
+.td__toc a:hover { color: var(--text-primary); }
+.td__main { min-width: 0; max-width: 780px; }
+
+.td-section { padding: 2.5rem 0; border-top: 1px solid var(--border); scroll-margin-top: 6rem; }
+.td-section:first-of-type { border-top: none; padding-top: 0; }
+.td-section__title { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 1.1rem; }
+.td__lede { font-family: var(--font-serif); font-size: 1.35rem; line-height: 1.6; color: var(--text-primary); margin-bottom: 1.2rem; }
+.td__p { color: var(--text-secondary); margin-bottom: 0.8rem; font-size: 1rem; line-height: 1.75; }
+.td__p strong { color: var(--text-primary); font-weight: 400; }
+.td__highlights { list-style: none; margin: 0.5rem 0 1.2rem; }
+.td__highlights li { padding: 0.4rem 0 0.4rem 1.2rem; position: relative; color: var(--text-primary); }
+.td__highlights li::before { content: '—'; position: absolute; left: 0; color: var(--gold-dim); }
+.td__tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+.td__fit { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
+.td__fit h3 { font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem; }
+.td__fit p { color: var(--text-secondary); }
+.td__list { list-style: none; margin: 0.4rem 0 0.8rem; color: var(--text-secondary); }
+.td__list li { padding: 0.2rem 0; }
+.td__reading { list-style: none; }
+.td__reading li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+.td__reading a { font-family: var(--font-serif); font-size: 1.2rem; }
+.td__reading a:hover { color: var(--text-accent); }
+
+.facts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.facts-grid > div { background: var(--bg-2); padding: 0.9rem 1rem; }
+.facts-grid dt { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem; }
+.facts-grid dd { color: var(--text-primary); font-size: 0.98rem; }
+.fact-note { display: block; color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem; line-height: 1.45; }
+
+.verify { border: 1px solid var(--border-light); background: var(--bg-2); padding: 1rem 1.2rem; margin-bottom: 2.5rem; }
+.verify--warn { border-color: rgba(224, 168, 92, 0.5); }
+.verify__warn { color: var(--text-primary); margin-bottom: 0.5rem; }
+.verify__warn strong { color: var(--warn); font-weight: 700; margin-right: 0.3rem; }
+.verify__status { font-size: 0.85rem; color: var(--text-secondary); }
+.verify__sources { margin-top: 0.4rem; font-size: 0.85rem; padding-left: 1rem; }
+
+.duration-note { border-left: 2px solid var(--gold-dim); padding: 0.4rem 0 0.4rem 1rem; margin-bottom: 1.8rem; color: var(--text-secondary); }
+.duration-note strong { color: var(--text-primary); font-weight: 400; }
+
+.month-strip__row { display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; list-style: none; }
+.month-strip__m { text-align: center; padding: 0.6rem 0; font-size: 0.78rem; }
+.month-strip__m--best { background: var(--text-accent); color: #14130f; font-weight: 700; }
+.month-strip__m--ok { background: rgba(201, 185, 154, 0.25); color: var(--text-primary); }
+.month-strip__m--no { background: var(--bg-3); color: var(--text-muted); }
+.month-strip__key { display: flex; gap: 1.2rem; list-style: none; margin: 0.8rem 0 1rem; font-size: 0.8rem; color: var(--text-secondary); flex-wrap: wrap; }
+.month-strip__key li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.month-strip__swatch { width: 14px; height: 14px; display: inline-block; padding: 0; }
+
+.faq__item { border-bottom: 1px solid var(--border); padding: 0.9rem 0; }
+.faq__item summary { cursor: pointer; font-size: 1.05rem; color: var(--text-primary); }
+.faq__item p { color: var(--text-secondary); margin-top: 0.5rem; }
+
+.td-enquire { margin-top: 1rem; padding: 2rem; background: var(--bg-2); border: 1px solid var(--border); }
+.td-related { padding-top: 4rem; }
+.td-related .section-title { margin-bottom: 1.5rem; }
+
+@media (max-width: 900px) {
+  .td__layout { grid-template-columns: 1fr; gap: 1.5rem; }
+  .td__toc { position: static; border: 1px solid var(--border); padding: 1rem; }
+  .td__toc ol { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1rem; }
+  .td__fit { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .facts-grid { grid-template-columns: 1fr; }
+  .month-strip__row { grid-template-columns: repeat(6, 1fr); }
+  .td-enquire { padding: 1.3rem; }
+}

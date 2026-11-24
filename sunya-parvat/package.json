@@ -1,6 +1,6 @@
 {
   "name": "sunya-parvat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "framer-motion": "^10.16.4",
@@ -11,7 +11,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build && node scripts/prerender.js",
+    "check-data": "node scripts/check-data.js",
+    "editor-server": "node scripts/editor-server.js"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
   },
   "browserslist": {
     "production": [
@@ -24,10 +29,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2"
   }
 }

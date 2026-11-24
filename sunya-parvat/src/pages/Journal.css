@@ -1,0 +1,23 @@
+.journal__filters { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1.5rem; }
+.journal__list { border-top: 1px solid var(--border); }
+.jrow { display: block; padding: 1.8rem 0; border-bottom: 1px solid var(--border); }
+.jrow:hover .jrow__title { color: var(--text-accent); }
+.jrow__meta { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.6rem; }
+.jrow__title { font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 400; margin-bottom: 0.4rem; transition: color 0.3s ease; }
+.jrow__summary { color: var(--text-secondary); max-width: 46rem; }
+.jrow__treks { font-size: 0.8rem; color: var(--text-accent); margin-top: 0.5rem; }
+
+.article__header { padding-top: 9rem; padding-bottom: 2rem; }
+.article__meta { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; font-size: 0.8rem; color: var(--text-muted); margin: 2rem 0 1rem; }
+.article__title { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 300; line-height: 1.1; }
+.article__subtitle { font-family: var(--font-serif); font-style: italic; font-size: 1.3rem; color: var(--text-accent); margin-top: 0.6rem; margin-bottom: 1rem; }
+.article__lede { font-family: var(--font-serif); font-size: 1.4rem; line-height: 1.6; color: var(--text-primary); padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.article__body p, .article__body li { font-size: 1.06rem; line-height: 1.85; color: var(--text-secondary); }
+.article__body p { margin-bottom: 1.2rem; }
+.article__body h2 { font-size: 1.6rem; margin: 2.2rem 0 0.8rem; color: var(--text-primary); }
+.article__body ul { margin: 0 0 1.4rem 1.2rem; }
+.article__body li { margin-bottom: 0.4rem; }
+.article__sig { font-family: var(--font-serif); font-style: italic; color: var(--text-muted); margin-top: 2rem; }
+.article__treks { padding-top: 4rem; }
+.article__treks .section-title { margin-bottom: 1.5rem; }
+html[lang='hi'] .article__body p, html[lang='hi'] .article__body li { line-height: 1.95; }

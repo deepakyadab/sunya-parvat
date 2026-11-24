@@ -1,0 +1,32 @@
+.editor { padding-top: 6rem; }
+.ed-banner { background: rgba(224, 168, 92, 0.12); border: 1px solid rgba(224, 168, 92, 0.4); padding: 0.7rem 1rem; font-size: 0.88rem; margin: 1rem 0; }
+.ed-banner code { background: var(--bg-3); padding: 0 0.3rem; }
+.ed-head { display: flex; justify-content: space-between; align-items: center; margin: 1rem 0 1.5rem; }
+.ed-table { width: 100%; border-collapse: collapse; }
+.ed-table th, .ed-table td { text-align: left; padding: 0.6rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+.ed-table small { color: var(--text-muted); margin-left: 0.4rem; }
+
+.ed-toolbar { position: sticky; top: 4.2rem; z-index: 50; background: var(--bg-2); border-bottom: 1px solid var(--border); }
+.ed-toolbar__inner { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+.ed-toolbar__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-left: auto; }
+
+.ed-msg { padding: 0.7rem 1rem; margin: 1rem 0; font-size: 0.9rem; }
+.ed-msg.is-ok { background: rgba(143, 168, 137, 0.15); border: 1px solid rgba(143, 168, 137, 0.5); }
+.ed-msg.is-err { background: rgba(200, 90, 80, 0.15); border: 1px solid rgba(200, 90, 80, 0.5); }
+.ed-problems { margin: 1rem 0; padding-left: 1.2rem; color: var(--warn); font-size: 0.88rem; }
+
+.ed-section { border: 1px solid var(--border); padding: 1.3rem; margin: 1.2rem 0; display: flex; flex-direction: column; gap: 1rem; }
+.ed-section h2 { font-size: 1.5rem; }
+.ed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.8rem; }
+.ed-field { display: flex; flex-direction: column; gap: 0.3rem; border: none; min-width: 0; }
+.ed-label { font-size: 0.78rem; color: var(--text-muted); }
+.ed-bi { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.ed-bi label { display: flex; flex-direction: column; gap: 0.2rem; }
+.ed-bi label span { font-size: 0.7rem; color: var(--text-muted); }
+.ed-multi { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; }
+.ed-day { border: 1px solid var(--border-light); padding: 1rem; display: flex; flex-direction: column; gap: 0.8rem; background: var(--bg-2); }
+.ed-day__head { display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; }
+.ed-day__moves { margin-left: auto; display: flex; gap: 0.3rem; }
+.ed-preview { border: 1px dashed var(--border-light); margin-top: 1rem; }
+
+@media (max-width: 700px) { .ed-bi { grid-template-columns: 1fr; } }

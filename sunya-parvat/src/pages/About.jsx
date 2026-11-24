@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
 import { getGradient } from '../data/gradients';
+import usePageMeta from '../lib/usePageMeta';
 import './About.css';
 
 export default function About() {
+  usePageMeta({ title: 'About', description: 'Why Sunya Parvat exists: an engineer’s personal approach to the mountains, silence and reflection.', path: '/about' });
   return (
     <div className="page-wrapper about-page">
 
@@ -175,7 +177,7 @@ export default function About() {
         {/* CTA Links */}
         <FadeIn>
           <div className="about__ctas">
-            <Link to="/journeys" className="about__cta-link">Explore the Journeys →</Link>
+            <Link to="/treks" className="about__cta-link">Find a trek →</Link>
             <Link to="/connect" className="about__cta-link">Get in Touch →</Link>
             <Link to="/before-you-go" className="about__cta-link">Before You Go →</Link>
           </div>

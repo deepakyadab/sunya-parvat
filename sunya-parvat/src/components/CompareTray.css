@@ -1,0 +1,59 @@
+.ctray {
+  position: fixed;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  width: min(880px, calc(100% - 2rem));
+  z-index: 80;
+  background: rgba(26, 26, 23, 0.97);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+.ctray__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 0.9rem 0.7rem 1.1rem;
+  flex-wrap: wrap;
+}
+.ctray__title { font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; }
+.ctray__list { display: flex; gap: 0.5rem; list-style: none; flex-wrap: wrap; flex: 1; min-width: 0; }
+.ctray__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--bg-2);
+  border: 1px solid var(--border-light);
+  padding: 0.15rem 0.2rem 0.15rem 0.7rem;
+  font-size: 0.85rem;
+  max-width: 100%;
+}
+.ctray__chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ctray__chip button { color: var(--text-secondary); font-size: 1.1rem; width: 30px; height: 30px; }
+.ctray__chip button:hover { color: var(--text-primary); }
+.ctray__actions { display: flex; align-items: center; gap: 0.8rem; margin-left: auto; }
+.ctray__hint { font-size: 0.78rem; color: var(--text-muted); }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  z-index: 120;
+  background: var(--text-primary);
+  color: #14130f;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  max-width: calc(100% - 2rem);
+}
+.toast--raised { bottom: 6.5rem; }
+
+@media (max-width: 600px) {
+  .ctray { bottom: 0; width: 100%; border-left: none; border-right: none; }
+  .ctray__inner { display: grid; grid-template-columns: 1fr auto; gap: 0.5rem 0.8rem; padding: 0.6rem 0.8rem; }
+  .ctray__title { align-self: center; }
+  .ctray__actions { grid-column: 2; grid-row: 1; margin: 0; gap: 0.6rem; }
+  .ctray__list { grid-column: 1 / -1; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 2px; }
+  .ctray__chip { flex-shrink: 0; font-size: 0.8rem; }
+  .ctray__hint { display: none; }
+}

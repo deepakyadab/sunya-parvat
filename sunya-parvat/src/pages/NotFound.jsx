@@ -1,25 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { useLang } from '../i18n';
+import usePageMeta from '../lib/usePageMeta';
 import './NotFound.css';
 
 export default function NotFound() {
+  const { t } = useLang();
+  usePageMeta({ title: t('nf.title'), noindex: true });
   return (
     <div className="notfound">
-      <motion.div
-        className="notfound__content"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="section-label" style={{ marginBottom: '2rem' }}>Lost</div>
-        <h1 className="notfound__title">This path<br />does not exist.</h1>
-        <p className="notfound__text">
-          Some trails end before they begin.<br />
-          Turn back and find a different way.
-        </p>
-        <Link to="/" className="notfound__link">Return to the beginning →</Link>
-      </motion.div>
+      <div className="notfound__content">
+        <div className="section-label" style={{ marginBottom: '2rem' }}>{t('nf.eyebrow')}</div>
+        <h1 className="notfound__title">{t('nf.title')}</h1>
+        <p className="notfound__text">{t('nf.text')}</p>
+        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link to="/treks" className="notfound__link">{t('nav.find')} →</Link>
+          <Link to="/" className="notfound__link">{t('nf.home')} →</Link>
+        </div>
+      </div>
     </div>
   );
 }

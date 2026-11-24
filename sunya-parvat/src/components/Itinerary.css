@@ -1,0 +1,66 @@
+.itin__legend { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin-bottom: 1.5rem; }
+
+.itin__kind {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid currentColor;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+}
+.itin__legend .itin__kind { margin-left: 0; }
+.itin__kind--trek { color: #9fb79a; }
+.itin__kind--summit { color: var(--gold); }
+.itin__kind--travel { color: #93a9bd; }
+.itin__kind--acclimatisation { color: #c4a0d0; }
+.itin__kind--buffer, .itin__kind--rest { color: #a8a39a; }
+
+.itin__list { list-style: none; position: relative; }
+.itin__day { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; position: relative; padding-bottom: 2rem; }
+.itin__day::before {
+  content: '';
+  position: absolute;
+  left: 1.5rem;
+  top: 2.6rem;
+  bottom: 0;
+  width: 1px;
+  background: var(--border-light);
+}
+.itin__day:last-child::before { display: none; }
+.itin__marker { display: flex; justify-content: center; }
+.itin__num {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  background: var(--bg);
+}
+.itin__day--summit .itin__num { border-color: var(--gold); color: var(--gold); }
+.itin__day--travel .itin__num, .itin__day--buffer .itin__num { border-style: dashed; color: var(--text-secondary); }
+.itin__day--acclimatisation .itin__num { border-color: #c4a0d0; }
+
+.itin__content { background: var(--bg-2); border: 1px solid var(--border); padding: 1rem 1.2rem; }
+.itin__day--travel .itin__content, .itin__day--buffer .itin__content { background: transparent; border-style: dashed; }
+.itin__daylabel { font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.itin__route { font-size: 1.35rem; font-weight: 400; margin: 0.25rem 0 0.4rem; }
+.itin__desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; }
+.itin__stats { display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; margin-top: 0.8rem; }
+.itin__stats dt { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.itin__stats dd { font-size: 0.9rem; color: var(--text-primary); }
+.itin__reflection { margin-top: 0.8rem; }
+.itin__reflection summary { cursor: pointer; font-size: 0.82rem; color: var(--text-accent); }
+.itin__reflection p { font-family: var(--font-serif); font-style: italic; font-size: 1.08rem; color: var(--text-secondary); margin-top: 0.4rem; line-height: 1.6; }
+
+@media (max-width: 600px) {
+  .itin__day { grid-template-columns: 2.4rem 1fr; gap: 0.6rem; }
+  .itin__day::before { left: 1.2rem; }
+  .itin__num { width: 2.2rem; height: 2.2rem; font-size: 1rem; }
+  .itin__content { padding: 0.9rem; }
+}

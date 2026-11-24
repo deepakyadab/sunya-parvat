@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
+import { Link } from 'react-router-dom';
+import usePageMeta from '../lib/usePageMeta';
 import './BeforeYouGo.css';
 
 const demands = [
@@ -68,6 +70,7 @@ The mountain will do its part. Your part is arriving willing.`
 ];
 
 export default function BeforeYouGo() {
+  usePageMeta({ title: 'Before You Go', description: 'An honest conversation about what going into the mountains requires: fitness, mindset, discipline and the right gear.', path: '/before-you-go' });
   return (
     <div className="page-wrapper byg">
 
@@ -125,6 +128,12 @@ export default function BeforeYouGo() {
             </blockquote>
             <p className="byg__closing-text">
               When you feel ready — not confident, but ready — the journeys are waiting.
+            </p>
+            <p className="byg__closing-text" style={{ marginTop: '1.5rem' }}>
+              <Link to="/journal/fitness-for-trekking" className="text-link">Fitness plan</Link> ·{' '}
+              <Link to="/journal/packing-for-a-himalayan-trek" className="text-link">Packing list</Link> ·{' '}
+              <Link to="/journal/altitude-awareness" className="text-link">Altitude awareness</Link> ·{' '}
+              <Link to="/treks" className="text-link">Find a trek</Link>
             </p>
           </div>
         </FadeIn>

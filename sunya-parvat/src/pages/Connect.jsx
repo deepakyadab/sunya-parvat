@@ -1,11 +1,28 @@
 import React, { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
+import { getTrek } from '../data/treks';
+import usePageMeta from '../lib/usePageMeta';
 import './Connect.css';
 
+/*
+  There is no form backend in this project, so the form opens the visitor's
+  own email app with the message filled in, instead of pretending to send it.
+  To receive messages on the site itself, connect a form service (see README).
+*/
+export const CONTACT_EMAIL = 'sunyaparvat@gmail.com';
+
 export default function Connect() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [params] = useSearchParams();
+  const trek = getTrek(params.get('trek') || '');
+  const [form, setForm] = useState({
+    name: '', email: '',
+    message: trek ? `I have a question about ${trek.name.en}: ` : '',
+  });
   const [submitted, setSubmitted] = useState(false);
+
+  usePageMeta({ title: 'Connect', description: 'Ask a question about a trek or write to Sunya Parvat.', path: '/connect' });
 
   const handleChange = e => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -13,7 +30,9 @@ export default function Connect() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // In production, wire this to a form backend (Netlify Forms, Formspree, etc.)
+    const subject = trek ? `Question about ${trek.name.en}` : 'A note from the Sunya Parvat website';
+    const body = `${form.message}\n\n— ${form.name}${form.email ? ` (${form.email})` : ''}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   };
 
@@ -95,8 +114,12 @@ export default function Connect() {
                   </div>
 
                   <button type="submit" className="form-submit">
-                    Send →
+                    Open in my email app →
                   </button>
+                  <p className="connect__hint">
+                    This opens your own email app with the message ready to send. Or write directly to{' '}
+                    <a href={`mailto:${CONTACT_EMAIL}`} className="text-link">{CONTACT_EMAIL}</a>.
+                  </p>
                 </form>
               </FadeIn>
             ) : (
@@ -107,7 +130,12 @@ export default function Connect() {
                 transition={{ duration: 0.8 }}
               >
                 <p className="connect__thanks-text">
-                  Received. I will read it carefully and write back when I have something worth saying.
+                  Your email app should have opened with your message. Once you press send there, I will read it carefully and write back.
+                </p>
+                <p className="connect__hint">
+                  Nothing opened? Copy your message and write to{' '}
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-link">{CONTACT_EMAIL}</a>.{' '}
+                  <button type="button" className="btn-text" onClick={() => setSubmitted(false)}>Back to the form</button>
                 </p>
                 <span className="connect__thanks-sig">— Deepak</span>
               </motion.div>
