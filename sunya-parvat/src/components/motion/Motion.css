@@ -1,0 +1,15 @@
+/* Word reveal: each word sits in a clipping mask and rises into it. */
+.reveal-words__mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  /* room for descenders and italic overhang inside the mask */
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+  padding-right: 0.04em;
+}
+.reveal-words__word { display: inline-block; will-change: transform; }
+
+/* Stagger wrappers must not change the grid's card sizing. */
+.stagger-grid__item { display: grid; min-width: 0; }
+.stagger-grid__item > * { min-width: 0; }

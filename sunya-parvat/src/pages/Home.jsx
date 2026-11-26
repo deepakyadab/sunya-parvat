@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion
 import FadeIn from '../components/FadeIn';
 import TrekCard from '../components/TrekCard';
 import FindMyTrek from '../components/FindMyTrek';
+import { RevealWords, Rise, StaggerGrid, EASE } from '../components/motion/Motion';
+import SeasonScroll from '../components/motion/SeasonScroll';
 import { treks } from '../data/treks';
 import { seasons } from '../data/taxonomy';
 import { articles } from '../data/journal';
@@ -37,7 +39,8 @@ export default function Home() {
     <div className="home">
       <section className="hero">
         <motion.div className="hero__bg" style={{ y: heroY }}>
-          <img
+          {/* The photo settles in: a slow fade and a slight pull-back, like eyes adjusting to the light. */}
+          <motion.img
             src={HERO_PHOTO.src}
             srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
             sizes="100vw"
@@ -45,29 +48,33 @@ export default function Home() {
             className="hero__img"
             fetchpriority="high"
             decoding="async"
+            initial={reduce ? false : { opacity: 0.15, scale: 1.08 }}
+            animate={{ opacity: 0.62, scale: 1 }}
+            transition={{ opacity: { duration: 1.6, ease: 'easeOut' }, scale: { duration: 2.6, ease: EASE } }}
           />
         </motion.div>
         <div className="hero__shade" />
 
         <div className="hero__content container">
-          <p className="hero__eyebrow" lang="hi">शून्य पर्वत</p>
+          <Rise as="p" className="hero__eyebrow" lang="hi" delay={0.15}>शून्य पर्वत</Rise>
           <h1 className="hero__title">
-            {t('home.title1')}<br /><em>{t('home.title2')}</em>
+            <RevealWords text={t('home.title1')} delay={0.3} /><br />
+            <em><RevealWords text={t('home.title2')} delay={0.75} /></em>
           </h1>
-          <p className="hero__sub">{t('home.sub')}</p>
+          <Rise as="p" className="hero__sub" delay={1.05}>{t('home.sub')}</Rise>
 
-          <div className="hero__ctas">
+          <Rise className="hero__ctas" delay={1.2}>
             <a href="#find-my-trek" onClick={goFind} className="btn btn--primary">{t('home.ctaFind')}</a>
             <Link to="/treks" className="btn btn--ghost">{t('home.ctaBrowse', { n: treks.length })}</Link>
-          </div>
+          </Rise>
 
-          <form className="hero__search" role="search" onSubmit={e => { e.preventDefault(); navigate(q.trim() ? `/treks?q=${encodeURIComponent(q.trim())}` : '/treks'); }}>
+          <Rise as="form" delay={1.32} className="hero__search" role="search" onSubmit={e => { e.preventDefault(); navigate(q.trim() ? `/treks?q=${encodeURIComponent(q.trim())}` : '/treks'); }}>
             <label htmlFor="hero-search" className="visually-hidden">{t('dir.search')}</label>
             <input id="hero-search" className="field" value={q} onChange={e => setQ(e.target.value)} placeholder={t('home.searchPlaceholder')} />
             <button type="submit" className="btn btn--sm">{t('common.search')}</button>
-          </form>
+          </Rise>
 
-          <p className="hero__stats">{t('home.stats', { n: treks.length, c: countries })}</p>
+          <Rise as="p" className="hero__stats" delay={1.44}>{t('home.stats', { n: treks.length, c: countries })}</Rise>
           <p className="hero__credit">
             {tx(HERO_PHOTO.alt)}. {t('photo.credit')}: <a href={HERO_PHOTO.sourceUrl} target="_blank" rel="noreferrer">{HERO_PHOTO.author}</a>,{' '}
             <a href={HERO_PHOTO.licenseUrl} target="_blank" rel="noreferrer license">{HERO_PHOTO.license}</a>
@@ -80,40 +87,26 @@ export default function Home() {
       </section>
 
       <section className="home-section container">
-        <FadeIn>
-          <div className="section-head">
-            <div>
-              <p className="section-label">{t('home.seasonEyebrow')}</p>
-              <h2 className="section-title">{t('home.seasonTitle')}</h2>
-            </div>
+        <div className="section-head">
+          <div>
+            <Rise as="p" className="section-label" inView>{t('home.seasonEyebrow')}</Rise>
+            <h2 className="section-title"><RevealWords text={t('home.seasonTitle')} inView /></h2>
           </div>
-        </FadeIn>
-        <div className="seasons__grid">
-          {seasons.map(s => {
-            const n = treks.filter(x => x.bestSeasons.includes(s.id)).length;
-            return (
-              <Link key={s.id} to={`/treks?season=${s.id}`} className="season-card" style={{ '--season-color': s.color }}>
-                <span className="season-card__dot" aria-hidden="true" />
-                <h3 className="season-card__name">{tx(s)}</h3>
-                <p className="season-card__tagline">{tx(s.tagline)}</p>
-                <span className="season-card__count">{t('home.seasonCount', { n })} →</span>
-              </Link>
-            );
-          })}
         </div>
+        <SeasonScroll seasons={seasons} countFor={s => treks.filter(x => x.bestSeasons.includes(s.id)).length} />
       </section>
 
       <section className="home-section container">
         <div className="section-head">
           <div>
-            <p className="section-label">{t('home.featuredEyebrow')}</p>
-            <h2 className="section-title">{t('home.featuredTitle')}</h2>
+            <Rise as="p" className="section-label" inView>{t('home.featuredEyebrow')}</Rise>
+            <h2 className="section-title"><RevealWords text={t('home.featuredTitle')} inView /></h2>
           </div>
           <Link to="/treks" className="link-subtle">{t('home.allTreks')} →</Link>
         </div>
-        <div className="trek-grid">
+        <StaggerGrid className="trek-grid">
           {featured.map(trek => <TrekCard key={trek.id} trek={trek} />)}
-        </div>
+        </StaggerGrid>
       </section>
 
       <section className="home-section container">

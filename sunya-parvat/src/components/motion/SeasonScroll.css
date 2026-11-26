@@ -1,0 +1,82 @@
+/* ─── Seasons scroll story ─── */
+.season-scroll {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+.season-scroll__list { list-style: none; border-top: 1px solid var(--border); }
+
+.season-row {
+  min-height: 46vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.season-row__link { display: block; padding: 2.2rem 0; width: 100%; }
+.season-row__dot {
+  display: block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--season-color, var(--gold-dim)); margin-bottom: 1.1rem;
+  transform: scale(1); transition: transform 0.6s ease;
+}
+.season-row__name {
+  font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.05;
+  color: var(--text-muted); margin-bottom: 0.7rem;
+  transition: color 0.6s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.season-row__tagline {
+  font-family: var(--font-serif); font-style: italic; font-size: 1.08rem; line-height: 1.5;
+  color: var(--text-muted); max-width: 28rem; margin-bottom: 1rem;
+  transition: color 0.6s ease;
+}
+.season-row__count { font-size: 0.82rem; color: var(--text-muted); transition: color 0.6s ease; }
+
+.season-row.is-active .season-row__name { color: var(--text-primary); transform: translateX(0.4rem); }
+.season-row.is-active .season-row__tagline { color: var(--text-secondary); }
+.season-row.is-active .season-row__count { color: var(--text-accent); }
+.season-row.is-active .season-row__dot { transform: scale(1.6); }
+.season-row__link:hover .season-row__name,
+.season-row__link:focus-visible .season-row__name { color: var(--text-primary); }
+
+/* Pinned photo */
+.season-scroll__stage { position: sticky; top: 14vh; height: 72vh; }
+.season-scroll__frame { position: relative; height: 100%; overflow: hidden; background: var(--bg-3); }
+.season-photo { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 0.9s ease; }
+.season-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: saturate(0.9);
+  transform: scale(1.06);
+  transition: transform 6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.season-photo.is-active { opacity: 1; }
+.season-photo.is-active img { transform: scale(1); }
+.season-photo__caption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 2.4rem 1.1rem 0.9rem;
+  background: linear-gradient(to top, rgba(10, 10, 8, 0.85), rgba(10, 10, 8, 0));
+  font-size: 0.74rem; color: var(--text-secondary); line-height: 1.5;
+}
+.season-photo__caption a { color: var(--text-primary); text-decoration: underline; text-underline-offset: 2px; }
+
+.season-row__inline { display: none; }
+
+/* Phones and tablets: no pinning; each season carries its own photo */
+@media (max-width: 900px) {
+  .season-scroll { grid-template-columns: 1fr; }
+  .season-scroll__stage { display: none; }
+  .season-row { min-height: 0; display: block; padding-top: 1.6rem; }
+  .season-row__inline { display: block; position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--bg-3); }
+  .season-row__inline .season-photo { opacity: 1; }
+  .season-row__inline .season-photo img { transform: none; }
+  .season-row__link { padding: 1.4rem 0 1.8rem; }
+  .season-row__name { color: var(--text-primary); transform: none !important; }
+  .season-row__tagline { color: var(--text-secondary); }
+  .season-row__count { color: var(--text-accent); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .season-photo, .season-photo img, .season-row__name, .season-row__dot,
+  .season-row__tagline, .season-row__count { transition: none !important; }
+  .season-photo img { transform: none !important; }
+  .season-row.is-active .season-row__name { transform: none; }
+}
