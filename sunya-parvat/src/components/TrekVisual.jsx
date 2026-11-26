@@ -1,5 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLang } from '../i18n';
+
+/*
+  Motion only (styles in src/styles/motion.css):
+  - card photos open through a mask the first time they scroll into view;
+  - the tall trek-page photo moves slower than the page (depth parallax).
+*/
+function useVisualMotion(tall) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return undefined;
+    if (tall) {
+      let frame = 0;
+      const update = () => {
+        frame = 0;
+        const r = el.getBoundingClientRect();
+        const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height)));
+        el.style.setProperty('--sp-par', p.toFixed(3));
+      };
+      const onScroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+      update();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => { window.removeEventListener('scroll', onScroll); if (frame) cancelAnimationFrame(frame); };
+    }
+    if (typeof IntersectionObserver === 'undefined') return undefined;
+    el.classList.add('sp-reveal');
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { el.classList.add('is-in'); io.disconnect(); }
+    }, { rootMargin: '0px 0px -8% 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [tall]);
+  return ref;
+}
 
 /*
   Trek photo, or a clean generated placeholder when no rights-cleared photo exists yet.
@@ -51,6 +87,7 @@ export function hasPhoto(trek) {
 
 export default function TrekVisual({ trek, tall = false, className = '', priority = false, showScope = true }) {
   const { t, tx } = useLang();
+  const motionRef = useVisualMotion(tall);
   const cls = `trek-visual ${tall ? 'trek-visual--tall' : ''} ${className}`;
 
   if (hasPhoto(trek)) {
@@ -64,7 +101,7 @@ export default function TrekVisual({ trek, tall = false, className = '', priorit
     // so the hero is never an empty dark box while the big file downloads.
     const backdrop = tall && img.srcSmall ? { backgroundImage: `url("${img.srcSmall}")`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined;
     return (
-      <div className={cls} style={backdrop}>
+      <div className={cls} style={backdrop} ref={motionRef}>
         <img
           src={tall ? img.src : img.srcSmall || img.src}
           srcSet={srcSet}
@@ -85,7 +122,7 @@ export default function TrekVisual({ trek, tall = false, className = '', priorit
   const [dark, mid, light] = PALETTES[key];
   const seed = hash(trek.id);
   return (
-    <div className={`${cls} trek-visual--placeholder`}>
+    <div className={`${cls} trek-visual--placeholder`} ref={motionRef}>
       <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
         <defs>
           <linearGradient id={`sky-${trek.id}`} x1="0" y1="0" x2="0" y2="1">

@@ -42,7 +42,13 @@
 /* ─── Sections ─── */
 .home-section { padding-top: clamp(3.5rem, 8vw, 6rem); }
 
-/* Seasons: see components/motion/SeasonScroll.css */
+.seasons__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.season-card { display: flex; flex-direction: column; padding: 2rem 1.6rem; background: var(--bg-2); transition: background 0.3s ease; }
+.season-card:hover { background: var(--bg-3); }
+.season-card__dot { width: 8px; height: 8px; border-radius: 50%; background: var(--season-color, var(--gold-dim)); margin-bottom: 1.2rem; }
+.season-card__name { font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 400; }
+.season-card__tagline { font-family: var(--font-serif); font-style: italic; font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.4rem; line-height: 1.45; flex: 1; }
+.season-card__count { font-size: 0.8rem; color: var(--text-accent); }
 
 /* ─── Stories ─── */
 .story-list { display: flex; flex-direction: column; border-top: 1px solid var(--border); }
@@ -73,8 +79,12 @@
 }
 .about-preview__quote footer { display: block; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--text-muted); font-style: normal; font-family: var(--font-sans); margin-top: 1.2rem; }
 
+@media (max-width: 1024px) {
+  .seasons__grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 600px) {
   .hero { padding: 7rem 0 2.5rem; min-height: 88svh; }
+  .seasons__grid { grid-template-columns: 1fr; }
   .story-row { flex-direction: column; gap: 0.4rem; }
   .hero__ctas .btn { flex: 1; justify-content: center; }
 }

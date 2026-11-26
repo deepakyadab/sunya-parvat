@@ -38,6 +38,13 @@ function ScrollToTop() {
   return null;
 }
 
+/* Each new page settles in (motion only; see styles/motion.css). Keyed by path,
+   so filter or language changes on the same page do not replay it. */
+function PageFrame({ children }) {
+  const { pathname } = useLocation();
+  return <div key={pathname} className="sp-page">{children}</div>;
+}
+
 /* Old URLs from the first version of the site keep working. */
 function LegacyJourney() {
   const { id } = useParams();
@@ -62,6 +69,7 @@ export default function App() {
               <ScrollToTop />
               <Nav />
               <main id="main" tabIndex={-1}>
+                <PageFrame>
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/treks" element={<Treks />} />
@@ -81,6 +89,7 @@ export default function App() {
                   {Editor && <Route path="/editor" element={<Suspense fallback={null}><Editor /></Suspense>} />}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
+                </PageFrame>
               </main>
               <Footer />
               <CompareTray />

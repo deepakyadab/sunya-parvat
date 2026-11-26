@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform, useReducedMotion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
 import TrekCard from '../components/TrekCard';
 import FindMyTrek from '../components/FindMyTrek';
 import { RevealWords, Rise, StaggerGrid, EASE } from '../components/motion/Motion';
-import SeasonScroll from '../components/motion/SeasonScroll';
 import { treks } from '../data/treks';
 import { seasons } from '../data/taxonomy';
 import { articles } from '../data/journal';
@@ -24,6 +23,28 @@ export default function Home() {
   const { scrollY } = useScroll();
   const heroY = useTransform(scrollY, [0, 600], [0, reduce ? 0 : 100]);
 
+  // Hero camera: scroll-driven dolly and tilt on the photo, with the text moving
+  // faster than the photo so the two separate in depth. Motion only; layout unchanged.
+  const heroRef = useRef(null);
+  const { scrollYProgress: heroP } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
+  const camScale = useTransform(heroP, [0, 1], [1, reduce ? 1 : 1.16]);
+  const camTilt = useTransform(heroP, [0, 1], [0, reduce ? 0 : 7]);
+  const contentY = useTransform(heroP, [0, 1], [0, reduce ? 0 : -90]);
+  const contentFade = useTransform(heroP, [0, 0.85], [1, reduce ? 1 : 0]);
+  const spring = { stiffness: 40, damping: 18, mass: 1 };
+  const camX = useSpring(0, spring);
+  const camY = useSpring(0, spring);
+  const camPan = useSpring(0, spring);
+  const finePointer = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+  const onHeroPointer = e => {
+    if (reduce || !finePointer) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    const nx = (e.clientX - r.left) / r.width - 0.5;
+    const ny = (e.clientY - r.top) / r.height - 0.5;
+    camX.set(-nx * 18); camY.set(-ny * 12); camPan.set(nx * 1.6);
+  };
+  const resetHeroPointer = () => { camX.set(0); camY.set(0); camPan.set(0); };
+
   usePageMeta({ title: null, description: t('meta.home'), path: '/' });
 
   const featured = FEATURED.map(id => treks.find(x => x.id === id)).filter(Boolean);
@@ -37,25 +58,30 @@ export default function Home() {
 
   return (
     <div className="home">
-      <section className="hero">
+      <section className="hero" ref={heroRef} onPointerMove={onHeroPointer} onPointerLeave={resetHeroPointer}>
         <motion.div className="hero__bg" style={{ y: heroY }}>
-          {/* The photo settles in: a slow fade and a slight pull-back, like eyes adjusting to the light. */}
-          <motion.img
-            src={HERO_PHOTO.src}
-            srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
-            sizes="100vw"
-            alt={tx(HERO_PHOTO.alt)}
-            className="hero__img"
-            fetchpriority="high"
-            decoding="async"
-            initial={reduce ? false : { opacity: 0.15, scale: 1.08 }}
-            animate={{ opacity: 0.62, scale: 1 }}
-            transition={{ opacity: { duration: 1.6, ease: 'easeOut' }, scale: { duration: 2.6, ease: EASE } }}
-          />
+          {/* Camera: dollies in and tilts back as you scroll, leans slightly toward the pointer. */}
+          <motion.div className="hero__camera" style={{ scale: camScale, rotateX: camTilt, rotateY: camPan, x: camX, y: camY }}>
+            <div className="hero__drift">
+              {/* The photo settles in: a slow fade and a slight pull-back, like eyes adjusting to the light. */}
+              <motion.img
+                src={HERO_PHOTO.src}
+                srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
+                sizes="100vw"
+                alt={tx(HERO_PHOTO.alt)}
+                className="hero__img"
+                fetchpriority="high"
+                decoding="async"
+                initial={reduce ? false : { opacity: 0.15, scale: 1.08 }}
+                animate={{ opacity: 0.62, scale: 1 }}
+                transition={{ opacity: { duration: 1.6, ease: 'easeOut' }, scale: { duration: 2.6, ease: EASE } }}
+              />
+            </div>
+          </motion.div>
         </motion.div>
         <div className="hero__shade" />
 
-        <div className="hero__content container">
+        <motion.div className="hero__content container" style={{ y: contentY, opacity: contentFade }}>
           <Rise as="p" className="hero__eyebrow" lang="hi" delay={0.15}>शून्य पर्वत</Rise>
           <h1 className="hero__title">
             <RevealWords text={t('home.title1')} delay={0.3} /><br />
@@ -79,7 +105,7 @@ export default function Home() {
             {tx(HERO_PHOTO.alt)}. {t('photo.credit')}: <a href={HERO_PHOTO.sourceUrl} target="_blank" rel="noreferrer">{HERO_PHOTO.author}</a>,{' '}
             <a href={HERO_PHOTO.licenseUrl} target="_blank" rel="noreferrer license">{HERO_PHOTO.license}</a>
           </p>
-        </div>
+        </motion.div>
       </section>
 
       <section className="home-section container">
@@ -93,7 +119,19 @@ export default function Home() {
             <h2 className="section-title"><RevealWords text={t('home.seasonTitle')} inView /></h2>
           </div>
         </div>
-        <SeasonScroll seasons={seasons} countFor={s => treks.filter(x => x.bestSeasons.includes(s.id)).length} />
+        <StaggerGrid className="seasons__grid" step={0.1}>
+          {seasons.map(s => {
+            const n = treks.filter(x => x.bestSeasons.includes(s.id)).length;
+            return (
+              <Link key={s.id} to={`/treks?season=${s.id}`} className="season-card" style={{ '--season-color': s.color }}>
+                <span className="season-card__dot" aria-hidden="true" />
+                <h3 className="season-card__name">{tx(s)}</h3>
+                <p className="season-card__tagline">{tx(s.tagline)}</p>
+                <span className="season-card__count">{t('home.seasonCount', { n })} →</span>
+              </Link>
+            );
+          })}
+        </StaggerGrid>
       </section>
 
       <section className="home-section container">
