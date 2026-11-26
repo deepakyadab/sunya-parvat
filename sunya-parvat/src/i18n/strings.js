@@ -104,6 +104,7 @@ const en = {
   'ask.limit2': 'It has no live weather, trail-closure or permit information. Check official sources before you travel.',
   'ask.limit3': 'It is not a doctor or an emergency service. In an emergency in India, call 112.',
 
+  'hero.skip': 'Skip intro',
   'home.title1': 'Into the mountains.',
   'home.title2': 'Into the self.',
   'home.sub': 'A calm guide to treks in the Himalaya and beyond. Find the trek that fits your time and experience, compare routes honestly, and prepare well.',
@@ -410,6 +411,7 @@ const hi = {
   'ask.limit2': 'इसके पास ताज़ा मौसम, रास्ता बंद होने या परमिट की जानकारी नहीं है। यात्रा से पहले आधिकारिक स्रोत देखें।',
   'ask.limit3': 'यह डॉक्टर या आपात सेवा नहीं है। भारत में आपात स्थिति में 112 पर कॉल करें।',
 
+  'hero.skip': 'परिचय छोड़ें',
   'home.title1': 'पहाड़ों की ओर।',
   'home.title2': 'स्वयं की ओर।',
   'home.sub': 'हिमालय और उससे आगे के ट्रेक के लिए एक शांत गाइड। अपने समय और अनुभव के अनुसार ट्रेक खोजें, रास्तों की ईमानदार तुलना करें, और अच्छी तैयारी करें।',
