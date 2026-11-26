@@ -5,7 +5,6 @@ import FadeIn from '../components/FadeIn';
 import TrekCard from '../components/TrekCard';
 import FindMyTrek from '../components/FindMyTrek';
 import { RevealWords, Rise, StaggerGrid, EASE } from '../components/motion/Motion';
-import Hero3D from '../components/hero3d/Hero3D';
 import { treks } from '../data/treks';
 import { seasons } from '../data/taxonomy';
 import { articles } from '../data/journal';
@@ -27,8 +26,7 @@ export default function Home() {
   // Hero camera: scroll-driven dolly and tilt on the photo, with the text moving
   // faster than the photo so the two separate in depth. Motion only; layout unchanged.
   const heroRef = useRef(null);
-  // (only used by the photo fallback; layoutEffect:false avoids a warning when it isn't shown)
-  const { scrollYProgress: heroP } = useScroll({ target: heroRef, offset: ['start start', 'end start'], layoutEffect: false });
+  const { scrollYProgress: heroP } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
   const camScale = useTransform(heroP, [0, 1], [1, reduce ? 1 : 1.16]);
   const camTilt = useTransform(heroP, [0, 1], [0, reduce ? 0 : 7]);
   const contentY = useTransform(heroP, [0, 1], [0, reduce ? 0 : -90]);
@@ -53,88 +51,62 @@ export default function Home() {
   const guides = articles.filter(a => a.kind === 'guide' && a.languages.includes('hi')).slice(0, 3);
   const countries = new Set(treks.flatMap(x => x.countries)).size;
 
-  const onSearch = e => { e.preventDefault(); navigate(q.trim() ? `/treks?q=${encodeURIComponent(q.trim())}` : '/treks'); };
-
   const goFind = e => {
     e.preventDefault();
     document.getElementById('find-my-trek')?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
   };
 
-  // Devices without WebGL keep the photo hero (with its own camera motion).
-  const photoHero = (
-    <section className="hero" ref={heroRef} onPointerMove={onHeroPointer} onPointerLeave={resetHeroPointer}>
-      <motion.div className="hero__bg" style={{ y: heroY }}>
-        {/* Camera: dollies in and tilts back as you scroll, leans slightly toward the pointer. */}
-        <motion.div className="hero__camera" style={{ scale: camScale, rotateX: camTilt, rotateY: camPan, x: camX, y: camY }}>
-          <div className="hero__drift">
-            {/* The photo settles in: a slow fade and a slight pull-back, like eyes adjusting to the light. */}
-            <motion.img
-              src={HERO_PHOTO.src}
-              srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
-              sizes="100vw"
-              alt={tx(HERO_PHOTO.alt)}
-              className="hero__img"
-              fetchpriority="high"
-              decoding="async"
-              initial={reduce ? false : { opacity: 0.15, scale: 1.08 }}
-              animate={{ opacity: 0.62, scale: 1 }}
-              transition={{ opacity: { duration: 1.6, ease: 'easeOut' }, scale: { duration: 2.6, ease: EASE } }}
-            />
-          </div>
-        </motion.div>
-      </motion.div>
-      <div className="hero__shade" />
-
-      <motion.div className="hero__content container" style={{ y: contentY, opacity: contentFade }}>
-        <Rise as="p" className="hero__eyebrow" lang="hi" delay={0.15}>शून्य पर्वत</Rise>
-        <h1 className="hero__title">
-          <RevealWords text={t('home.title1')} delay={0.3} /><br />
-          <em><RevealWords text={t('home.title2')} delay={0.75} /></em>
-        </h1>
-        <Rise as="p" className="hero__sub" delay={1.05}>{t('home.sub')}</Rise>
-
-        <Rise className="hero__ctas" delay={1.2}>
-          <a href="#find-my-trek" onClick={goFind} className="btn btn--primary">{t('home.ctaFind')}</a>
-          <Link to="/treks" className="btn btn--ghost">{t('home.ctaBrowse', { n: treks.length })}</Link>
-        </Rise>
-
-        <Rise as="form" delay={1.32} className="hero__search" role="search" onSubmit={onSearch}>
-          <label htmlFor="hero-search" className="visually-hidden">{t('dir.search')}</label>
-          <input id="hero-search" className="field" value={q} onChange={e => setQ(e.target.value)} placeholder={t('home.searchPlaceholder')} />
-          <button type="submit" className="btn btn--sm">{t('common.search')}</button>
-        </Rise>
-
-        <Rise as="p" className="hero__stats" delay={1.44}>{t('home.stats', { n: treks.length, c: countries })}</Rise>
-        <p className="hero__credit">
-          {tx(HERO_PHOTO.alt)}. {t('photo.credit')}: <a href={HERO_PHOTO.sourceUrl} target="_blank" rel="noreferrer">{HERO_PHOTO.author}</a>,{' '}
-          <a href={HERO_PHOTO.licenseUrl} target="_blank" rel="noreferrer license">{HERO_PHOTO.license}</a>
-        </p>
-      </motion.div>
-    </section>
-  );
-
   return (
     <div className="home">
-      <Hero3D fallback={photoHero}>
-        <p className="hero__eyebrow" lang="hi">शून्य पर्वत</p>
-        <h1 className="hero__title">
-          <span className="hero3d__line hero3d__line--1">{t('home.title1')}</span><br />
-          <em className="hero3d__line hero3d__line--2">{t('home.title2')}</em>
-        </h1>
-        <div className="hero3d__rest">
-          <p className="hero__sub">{t('home.sub')}</p>
-          <div className="hero__ctas">
+      <section className="hero" ref={heroRef} onPointerMove={onHeroPointer} onPointerLeave={resetHeroPointer}>
+        <motion.div className="hero__bg" style={{ y: heroY }}>
+          {/* Camera: dollies in and tilts back as you scroll, leans slightly toward the pointer. */}
+          <motion.div className="hero__camera" style={{ scale: camScale, rotateX: camTilt, rotateY: camPan, x: camX, y: camY }}>
+            <div className="hero__drift">
+              {/* The photo settles in: a slow fade and a slight pull-back, like eyes adjusting to the light. */}
+              <motion.img
+                src={HERO_PHOTO.src}
+                srcSet={`${HERO_PHOTO.srcSmall} 960w, ${HERO_PHOTO.src} 1280w`}
+                sizes="100vw"
+                alt={tx(HERO_PHOTO.alt)}
+                className="hero__img"
+                fetchpriority="high"
+                decoding="async"
+                initial={reduce ? false : { opacity: 0.15, scale: 1.08 }}
+                animate={{ opacity: 0.62, scale: 1 }}
+                transition={{ opacity: { duration: 1.6, ease: 'easeOut' }, scale: { duration: 2.6, ease: EASE } }}
+              />
+            </div>
+          </motion.div>
+        </motion.div>
+        <div className="hero__shade" />
+
+        <motion.div className="hero__content container" style={{ y: contentY, opacity: contentFade }}>
+          <Rise as="p" className="hero__eyebrow" lang="hi" delay={0.15}>शून्य पर्वत</Rise>
+          <h1 className="hero__title">
+            <RevealWords text={t('home.title1')} delay={0.3} /><br />
+            <em><RevealWords text={t('home.title2')} delay={0.75} /></em>
+          </h1>
+          <Rise as="p" className="hero__sub" delay={1.05}>{t('home.sub')}</Rise>
+
+          <Rise className="hero__ctas" delay={1.2}>
             <a href="#find-my-trek" onClick={goFind} className="btn btn--primary">{t('home.ctaFind')}</a>
             <Link to="/treks" className="btn btn--ghost">{t('home.ctaBrowse', { n: treks.length })}</Link>
-          </div>
-          <form className="hero__search" role="search" onSubmit={onSearch}>
+          </Rise>
+
+          <Rise as="form" delay={1.32} className="hero__search" role="search" onSubmit={e => { e.preventDefault(); navigate(q.trim() ? `/treks?q=${encodeURIComponent(q.trim())}` : '/treks'); }}>
             <label htmlFor="hero-search" className="visually-hidden">{t('dir.search')}</label>
             <input id="hero-search" className="field" value={q} onChange={e => setQ(e.target.value)} placeholder={t('home.searchPlaceholder')} />
             <button type="submit" className="btn btn--sm">{t('common.search')}</button>
-          </form>
-          <p className="hero__stats">{t('home.stats', { n: treks.length, c: countries })}</p>
-        </div>
-      </Hero3D>
+          </Rise>
+
+          <Rise as="p" className="hero__stats" delay={1.44}>{t('home.stats', { n: treks.length, c: countries })}</Rise>
+          <p className="hero__credit">
+            {tx(HERO_PHOTO.alt)}. {t('photo.credit')}: <a href={HERO_PHOTO.sourceUrl} target="_blank" rel="noreferrer">{HERO_PHOTO.author}</a>,{' '}
+            <a href={HERO_PHOTO.licenseUrl} target="_blank" rel="noreferrer license">{HERO_PHOTO.license}</a>
+          </p>
+        </motion.div>
+      </section>
 
       <section className="home-section container">
         <FindMyTrek />
