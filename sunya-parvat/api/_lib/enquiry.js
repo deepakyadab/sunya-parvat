@@ -25,6 +25,9 @@ const CONTROL_RE = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g;
 const LIMITS = { name: [2, 80], email: [5, 254], message: [10, 2000] };
 const MIN_FILL_MS = 3000;          // faster than this is almost certainly a bot
 const RATE = { windowMs: 10 * 60 * 1000, max: 5 };
+// Ceiling across all visitors (per serverless instance), so a flood from many
+// addresses cannot fill the inbox or use up the email provider's quota.
+const GLOBAL_RATE = { windowMs: 10 * 60 * 1000, max: 30 };
 
 /* ---------- validation ---------- */
 
@@ -67,12 +70,15 @@ const isSpam = body => spamReason(body) !== null;
 /* ---------- rate limiting (best effort, per serverless instance) ---------- */
 
 const hits = new Map();
+let globalHits = [];
 function rateLimited(key, now = Date.now()) {
+  globalHits = globalHits.filter(t => now - t < GLOBAL_RATE.windowMs);
+  globalHits.push(now);
   const list = (hits.get(key) || []).filter(t => now - t < RATE.windowMs);
   list.push(now);
   hits.set(key, list);
   if (hits.size > 5000) hits.clear();
-  return list.length > RATE.max;
+  return list.length > RATE.max || globalHits.length > GLOBAL_RATE.max;
 }
 
 /* ---------- email content ---------- */
@@ -216,4 +222,4 @@ async function handleEnquiry({ method, body, ip, origin, env = process.env }) {
   return { status: 200, body: { ok: true } };
 }
 
-module.exports = { handleEnquiry, validate, isSpam, spamReason, _resetRateLimit: () => hits.clear() };
+module.exports = { handleEnquiry, validate, isSpam, spamReason, _resetRateLimit: () => { hits.clear(); globalHits = []; } };

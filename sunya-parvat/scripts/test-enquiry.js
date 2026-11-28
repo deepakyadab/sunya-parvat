@@ -82,6 +82,16 @@ test('rate limit after 5 requests from one IP', async () => {
   console.log = orig;
   assert.deepStrictEqual(statuses, [200, 200, 200, 200, 200, 429, 429]);
 });
+test('overall cap stops a flood from many different IPs', async () => {
+  _resetRateLimit();
+  const orig = console.log; console.log = () => {};
+  const statuses = [];
+  for (let i = 0; i < 32; i++) statuses.push((await call(base)).status);
+  console.log = orig;
+  _resetRateLimit();
+  assert.strictEqual(statuses.filter(s => s === 200).length, 30);
+  assert.deepStrictEqual(statuses.slice(30), [429, 429]);
+});
 test('header injection in name cannot add lines to the subject', async () => {
   const out = []; const orig = console.log; console.log = m => out.push(String(m));
   await call({ ...base, name: 'Eve\r\nBcc: x@y.z' });

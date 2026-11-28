@@ -45,6 +45,8 @@ function saveTrek(trek) {
 
 const server = http.createServer((req, res) => {
   const origin = req.headers.origin || '';
+  // Refuse any Host other than this machine (blocks DNS-rebinding tricks from websites).
+  if (!/^(127\.0\.0\.1|localhost):\d+$/.test(req.headers.host || '')) return send(res, 403, { error: 'Host not allowed' }, '');
   if (origin && !ALLOWED_ORIGINS.includes(origin)) return send(res, 403, { error: 'Origin not allowed' }, origin);
   if (req.method === 'OPTIONS') return send(res, 204, {}, origin);
   if (req.method === 'GET' && req.url === '/health') return send(res, 200, { ok: true }, origin);
